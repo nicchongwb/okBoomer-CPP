@@ -7,7 +7,19 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OkBoomer", "OkBoomer.vcxpro
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E454EEC5-20D2-4FAF-8301-149A1FBA5936}"
 	ProjectSection(SolutionItems) = preProject
+		res\sprites\background.png = res\sprites\background.png
+		res\sprites\bombermantilesnew.png = res\sprites\bombermantilesnew.png
+		res\sprites\bombs2.bmp = res\sprites\bombs2.bmp
+		res\sprites\characternew.png = res\sprites\characternew.png
+		res\sprites\gameover.png = res\sprites\gameover.png
+		res\sprites\history.png = res\sprites\history.png
 		Launcher.cpp = Launcher.cpp
+		res\sprites\quit-button.png = res\sprites\quit-button.png
+		res\sprites\replay-button.png = res\sprites\replay-button.png
+		res\sprites\start-button.png = res\sprites\start-button.png
+		TextureManager.cpp = TextureManager.cpp
+		TextureManager.h = TextureManager.h
+		res\sprites\title.png = res\sprites\title.png
 	EndProjectSection
 EndProject
 Global

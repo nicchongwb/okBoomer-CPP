@@ -72,8 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Dev\SDL2-2.0.14\include;C:\Dev\SDL2_image-2.0.5\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Dev\SDL2-2.0.14\lib\x86;C:\Dev\SDL2_image-2.0.5\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\CPP_Libraries\SDL2-2.0.14\include;C:\CPP_Libraries\SDL2_image-2.0.5\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\CPP_Libraries\SDL2-2.0.14\lib\x86;C:\CPP_Libraries\SDL2_image-2.0.5\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -146,9 +146,11 @@
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Launcher.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
+    <ClInclude Include="TextureManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

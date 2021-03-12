@@ -1,4 +1,5 @@
 #include "Game.h"
+#include "TextureManager.h"
 #include <iostream>
 
 // GAME.H AND GAME.CPP CONTAINS GAME LOOP METHODS
@@ -29,6 +30,8 @@ bool Game::Init() {
         return false;
     }
 
+    // load sprite
+    TextureManager::GetInstance()->Load("bg", "res/sprites/characternew.png");
     return m_IsRunning = true;
 }
 
@@ -41,7 +44,8 @@ void Game::Render() {
     // Setting screen colour
     SDL_SetRenderDrawColor(m_Renderer, 124, 218, 254, 255);
     SDL_RenderClear(m_Renderer);
-
+    // render texture Draw(coord_x on map, coord_y on map, width of image, height of image)
+    TextureManager::GetInstance()->Draw("bg", 0, 0, 32, 32);
     SDL_RenderPresent(m_Renderer);
 
 }
