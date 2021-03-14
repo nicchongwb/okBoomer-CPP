@@ -6,7 +6,7 @@
 #include <SDL.h>
 #include <SDL_image.h>
 
-// GAME.H AND GAME.CPP CONTAINS GAME LOOP METHODS
+/* GAME.H AND GAME.CPP CONTAINS GAME LOOP METHODS */
 
 // Define screen dimensions
 #define SCREEN_WIDTH 960

@@ -1,6 +1,10 @@
 #include "TextureManager.h"
 #include "Game.h"
 
+/* Texture Manager handles the drawing of objects
+*  and animations to the screen. 
+*  Header file is TextureManager.h
+*/
 TextureManager* TextureManager::s_Instance = nullptr;
 
 bool TextureManager::Load(std::string id, std::string filename){
@@ -21,6 +25,7 @@ bool TextureManager::Load(std::string id, std::string filename){
     return true;
 }
 
+// Draw from image on screen
 void TextureManager::Draw(std::string id, int x, int y, int width, int height, SDL_RendererFlip flip){
     // draw from 0 to x and 0 to y.
     SDL_Rect srcRect = {0, 0, width, height};
@@ -28,9 +33,10 @@ void TextureManager::Draw(std::string id, int x, int y, int width, int height, S
     SDL_RenderCopyEx(Game::GetInstance()->GetRenderer(), m_TextureMap[id], &srcRect, &dstRect, 0, nullptr, flip);
 }
 
+// Draw Frame for animation.
 void TextureManager::DrawFrame(std::string id, int x, int y, int width, int height, int row, int frame, SDL_RendererFlip flip){
-    SDL_Rect srcRect = {x, y, width, height};
-    SDL_Rect dstRect = {width, y, width, height};
+    SDL_Rect srcRect = {width*frame, height*row, width, height};
+    SDL_Rect dstRect = {x, y, width, height};
     SDL_RenderCopyEx(Game::GetInstance()->GetRenderer(), m_TextureMap[id], &srcRect, &dstRect, 0, nullptr, flip);
 }
 

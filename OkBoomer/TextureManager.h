@@ -5,6 +5,11 @@
 #include "SDL.h"
 #include <map>
 
+/* Texture Manager handles the drawing of objects
+*  and animations to the screen.
+*  Class file is TextureManager.cpp
+*/
+
 class TextureManager
 {
     public:
@@ -14,8 +19,9 @@ class TextureManager
         void Drop(std::string id);
         void Clean();
         
-        // Draw from x to y
+        // Draw from image to x to y.
         void Draw(std::string id, int x, int y, int width, int height, SDL_RendererFlip flip=SDL_FLIP_NONE);
+        // Draw frame (animation) to x and y, from width to height. Row and Frame is coordinates on the sprite sheet.
         void DrawFrame(std::string id, int x, int y, int width, int height, int row, int frame, SDL_RendererFlip flip=SDL_FLIP_NONE);
 
     private:

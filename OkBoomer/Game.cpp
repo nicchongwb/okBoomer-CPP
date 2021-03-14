@@ -1,10 +1,17 @@
 #include "Game.h"
 #include "TextureManager.h"
+#include "Transform.h"
+#include "Player.h"
+
 #include <iostream>
 
-// GAME.H AND GAME.CPP CONTAINS GAME LOOP METHODS
+/* Game class. This is where all our game loop methods
+*  are defined.
+*  Header file is Game.h
+*/
 
 Game * Game::s_Instance = nullptr;
+Player * player1 = nullptr;
 
 bool Game::Init() {
     
@@ -31,12 +38,18 @@ bool Game::Init() {
     }
 
     // load sprite
-    TextureManager::GetInstance()->Load("bg", "res/sprites/characternew.png");
+    TextureManager::GetInstance()->Load("player1", "res/sprites/characternew.png");
+    player1 = new Player(new Properties("player1", 0, 0, 32, 32));
+   
+    Transform tf;
+
+    tf.Log("Transform: ");
+
     return m_IsRunning = true;
 }
 
 void Game::Update() {
-    SDL_Log("updating...");
+    player1->Update(0);
 }
 
 void Game::Render() {
@@ -44,8 +57,10 @@ void Game::Render() {
     // Setting screen colour
     SDL_SetRenderDrawColor(m_Renderer, 124, 218, 254, 255);
     SDL_RenderClear(m_Renderer);
+
     // render texture Draw(coord_x on map, coord_y on map, width of image, height of image)
-    TextureManager::GetInstance()->Draw("bg", 0, 0, 32, 32);
+    // TextureManager::GetInstance()->Draw("bg", 0, 0, 32, 32);
+    player1->Draw();
     SDL_RenderPresent(m_Renderer);
 
 }
