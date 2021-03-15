@@ -29,14 +29,21 @@ bool TextureManager::Load(std::string id, std::string filename){
 void TextureManager::Draw(std::string id, int x, int y, int width, int height, SDL_RendererFlip flip){
     // draw from 0 to x and 0 to y.
     SDL_Rect srcRect = {0, 0, width, height};
-    SDL_Rect dstRect = {x, y, width, height};
+    SDL_Rect dstRect = {x, y, 64, 64};
     SDL_RenderCopyEx(Game::GetInstance()->GetRenderer(), m_TextureMap[id], &srcRect, &dstRect, 0, nullptr, flip);
 }
 
 // Draw Frame for animation.
-void TextureManager::DrawFrame(std::string id, int x, int y, int width, int height, int row, int frame, SDL_RendererFlip flip){
-    SDL_Rect srcRect = {width*frame, height*row, width, height};
-    SDL_Rect dstRect = {x, y, width, height};
+void TextureManager::DrawFrame(std::string id, int x, int y, int width, int height, int row, int col, int frame, SDL_RendererFlip flip){
+    
+    /* x and y will be the location to draw the image. 
+    *  width and height specifies the width and height of the image to crop. (32 x 32)
+    *  row and col specifies WHERE on the image to crop.
+    *  E.g. Animation frames for player are drawn like [][][] <- where each [] represents one frame. 
+    */
+
+    SDL_Rect srcRect = {(width*frame)+(col*width), height*row, width, height};
+    SDL_Rect dstRect = {x, y, 64, 64}; // scale sprites to 64 x 64
     SDL_RenderCopyEx(Game::GetInstance()->GetRenderer(), m_TextureMap[id], &srcRect, &dstRect, 0, nullptr, flip);
 }
 

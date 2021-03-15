@@ -44,7 +44,7 @@ bool Game::Init() {
 
     // draws player1 to 0, 0.
     player1 = new Player(new Properties("player1", 0, 0, 32, 32));
-    player2 = new Player(new Properties("player2", 596, 596, 32, 32));
+    player2 = new Player(new Properties("player2", 576, 576, 32, 32));
    
     Transform tf;
 

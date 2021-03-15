@@ -12,9 +12,19 @@
 
 // Constructor for Player
 Player::Player(Properties * props): Creature(props) {
+
 	m_Animation = new Animation();
-	// Set Properties -> Row, Frame_Count, Animation_Speed, SDL_Flip)
-	m_Animation->SetProperties(m_TextureID, 0, 3, 500, SDL_FLIP_NONE);
+
+	// Set Player 1 animation
+	if (props->TextureID == "player1") {
+		// Set Properties -> Row, Col, Frame_Count, Animation_Speed, SDL_Flip
+		// Row and Col specifies where to chop on the spritesheet
+		m_Animation->SetProperties(m_TextureID, 0, 0, 3, 500, SDL_FLIP_NONE);
+	}
+	// Set Player 2 animation
+	else if (props->TextureID=="player2"){
+		m_Animation->SetProperties(m_TextureID, 4, 3, 3, 500, SDL_FLIP_NONE);
+	}
 
 }
 

@@ -12,12 +12,13 @@ void Animation::Update() {
 }
 
 void Animation::Draw(float x, float y, int spriteWidth, int spriteHeight) {
-	TextureManager::GetInstance()->DrawFrame(m_TextureID, x, y, spriteWidth, spriteHeight, m_SpriteRow, m_SpriteFrame, m_Flip);
+	TextureManager::GetInstance()->DrawFrame(m_TextureID, x, y, spriteWidth, spriteHeight, m_SpriteRow, m_SpriteCol, m_SpriteFrame, m_Flip);
 }
 
-void Animation::SetProperties(std::string textureID, int spriteRow, int frameCount, int animSpeed, SDL_RendererFlip flip) {
+void Animation::SetProperties(std::string textureID, int spriteRow, int spriteCol, int frameCount, int animSpeed, SDL_RendererFlip flip) {
 	m_TextureID = textureID;
 	m_SpriteRow = spriteRow;
+	m_SpriteCol = spriteCol;
 	m_FrameCount = frameCount;
 	m_AnimSpeed = animSpeed;
 	m_Flip = flip;
