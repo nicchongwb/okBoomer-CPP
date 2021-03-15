@@ -9,8 +9,8 @@
 /* GAME.H AND GAME.CPP CONTAINS GAME LOOP METHODS */
 
 // Define screen dimensions
-#define SCREEN_WIDTH 960
-#define SCREN_HEIGHT 480
+#define SCREEN_WIDTH 640
+#define SCREN_HEIGHT 640
 
 
 class Game {

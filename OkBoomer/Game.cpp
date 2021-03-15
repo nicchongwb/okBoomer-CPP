@@ -12,6 +12,7 @@
 
 Game * Game::s_Instance = nullptr;
 Player * player1 = nullptr;
+Player * player2 = nullptr;
 
 bool Game::Init() {
     
@@ -39,7 +40,11 @@ bool Game::Init() {
 
     // load sprite
     TextureManager::GetInstance()->Load("player1", "res/sprites/characternew.png");
+    TextureManager::GetInstance()->Load("player2", "res/sprites/characternew.png");
+
+    // draws player1 to 0, 0.
     player1 = new Player(new Properties("player1", 0, 0, 32, 32));
+    player2 = new Player(new Properties("player2", 596, 596, 32, 32));
    
     Transform tf;
 
@@ -50,6 +55,7 @@ bool Game::Init() {
 
 void Game::Update() {
     player1->Update(0);
+    player2->Update(0);
 }
 
 void Game::Render() {
@@ -61,6 +67,7 @@ void Game::Render() {
     // render texture Draw(coord_x on map, coord_y on map, width of image, height of image)
     // TextureManager::GetInstance()->Draw("bg", 0, 0, 32, 32);
     player1->Draw();
+    player2->Draw();
     SDL_RenderPresent(m_Renderer);
 
 }

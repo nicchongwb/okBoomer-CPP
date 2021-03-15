@@ -4,6 +4,8 @@
 #define PLAYER_H
 
 #include "Creature.h"
+#include "Animation.h"
+
 
 /* Player header file. Each Player object represents
 *  a distinct player in the game.
@@ -22,6 +24,8 @@ public:
 
 private:
 	// Initialise variables for animation purposes
-	int m_Row, m_Frame, m_FrameCount, m_AnimSpeed;
+	//int m_Row, m_Frame, m_FrameCount, m_AnimSpeed;
+	Animation * m_Animation;
+
 };
 #endif // PLAYER_H
