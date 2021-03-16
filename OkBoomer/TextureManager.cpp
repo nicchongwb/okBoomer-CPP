@@ -29,7 +29,7 @@ bool TextureManager::Load(std::string id, std::string filename){
 void TextureManager::Draw(std::string id, int x, int y, int width, int height, SDL_RendererFlip flip){
     // draw from 0 to x and 0 to y.
     SDL_Rect srcRect = {0, 0, width, height};
-    SDL_Rect dstRect = {x, y, 64, 64};
+    SDL_Rect dstRect = {x, y, 64, 64}; // scale sprites to 64 x 64
     SDL_RenderCopyEx(Game::GetInstance()->GetRenderer(), m_TextureMap[id], &srcRect, &dstRect, 0, nullptr, flip);
 }
 

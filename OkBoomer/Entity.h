@@ -21,6 +21,8 @@ public:
     Properties(std::string textureID, int x, int y, int width, int height, SDL_RendererFlip flip = SDL_FLIP_NONE) {
         X = x;
         Y = y;
+        PrevX = x;
+        PrevY = y;
         Flip = flip;
         Width = width;
         Height = height;
@@ -30,15 +32,15 @@ public:
 public:
     std::string TextureID;
     int Width, Height;
-    float X, Y;
+    int X, Y, PrevX, PrevY;
     SDL_RendererFlip Flip;
 };
 
 class Entity : public IOObject {
 public:
-    Entity(Properties* props): m_TextureID(props->TextureID),
-        m_Width(props->Width), m_Height(props->Height), m_Flip(props->Flip) {
 
+    explicit Entity(Properties* props): m_TextureID(props->TextureID),
+        m_Width(props->Width), m_Height(props->Height), m_Flip(props->Flip) {
         m_Transform = new Transform(props->X, props->Y);
     }
 
@@ -47,6 +49,14 @@ public:
     virtual void Update(float dt) = 0;
 
 protected:
+
+    int X = X;
+    int Y = Y;
+    int PrevX = PrevX;
+    int PrevY = PrevY;
+    int Width = Width;
+    int Height = Height;
+
     Transform* m_Transform;
     int m_Width, m_Height;
     std::string m_TextureID;

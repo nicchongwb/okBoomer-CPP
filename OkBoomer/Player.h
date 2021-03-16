@@ -21,11 +21,17 @@ public:
 	virtual void Draw();
 	virtual void Clean();
 	virtual void Update(float dt);
+	void GetInput();
+
+	static int s_PlayerCount; // playerCount initialised to 0 inside class file
 
 private:
 	// Initialise variables for animation purposes
 	//int m_Row, m_Frame, m_FrameCount, m_AnimSpeed;
 	Animation * m_Animation;
+	int m_pid; // player id
+
+	int newX, newY; // Temporary variables to hold next player coordinates
 
 };
 #endif // PLAYER_H

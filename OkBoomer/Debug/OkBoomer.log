@@ -1,12 +1,11 @@
-﻿  Animation.cpp
-C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Animation.cpp(15,59): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Animation.cpp(15,56): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+﻿  Creature.cpp
+C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Entity.h(44,52): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Entity.h(44,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   Game.cpp
-C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Entity.h(22,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Entity.h(23,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Entity.h(44,52): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Entity.h(44,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   Player.cpp
-C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Entity.h(22,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Entity.h(23,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  TextureManager.cpp
+C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Entity.h(44,52): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Entity.h(44,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   Generating Code...
   OkBoomer.vcxproj -> C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Debug\OkBoomer.exe

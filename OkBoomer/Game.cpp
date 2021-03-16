@@ -2,6 +2,7 @@
 #include "TextureManager.h"
 #include "Transform.h"
 #include "Player.h"
+#include "IOHandler.h"
 
 #include <iostream>
 
@@ -41,6 +42,7 @@ bool Game::Init() {
     // load sprite
     TextureManager::GetInstance()->Load("player1", "res/sprites/characternew.png");
     TextureManager::GetInstance()->Load("player2", "res/sprites/characternew.png");
+    //TextureManager::GetInstance()->Load("Tile", "res/sprites/bombermantilesnew.png");
 
     // draws player1 to 0, 0.
     player1 = new Player(new Properties("player1", 0, 0, 32, 32));
@@ -54,6 +56,7 @@ bool Game::Init() {
 }
 
 void Game::Update() {
+
     player1->Update(0);
     player2->Update(0);
 }
@@ -73,15 +76,8 @@ void Game::Render() {
 }
 
 void Game::Events() {
-
-    // Event handler so the system knows what to do with our SDL window.
-    SDL_Event event;
-    SDL_PollEvent(&event);
-    switch (event.type) {
-    case SDL_QUIT:
-        Quit();
-        break;
-    }
+    // Listen for events
+    IOHandler::GetInstance()->Listen();
 }
 
 bool Game::Clean() {
