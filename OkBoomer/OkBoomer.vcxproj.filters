@@ -68,5 +68,8 @@
     <ClInclude Include="IOHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DrawManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
