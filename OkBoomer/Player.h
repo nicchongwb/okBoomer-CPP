@@ -5,6 +5,7 @@
 
 #include "Creature.h"
 #include "Animation.h"
+#include "DrawManager.h"
 
 
 /* Player header file. Each Player object represents
@@ -24,11 +25,14 @@ public:
 	void GetInput();
 
 	static int s_PlayerCount; // playerCount initialised to 0 inside class file
+	static bool s_AlrPressedP1; // static variables for checking if key is already held down
+	static bool s_AlrPressedP2;
 
 private:
 	// Initialise variables for animation purposes
 	//int m_Row, m_Frame, m_FrameCount, m_AnimSpeed;
-	Animation * m_Animation;
+	Animation* m_Animation;
+	DrawManager* m_DrawManager;
 	int m_pid; // player id
 
 	int newX, newY; // Temporary variables to hold next player coordinates

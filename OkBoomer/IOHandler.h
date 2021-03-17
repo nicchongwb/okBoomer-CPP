@@ -5,6 +5,9 @@
 
 #include <SDL.h>
 
+/* IOHandler class is the main manager for handling IO inputs.
+*  It handles both mouse and keyboard inputs. (currently only handles keyboard)
+*/
 class IOHandler
 {
 public:
@@ -15,6 +18,7 @@ public:
 
 	void Listen();
 	bool KeyPressed(SDL_Scancode key);
+	bool KeyReleased(SDL_Scancode key);
 
 
 private:

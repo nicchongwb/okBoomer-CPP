@@ -5,21 +5,23 @@
 
 #include "Vector2D.h"
 
-/* */
+/* Vector2D, DrawManager and Transform handles the drawing
+*  of objects to the screen.
+*/
+
 class Transform {
 
 public:
-    float X, Y;
+    int X, Y;
 
 public:
-    Transform(float x = 0, float y = 0) :X(x), Y(y) {}
+    Transform(int x = 0, int y = 0) :X(x), Y(y) {}
     void Log(std::string msg = "") {
         std::cout << msg << "(X Y) = (" << X << " " << Y << ")" << std::endl;
     }
 
-private:
-    inline void TranslateX(float x) { X += x; }
-    inline void TranslateY(float y) { Y += y; }
+    inline void TranslateX(int x) { X += x; }
+    inline void TranslateY(int y) { Y += y; }
     inline void Translate(Vector2D v) { X += v.X; Y += v.Y; }
 };
 

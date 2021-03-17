@@ -50,13 +50,6 @@ public:
 
 protected:
 
-    int X = X;
-    int Y = Y;
-    int PrevX = PrevX;
-    int PrevY = PrevY;
-    int Width = Width;
-    int Height = Height;
-
     Transform* m_Transform;
     int m_Width, m_Height;
     std::string m_TextureID;

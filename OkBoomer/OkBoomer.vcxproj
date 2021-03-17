@@ -149,7 +149,6 @@
     <ClCompile Include="IOHandler.cpp" />
     <ClCompile Include="Launcher.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Creature.cpp" />
     <ClCompile Include="TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>

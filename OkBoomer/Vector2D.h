@@ -5,8 +5,8 @@
 
 #include <iostream>
 
-/* Vector2D class is to process drawing of objects to the screen 
-*  It is used by Transform.h.
+/* Vector2D, DrawManager and Transform handles the drawing
+*  of objects to the screen. 
 */
 
 class Vector2D {

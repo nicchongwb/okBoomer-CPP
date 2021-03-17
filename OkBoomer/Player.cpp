@@ -3,8 +3,9 @@
 #include "Animation.h"
 #include "IOHandler.h"
 #include <SDL.h>
+#include <iostream>
 
-
+using namespace std;
 /* Player class. Each Player object represents
 *  a distinct player in the game.
 *  Header file is Player.h
@@ -12,12 +13,16 @@
 
 // initialise static playerCount to 0
 int Player::s_PlayerCount = 0;
+// initialise static alrPressed variables to false;
+bool Player::s_AlrPressedP1 = false;
+bool Player::s_AlrPressedP2 = false;
 
 int X, Y;
 // Constructor for Player
 Player::Player(Properties * props): Creature(props) {
 
 	m_Animation = new Animation();
+    m_DrawManager = new DrawManager();
 
     m_pid = s_PlayerCount;
     s_PlayerCount++;
@@ -27,6 +32,7 @@ Player::Player(Properties * props): Creature(props) {
 		// Set Properties -> Row, Col, Frame_Count, Animation_Speed, SDL_Flip
 		// Row and Col specifies where to chop on the spritesheet
 		m_Animation->SetProperties(m_TextureID, 0, 0, 3, 500, SDL_FLIP_NONE);
+        
 	}
 	// Set Player 2 animation
 	else if (props->TextureID=="player2"){
@@ -41,12 +47,19 @@ void Player::Draw() {
 	//TextureManager::GetInstance()->DrawFrame(m_TextureID, m_Transform->X, m_Transform->Y, m_Width, m_Height, m_Row, m_Frame);
 }
 
-// Update player animation on the screen
+// Update player animation & position on the screen
 void Player::Update(float dt) {
-	m_Animation->Update();
 
+    // Update positions on the screen
+    m_DrawManager->Update();
+    m_Transform->TranslateX(m_DrawManager->GetPosition().X);
+    m_Transform->TranslateY(m_DrawManager->GetPosition().Y);
+
+    m_Animation->Update();
+
+    // Unset force before getting input
+    m_DrawManager->UnsetForce();
     GetInput();
-    Move();
 
 }
 
@@ -57,48 +70,124 @@ void Player::Clean() {
 
 // Other methods
 void Player::GetInput() {
-    // Everytime we call getInput method, we have to reset xMove and yMove
-    xMove = 0;
-    yMove = 0;
-
-    newY = Y;
-    newX = X;
+    
+    X = m_Transform->X;
+    Y = m_Transform->Y;
 
     if (m_pid == 0) {
-        if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_UP)) {
-            SDL_Log("Key UP pushed.");
-            newY = Y - speed;
-            yMove = -speed;
-        }
-        if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_DOWN)) {
-            SDL_Log("Key DOWN pushed.");
-        }
-        if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_LEFT)) {
-            SDL_Log("Key LEFT pushed.");
-        }
-        if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_RIGHT)) {
-            SDL_Log("Key RIGHT pushed.");
-        }
-        if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_COMMA)) {
-            SDL_Log("Key COMMA pushed.");
-        }
-    }
-    else if (m_pid == 1) {
+        
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_W)) {
-            SDL_Log("Key W pushed.");
+            
+            if (!s_AlrPressedP1) {
+                SDL_Log("Key W pushed.");
+                
+                cout << "Player 1: "; m_Transform->Log();
+                m_DrawManager->ApplyForceY(-64);
+
+
+                s_AlrPressedP1 = true;
+            }
         }
-        if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_A)) {
-            SDL_Log("Key A pushed.");
-        }
+
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_S)) {
-            SDL_Log("Key S pushed.");
+
+            if (!s_AlrPressedP1) {
+                SDL_Log("Key S pushed.");
+
+                cout << "Player 1: "; m_Transform->Log();
+                m_DrawManager->ApplyForceY(64);
+
+                s_AlrPressedP1 = true;
+            }
+
         }
+
+        if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_A)) {
+
+            if (!s_AlrPressedP1) {
+                SDL_Log("Key A pushed.");
+
+                cout << "Player 1: "; m_Transform->Log();
+                m_DrawManager->ApplyForceX(-64);
+
+                s_AlrPressedP1 = true;
+            }
+            
+        }
+        
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_D)) {
-            SDL_Log("Key D pushed.");
+            
+
+            if (!s_AlrPressedP1) {
+                SDL_Log("Key D pushed.");
+
+                cout << "Player 1: "; m_Transform->Log();
+                m_DrawManager->ApplyForceX(64);
+
+                s_AlrPressedP1 = true;
+            }
+
         }
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_G)) {
             SDL_Log("Key G pushed.");
         }
+        
+    }
+    else if (m_pid == 1) {
+
+        if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_UP)) {
+        
+            if (!s_AlrPressedP2) {
+                SDL_Log("Key UP pushed.");
+
+                cout << "Player 2: "; m_Transform->Log();
+                m_DrawManager->ApplyForceY(-64);
+
+                s_AlrPressedP2 = true;
+            }
+
+        }
+        if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_DOWN)) {
+            
+            if (!s_AlrPressedP2) {
+                SDL_Log("Key DOWN pushed.");
+
+                cout << "Player 2: "; m_Transform->Log();
+                m_DrawManager->ApplyForceY(64);
+
+
+                s_AlrPressedP2 = true;
+            }
+
+        }
+        if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_LEFT)) {
+
+            if (!s_AlrPressedP2) {
+                SDL_Log("Key LEFT pushed.");
+
+                cout << "Player 2: "; m_Transform->Log();
+                m_DrawManager->ApplyForceX(-64);
+
+                s_AlrPressedP2 = true;
+            }
+        }
+        if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_RIGHT)) {
+
+            if (!s_AlrPressedP2) {
+                SDL_Log("Key RIGHT pushed.");
+
+                cout << "Player 2: "; m_Transform->Log();
+                m_DrawManager->ApplyForceX(64);
+
+
+                s_AlrPressedP2 = true;
+            }
+
+        }
+        if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_COMMA)) {
+            SDL_Log("Key COMMA pushed.");
+        }
+
     }
 
 }
