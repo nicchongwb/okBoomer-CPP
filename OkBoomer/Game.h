@@ -5,6 +5,7 @@
 
 #include <SDL.h>
 #include <SDL_image.h>
+#include "GameMap.h"
 
 /* GAME.H AND GAME.CPP CONTAINS GAME LOOP METHODS */
 
@@ -29,6 +30,9 @@ public:
     void Render();
     void Events();
 
+    // To get GameMap
+    inline GameMap* GetMap() { return m_LevelMap; }
+
     inline bool IsRunning() { return m_IsRunning; }
     // To render SDL window
     inline SDL_Renderer* GetRenderer() { return m_Renderer; }
@@ -36,6 +40,9 @@ public:
 private:
     Game() {}
     bool m_IsRunning;
+
+    // Create GameMap
+    GameMap* m_LevelMap;
 
     // To render SDL Window
     SDL_Window* m_Window;

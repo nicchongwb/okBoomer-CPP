@@ -27,6 +27,10 @@ class TextureManager
         */
         void DrawFrame(std::string id, int x, int y, int width, int height, int row, int col, int frame, SDL_RendererFlip flip=SDL_FLIP_NONE);
 
+        // Similar to DrawFrame(), instead of int width, height we use int tileSize
+        void DrawTile(std::string tilesetID, int tileSize, int x, int y, int row, int frame, SDL_RendererFlip flip = SDL_FLIP_NONE);
+
+
     private:
         TextureManager(){}
         std::map<std::string, SDL_Texture*> m_TextureMap;

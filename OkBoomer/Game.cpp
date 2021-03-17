@@ -3,6 +3,7 @@
 #include "Transform.h"
 #include "Player.h"
 #include "IOHandler.h"
+#include "MapParser.h"
 
 #include <iostream>
 
@@ -39,6 +40,15 @@ bool Game::Init() {
         return false;
     }
 
+    // load map
+    if (!MapParser::GetInstance()->Load()) {
+        std::cout << "Failed to load map" << std::endl;
+        return false;
+    }
+
+    m_LevelMap = MapParser::GetInstance()->GetMap("MAP");
+
+
     // load sprite
     TextureManager::GetInstance()->Load("player1", "res/sprites/characternew.png");
     TextureManager::GetInstance()->Load("player2", "res/sprites/characternew.png");
@@ -59,6 +69,7 @@ void Game::Update() {
 
     player1->Update(0);
     player2->Update(0);
+    m_LevelMap->Update();
 }
 
 void Game::Render() {
@@ -66,6 +77,9 @@ void Game::Render() {
     // Setting screen colour
     SDL_SetRenderDrawColor(m_Renderer, 124, 218, 254, 255);
     SDL_RenderClear(m_Renderer);
+
+    // Render Map
+    m_LevelMap->Render();
 
     // render texture Draw(coord_x on map, coord_y on map, width of image, height of image)
     // TextureManager::GetInstance()->Draw("bg", 0, 0, 32, 32);

@@ -148,8 +148,16 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="IOHandler.cpp" />
     <ClCompile Include="Launcher.cpp" />
+    <ClCompile Include="Layer.cpp" />
+    <ClCompile Include="GameMap.cpp" />
+    <ClCompile Include="MapParser.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="TileLayer.cpp" />
+    <ClCompile Include="tinystr.cpp" />
+    <ClCompile Include="tinyxml.cpp" />
+    <ClCompile Include="tinyxmlerror.cpp" />
+    <ClCompile Include="tinyxmlparser.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h" />
@@ -159,10 +167,18 @@
     <ClInclude Include="IOHandler.h" />
     <ClInclude Include="IOObject.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Layer.h" />
+    <ClInclude Include="GameMap.h" />
+    <ClInclude Include="MapParser.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="Tile.h" />
+    <ClInclude Include="TileLayer.h" />
+    <ClInclude Include="tinystr.h" />
+    <ClInclude Include="tinyxml.h" />
     <ClInclude Include="Transform.h" />
     <ClInclude Include="Vector2D.h" />
     <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
