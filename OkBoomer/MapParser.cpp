@@ -1,5 +1,13 @@
 #include "MapParser.h"
 
+/* MapParser handles the parsing of tmx data into a gameMap
+*  to be used to render maps based on the tiles
+*  Header file is MapParser.h
+* 
+*  This class relies on 3rd party lib: tinystr.cpp, tinystr.h, 
+*  tinyxml.cpp, tinyxml.h, tinyxmlerror.cpp, tinyxmlparser.cpp
+*/
+
 MapParser* MapParser::s_Instance = nullptr;
 
 // Absolute file path for world.tmx
@@ -9,6 +17,7 @@ bool MapParser::Load() {
     return Parse("MAP", "res/world/world.tmx");
 }
 
+// Method to parse tmx file and add to m_mapDict 
 bool MapParser::Parse(std::string id, std::string source) {
     // check if source is valid
     TiXmlDocument xml;
@@ -34,7 +43,7 @@ bool MapParser::Parse(std::string id, std::string source) {
         }
     }
 
-    // Parse Layers
+    // Parse Layers into GameMap obj
     GameMap* gamemap = new GameMap();
     for (TiXmlElement* e = root->FirstChildElement(); e != nullptr; e = e->NextSiblingElement()) {
         if (e->Value() == std::string("layer")) {
@@ -46,28 +55,36 @@ bool MapParser::Parse(std::string id, std::string source) {
         }
     }
 
-    // add the gamemap obj into our m_MapDict list
+    // add the gamemap obj into our dicitionary of maps in m_MapDict
     m_MapDict[id] = gamemap;
     return true;
 }
 
-// 
+// Method to parse Tileset from tmx file
 Tileset MapParser::ParseTileset(TiXmlElement* xmlTileset) {
     Tileset tileset;
 
     // get attribute values from tmx file and set tileset obj attributes accordingly
     tileset.Name = xmlTileset->Attribute("name"); // set tileset name attribute based on "name" attribute of tmx file
+    
     xmlTileset->Attribute("firstgid", &tileset.FirstID); // "firstgid" is from tmx file, we get firstgid's value (int) and parse into tileset.FirstID by reference
+    
     xmlTileset->Attribute("tilecount", &tileset.TileCount); // "tilecount" is from tmx file, we get tilecount's value (int) and parse into tileset.TileCount by reference
+    
     tileset.LastID = (tileset.FirstID + tileset.TileCount) - 1; // FirstID is 1 so we subtract 1 to balance out offset
 
+    
     xmlTileset->Attribute("columns", &tileset.ColCount); // "columns" is from tmx file, we get columns's value (int) and parse into tileset.ColCount by reference
+    
     tileset.RowCount = tileset.TileCount / tileset.ColCount; // Row = TileCount / ColCount
+    
     xmlTileset->Attribute("tilewidth", &tileset.TileSize); // "tilewidth" is from tmx file, we get tilewidth's value (int) and parse into tileset.TileSize by reference
 
     // Get the image linked to the tmx, in this case it is the "bombermantilesnew_scaled_64x64.png"
     TiXmlElement* image = xmlTileset->FirstChildElement(); // Create tinyXML image object
+    
     tileset.Source = image->Attribute("source"); // set tileset.Source attribute to tinyXML image attribute based on "source" attribute in tmx file
+    
     return tileset;
 }
 
@@ -113,6 +130,7 @@ TileLayer* MapParser::ParseTileLayer(TiXmlElement* xmlLayer, std::vector<Tileset
     return (new TileLayer(tilesize, colcount, rowcount, tilemap, tilesets));
 }
 
+// Method to free memory
 void MapParser::Clean() {
     std::map<std::string, GameMap*>::iterator it;
     for (it = m_MapDict.begin(); it != m_MapDict.end(); it++)

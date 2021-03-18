@@ -7,6 +7,10 @@
 #include "Layer.h"
 #include "Vector2D.h"
 
+/* Tileset help us to manage our tiles in mulitple set(s)
+*  It will utitlise textureManager to help us render via DrawTile();
+*/
+
 // Properties of Tileset
 struct Tileset {
     int FirstID, LastID; // see .tmx file, FirstID starts with 1
@@ -18,9 +22,14 @@ struct Tileset {
 using TilesetsList = std::vector<Tileset>;
 using TileMap = std::vector<std::vector<int> >; // space between > > is important
 
-/* TileLayer inherits from Layer 
+/* TileLayer handles the background layer(s) of our game
+*  Help us overlap layers of background if needed
+*  Class file is TileLayer.cpp
+* 
+*  TileLayer inherits from Layer 
 *  TileLayer uses Tileset to help us draw tiles
 */
+
 class TileLayer : public Layer {
 
 public:

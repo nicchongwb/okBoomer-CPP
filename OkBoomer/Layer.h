@@ -3,8 +3,11 @@
 #ifndef LAYER_H
 #define LAYER_H
 
-// interface for all layer type: image- and tile layer
-// Helps us to layer backgrounds
+/* Base Class for any class related to layering
+*  In this engine: TileLayer class is derived class of Layer class
+*  Class file is Layer.cpp
+*/
+
 class Layer
 {
 public:

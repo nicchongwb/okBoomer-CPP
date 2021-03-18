@@ -6,8 +6,9 @@
 #include <vector>
 #include "Layer.h"
 
-/* Class for our GameMap. GameMap will hold information of
-* graphics layer of the game background 
+/* GameMap class will hold information of
+* graphics layer of the game background
+* No CPP file
 */
 class GameMap
 {

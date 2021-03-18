@@ -149,7 +149,6 @@
     <ClCompile Include="IOHandler.cpp" />
     <ClCompile Include="Launcher.cpp" />
     <ClCompile Include="Layer.cpp" />
-    <ClCompile Include="GameMap.cpp" />
     <ClCompile Include="MapParser.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="TextureManager.cpp" />
@@ -178,7 +177,6 @@
     <ClInclude Include="Transform.h" />
     <ClInclude Include="Vector2D.h" />
     <ClInclude Include="TextureManager.h" />
-    <ClInclude Include="World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

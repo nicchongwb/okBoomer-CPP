@@ -7,6 +7,7 @@
 #include "SDL.h"
 #include <map>
 
+/* Tile class to store information of our tile */
 class Tile
 {
 public:
