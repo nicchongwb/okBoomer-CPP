@@ -26,9 +26,13 @@ bool TextureManager::Load(std::string id, std::string filename){
 }
 
 // Draw from image on screen
-void TextureManager::Draw(std::string id, int x, int y, int width, int height, SDL_RendererFlip flip){
-    // draw from 0 to x and 0 to y.
-    SDL_Rect srcRect = {0, 0, width, height};
+void TextureManager::Draw(std::string id, int x, int y, int width, int height, int row, int col, SDL_RendererFlip flip){
+    /* x and y will be the location to draw the image.
+    *  width and height specifies the width and height of the image to crop. (32 x 32)
+    *  row and col specifies WHERE on the image to crop.
+    *  Note: SDL_RendererFlip just specifies if we should flip the sprite. Not used, can remove later on.
+    */
+    SDL_Rect srcRect = { width + (col * width), height * row, width, height };
     SDL_Rect dstRect = {x, y, 64, 64}; // scale sprites to 64 x 64
     SDL_RenderCopyEx(Game::GetInstance()->GetRenderer(), m_TextureMap[id], &srcRect, &dstRect, 0, nullptr, flip);
 }

@@ -15,6 +15,7 @@ void Animation::Draw(float x, float y, int spriteWidth, int spriteHeight) {
 	TextureManager::GetInstance()->DrawFrame(m_TextureID, x, y, spriteWidth, spriteHeight, m_SpriteRow, m_SpriteCol, m_SpriteFrame, m_Flip);
 }
 
+// Called by other classes to set the variables for animation. (e.g. called in Player.cpp)
 void Animation::SetProperties(std::string textureID, int spriteRow, int spriteCol, int frameCount, int animSpeed, SDL_RendererFlip flip) {
 	m_TextureID = textureID;
 	m_SpriteRow = spriteRow;

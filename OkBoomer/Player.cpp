@@ -68,7 +68,7 @@ void Player::Clean() {
 	TextureManager::GetInstance()->Clean();
 }
 
-// Other methods
+// Get input for player movement
 void Player::GetInput() {
     
     X = m_Transform->X;

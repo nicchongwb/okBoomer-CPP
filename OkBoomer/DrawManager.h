@@ -7,6 +7,7 @@
 
 /* The Vector2D, Transform and DrawManager Class handles the updating 
 *  of drwaings to the screen. Used when player moves -> draw new player position to the screen.
+*  DrawManager can be used to accomodate more more Physics functions in the future.
 *  DrawManager has no CPP file as most methods are inline.
 */
 class DrawManager {

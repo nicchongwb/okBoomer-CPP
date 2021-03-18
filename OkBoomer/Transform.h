@@ -6,7 +6,8 @@
 #include "Vector2D.h"
 
 /* Vector2D, DrawManager and Transform handles the drawing
-*  of objects to the screen.
+*  of objects to the screen. Transform takes DrawManager's 
+*  applied force and then translates it to the screen.
 */
 
 class Transform {

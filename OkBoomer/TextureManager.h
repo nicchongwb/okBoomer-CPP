@@ -20,7 +20,7 @@ class TextureManager
         void Clean();
         
         // Draw from image to x to y.
-        void Draw(std::string id, int x, int y, int width, int height, SDL_RendererFlip flip=SDL_FLIP_NONE);
+        void Draw(std::string id, int x, int y, int width, int height, int row, int col, SDL_RendererFlip flip=SDL_FLIP_NONE);
         /* Draw frame (animation) to x and y, from width to height. 
         *  Row and Col is coordinates on the sprite sheet. 
         *  Frame is frame count.

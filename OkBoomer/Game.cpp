@@ -52,12 +52,12 @@ bool Game::Init() {
     // load sprite
     TextureManager::GetInstance()->Load("player1", "res/sprites/characternew.png");
     TextureManager::GetInstance()->Load("player2", "res/sprites/characternew.png");
-    //TextureManager::GetInstance()->Load("Tile", "res/sprites/bombermantilesnew.png");
+    //TextureManager::GetInstance()->Load("bomb", "res/sprites/bombs2.bmp");
 
     // draws player1 to 0, 0.
     player1 = new Player(new Properties("player1", 0, 0, 32, 32));
     player2 = new Player(new Properties("player2", 576, 576, 32, 32));
-   
+    
     Transform tf;
 
     tf.Log("Transform: ");
@@ -74,6 +74,7 @@ void Game::Update() {
 
 void Game::Render() {
 
+    
     // Setting screen colour
     SDL_SetRenderDrawColor(m_Renderer, 124, 218, 254, 255);
     SDL_RenderClear(m_Renderer);
@@ -81,8 +82,9 @@ void Game::Render() {
     // Render Map
     m_LevelMap->Render();
 
-    // render texture Draw(coord_x on map, coord_y on map, width of image, height of image)
-    // TextureManager::GetInstance()->Draw("bg", 0, 0, 32, 32);
+    // Example of using Draw to draw item to the map: (see TextureManager.cpp for more info on fields)
+    // TextureManager::GetInstance()->Draw("bomb", 64, 64, 32, 32, 0, 0);
+
     player1->Draw();
     player2->Draw();
     SDL_RenderPresent(m_Renderer);
