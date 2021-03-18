@@ -32,7 +32,7 @@ public:
     }
 
 private:
-    friend class MapParser;
+    friend class MapParser; // GameMap will have private access to MapParser
     std::vector<Layer*> m_MapLayers; // vector of layers of our map
 };
 

@@ -10,7 +10,7 @@ bool MapParser::Load() {
 }
 
 bool MapParser::Parse(std::string id, std::string source) {
-
+    // check if source is valid
     TiXmlDocument xml;
     xml.LoadFile(source);
     if (xml.Error()) {
@@ -18,18 +18,19 @@ bool MapParser::Parse(std::string id, std::string source) {
         return false;
     }
 
+    // get root element of .tmx file, in this case it will be <map>
     TiXmlElement* root = xml.RootElement();
 
     int colcount, rowcount, tilesize = 0;
-    root->Attribute("width", &colcount);
-    root->Attribute("height", &rowcount);
-    root->Attribute("tilewidth", &tilesize);
+    root->Attribute("width", &colcount); // get <width> value and set to colcount
+    root->Attribute("height", &rowcount); // get <height> value and set to rowcount
+    root->Attribute("tilewidth", &tilesize); // get <tilewidth> value and set to tilesize
 
-    // Parse Tile sets
+    // Parse Tile sets <tilesets> as we may have more than 1 tile set used in the .tmx file
     TilesetsList tilesets;
     for (TiXmlElement* e = root->FirstChildElement(); e != nullptr; e = e->NextSiblingElement()) {
         if (e->Value() == std::string("tileset")) {
-            tilesets.push_back(ParseTileset(e));
+            tilesets.push_back(ParseTileset(e)); // push to tilesets vector
         }
     }
 
@@ -37,11 +38,15 @@ bool MapParser::Parse(std::string id, std::string source) {
     GameMap* gamemap = new GameMap();
     for (TiXmlElement* e = root->FirstChildElement(); e != nullptr; e = e->NextSiblingElement()) {
         if (e->Value() == std::string("layer")) {
+            // parse <layer> information into tileLayer obj
             TileLayer* tilelayer = ParseTileLayer(e, tilesets, tilesize, rowcount, colcount);
+            
+            // add scope tileLayer obj into m_MapLayers vector
             gamemap->m_MapLayers.push_back(tilelayer);
         }
     }
 
+    // add the gamemap obj into our m_MapDict list
     m_MapDict[id] = gamemap;
     return true;
 }
@@ -66,33 +71,45 @@ Tileset MapParser::ParseTileset(TiXmlElement* xmlTileset) {
     return tileset;
 }
 
+// Gets the <layer> <data> of .tmx file to be parsed in to generate layer of tiles
 TileLayer* MapParser::ParseTileLayer(TiXmlElement* xmlLayer, std::vector<Tileset> tilesets, int tilesize, int rowcount, int colcount)
 {
-    TiXmlElement* data = nullptr;
+    TiXmlElement* data = nullptr; // create data object to store <data> of .tmx file
+
+    // xmlLayer is the respective <layer> in .tmx -> FirstChildElement() will target first <> of <layer> in this case it is <data>
     for (TiXmlElement* e = xmlLayer->FirstChildElement(); e != nullptr; e = e->NextSiblingElement()) {
-        if (e->Value() == std::string("data")) {
+        // if name of componenet of .tmx file is == "data" then we write the data in
+        if (e->Value() == std::string("data")) { 
             data = e;
             break;
         }
     }
 
     // Parse Layer tile map
-    std::string matrix(data->GetText());
-    std::istringstream iss(matrix);
-    std::string id;
+    std::string matrix(data->GetText()); // put <data> value into matrix via GetText()
+    std::istringstream iss(matrix); // input stream
+    std::string id; // unique ID/KEY for respective Layer
 
-    TileMap tilemap(rowcount, std::vector<int>(colcount, 0));
+    // Create a tilemap with rowcount and col count and initialise all position of 2D array with 0
+    TileMap tilemap(rowcount, std::vector<int>(colcount, 0)); // this object will be added into tileLayer and return out of function later
+
+    // Iterate throught 2D array
     for (int row = 0; row < rowcount; row++) {
         for (int col = 0; col < colcount; col++) {
-            getline(iss, id, ',');
+            // Stream iss matrix object, parsed in each element seperated by ',' as seen in the .tmx <data> section
+            getline(iss, id, ','); 
+            
+            // convert id to stringstream object to be assigned to tilemap[row][col]
             std::stringstream convertor(id);
             convertor >> tilemap[row][col];
 
+            // Check if we reach the end, if yes then break
             if (!iss.good())
                 break;
         }
     }
 
+    // Return created TileLayer obj from function
     return (new TileLayer(tilesize, colcount, rowcount, tilemap, tilesets));
 }
 
