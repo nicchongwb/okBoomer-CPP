@@ -145,8 +145,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="Board.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="IOHandler.cpp" />
+    <ClCompile Include="Item.cpp" />
     <ClCompile Include="Launcher.cpp" />
     <ClCompile Include="Layer.cpp" />
     <ClCompile Include="MapParser.cpp" />
@@ -160,12 +162,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h" />
+    <ClInclude Include="Board.h" />
     <ClInclude Include="Creature.h" />
     <ClInclude Include="DrawManager.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="IOHandler.h" />
     <ClInclude Include="IOObject.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Item.h" />
     <ClInclude Include="Layer.h" />
     <ClInclude Include="GameMap.h" />
     <ClInclude Include="MapParser.h" />

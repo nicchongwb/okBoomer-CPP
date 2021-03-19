@@ -4,6 +4,7 @@
 #include "Player.h"
 #include "IOHandler.h"
 #include "MapParser.h"
+#include "Board.h"
 
 #include <iostream>
 
@@ -54,6 +55,10 @@ bool Game::Init() {
     TextureManager::GetInstance()->Load("player2", "res/sprites/characternew.png");
     //TextureManager::GetInstance()->Load("bomb", "res/sprites/bombs2.bmp");
 
+    // Initialise board
+    Board::GetInstance()->initBoard();
+    Board::GetInstance()->consoleBoard();
+
     // draws player1 to 0, 0.
     player1 = new Player(new Properties("player1", 0, 0, 32, 32));
     player2 = new Player(new Properties("player2", 576, 576, 32, 32));
@@ -73,7 +78,6 @@ void Game::Update() {
 }
 
 void Game::Render() {
-
     
     // Setting screen colour
     SDL_SetRenderDrawColor(m_Renderer, 124, 218, 254, 255);

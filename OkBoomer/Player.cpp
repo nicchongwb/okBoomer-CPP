@@ -2,6 +2,7 @@
 #include "TextureManager.h"
 #include "Animation.h"
 #include "IOHandler.h"
+#include "Board.h"
 #include <SDL.h>
 #include <iostream>
 
@@ -59,6 +60,8 @@ void Player::Update(float dt) {
 
     // Unset force before getting input
     m_DrawManager->UnsetForce();
+
+
     GetInput();
 
 }
@@ -74,6 +77,10 @@ void Player::GetInput() {
     X = m_Transform->X;
     Y = m_Transform->Y;
 
+    // temp variables for Board newX and newY
+    int nextX = X;
+    int nextY = Y;
+
     if (m_pid == 0) {
         
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_W)) {
@@ -81,9 +88,19 @@ void Player::GetInput() {
             if (!s_AlrPressedP1) {
                 SDL_Log("Key W pushed.");
                 
-                cout << "Player 1: "; m_Transform->Log();
-                m_DrawManager->ApplyForceY(-64);
+                nextY -= 64; // set temp value
 
+                if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY)) 
+                {
+                    cout << "Player 1: "; m_Transform->Log();
+                    m_DrawManager->ApplyForceY(-64);
+
+                    Board::GetInstance()->updateBoard(m_pid, X, Y, nextX, nextY);
+                    Board::GetInstance()->consoleBoard();
+                }
+                else {
+                    std::cout << "Invalid move." << std::endl;
+                }
 
                 s_AlrPressedP1 = true;
             }
@@ -94,8 +111,19 @@ void Player::GetInput() {
             if (!s_AlrPressedP1) {
                 SDL_Log("Key S pushed.");
 
-                cout << "Player 1: "; m_Transform->Log();
-                m_DrawManager->ApplyForceY(64);
+                nextY += 64; // set temp value
+
+                if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY))
+                {
+                    cout << "Player 1: "; m_Transform->Log();
+                    m_DrawManager->ApplyForceY(64);
+
+                    Board::GetInstance()->updateBoard(m_pid, X, Y, nextX, nextY);
+                    Board::GetInstance()->consoleBoard();
+                }
+                else {
+                    std::cout << "Invalid move." << std::endl;
+                }
 
                 s_AlrPressedP1 = true;
             }
@@ -107,8 +135,19 @@ void Player::GetInput() {
             if (!s_AlrPressedP1) {
                 SDL_Log("Key A pushed.");
 
-                cout << "Player 1: "; m_Transform->Log();
-                m_DrawManager->ApplyForceX(-64);
+                nextX -= 64; // set temp value
+
+                if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY)) 
+                {
+                    cout << "Player 1: "; m_Transform->Log();
+                    m_DrawManager->ApplyForceX(-64);
+
+                    Board::GetInstance()->updateBoard(m_pid, X, Y, nextX, nextY);
+                    Board::GetInstance()->consoleBoard();
+                }
+                else {
+                    std::cout << "Invalid move." << std::endl;
+                }
 
                 s_AlrPressedP1 = true;
             }
@@ -116,13 +155,23 @@ void Player::GetInput() {
         }
         
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_D)) {
-            
 
             if (!s_AlrPressedP1) {
                 SDL_Log("Key D pushed.");
 
-                cout << "Player 1: "; m_Transform->Log();
-                m_DrawManager->ApplyForceX(64);
+                nextX += 64; // set temp value
+
+                if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY))
+                {
+                    cout << "Player 1: "; m_Transform->Log();
+                    m_DrawManager->ApplyForceX(64);
+
+                    Board::GetInstance()->updateBoard(m_pid, X, Y, nextX, nextY);
+                    Board::GetInstance()->consoleBoard();
+                }
+                else {
+                    std::cout << "Invalid move." << std::endl;
+                }
 
                 s_AlrPressedP1 = true;
             }
@@ -140,8 +189,19 @@ void Player::GetInput() {
             if (!s_AlrPressedP2) {
                 SDL_Log("Key UP pushed.");
 
-                cout << "Player 2: "; m_Transform->Log();
-                m_DrawManager->ApplyForceY(-64);
+                nextY -= 64; // set temp value
+
+                if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY))
+                {
+                    cout << "Player 2: "; m_Transform->Log();
+                    m_DrawManager->ApplyForceY(-64);
+
+                    Board::GetInstance()->updateBoard(m_pid, X, Y, nextX, nextY);
+                    Board::GetInstance()->consoleBoard();
+                }
+                else {
+                    std::cout << "Invalid move." << std::endl;
+                }
 
                 s_AlrPressedP2 = true;
             }
@@ -152,9 +212,19 @@ void Player::GetInput() {
             if (!s_AlrPressedP2) {
                 SDL_Log("Key DOWN pushed.");
 
-                cout << "Player 2: "; m_Transform->Log();
-                m_DrawManager->ApplyForceY(64);
+                nextY += 64; // set temp value
 
+                if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY))
+                {
+                    cout << "Player 2: "; m_Transform->Log();
+                    m_DrawManager->ApplyForceY(64);
+
+                    Board::GetInstance()->updateBoard(m_pid, X, Y, nextX, nextY);
+                    Board::GetInstance()->consoleBoard();
+                }
+                else {
+                    std::cout << "Invalid move." << std::endl;
+                }
 
                 s_AlrPressedP2 = true;
             }
@@ -165,10 +235,21 @@ void Player::GetInput() {
             if (!s_AlrPressedP2) {
                 SDL_Log("Key LEFT pushed.");
 
-                cout << "Player 2: "; m_Transform->Log();
-                m_DrawManager->ApplyForceX(-64);
+                nextX -= 64; // set temp value
 
+                if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY))
+                {
+                    cout << "Player 2: "; m_Transform->Log();
+                    m_DrawManager->ApplyForceX(-64);
+
+                    Board::GetInstance()->updateBoard(m_pid, X, Y, nextX, nextY);
+                    Board::GetInstance()->consoleBoard();
+                }
+                else {
+                    std::cout << "Invalid move." << std::endl;
+                }
                 s_AlrPressedP2 = true;
+                
             }
         }
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_RIGHT)) {
@@ -176,9 +257,18 @@ void Player::GetInput() {
             if (!s_AlrPressedP2) {
                 SDL_Log("Key RIGHT pushed.");
 
-                cout << "Player 2: "; m_Transform->Log();
-                m_DrawManager->ApplyForceX(64);
+                nextX += 64; // set temp value
+                if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY))
+                {
+                    cout << "Player 2: "; m_Transform->Log();
+                    m_DrawManager->ApplyForceX(64);
 
+                    Board::GetInstance()->updateBoard(m_pid, X, Y, nextX, nextY);
+                    Board::GetInstance()->consoleBoard();
+                }
+                else {
+                    std::cout << "Invalid move." << std::endl;
+                }
 
                 s_AlrPressedP2 = true;
             }
