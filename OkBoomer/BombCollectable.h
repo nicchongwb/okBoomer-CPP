@@ -17,12 +17,12 @@ public:
 	virtual void Draw();
 	virtual void Clean();
 	virtual void Update(float dt);
-	inline std::vector <BombCollectable> * getListOfSpawnedBombs() { return &m_BombsSpawnedList; };
+	std::vector <BombCollectable> * getListOfSpawnedBombs() { return &s_BombsSpawnedList; };
 
 private:
 
 	TextureManager* m_BombItemTextureM;
-	std::vector <BombCollectable> m_BombsSpawnedList;
+	std::vector <BombCollectable> s_BombsSpawnedList;
 	int m_NumBombsSpawned = 0; // count current number of collectable bomb items on the map.
 	int m_ItemBombID = 0; 
 };

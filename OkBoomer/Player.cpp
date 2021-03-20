@@ -38,12 +38,11 @@ Player::Player(Properties * props): Creature(props) {
 	if (props->TextureID == "player1") {
 		// Set Properties -> Row, Col, Frame_Count, Animation_Speed, SDL_Flip
 		// Row and Col specifies where to chop on the spritesheet
-		m_Animation->SetProperties(m_TextureID, 0, 0, 3, 500, SDL_FLIP_NONE);
-        
+        m_Animation->SetProperties(m_TextureID, 4, 3, 3, 500, SDL_FLIP_NONE);       
 	}
 	// Set Player 2 animation
 	else if (props->TextureID=="player2"){
-		m_Animation->SetProperties(m_TextureID, 4, 3, 3, 500, SDL_FLIP_NONE);
+        m_Animation->SetProperties(m_TextureID, 0, 0, 3, 500, SDL_FLIP_NONE);
 	}
 
 }
@@ -91,7 +90,8 @@ void Player::GetInput() {
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_W)) {
             
             if (!s_AlrPressedP1) {
-                SDL_Log("Key W pushed.");
+                
+                //SDL_Log("Key W pushed.");
                 
                 nextY -= m_Speed; // set temp value
 
@@ -114,7 +114,7 @@ void Player::GetInput() {
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_S)) {
 
             if (!s_AlrPressedP1) {
-                SDL_Log("Key S pushed.");
+                //SDL_Log("Key S pushed.");
 
                 nextY += m_Speed; // set temp value
 
@@ -138,7 +138,7 @@ void Player::GetInput() {
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_A)) {
 
             if (!s_AlrPressedP1) {
-                SDL_Log("Key A pushed.");
+                //SDL_Log("Key A pushed.");
 
                 nextX -= m_Speed; // set temp value
 
@@ -162,7 +162,7 @@ void Player::GetInput() {
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_D)) {
 
             if (!s_AlrPressedP1) {
-                SDL_Log("Key D pushed.");
+                //SDL_Log("Key D pushed.");
 
                 nextX += m_Speed; // set temp value
 
@@ -186,7 +186,7 @@ void Player::GetInput() {
 
             if (!s_AlrPressedP1) 
             {
-                SDL_Log("Key G pushed.");
+                //SDL_Log("Key G pushed.");
 
                 if (Board::GetInstance()->canPlayerPlant(m_pid, X, Y))
                 {
@@ -196,10 +196,10 @@ void Player::GetInput() {
                         Board::GetInstance()->updateBoardPlant(m_pid, X, Y);
                         Board::GetInstance()->consoleBoard();
                     }
-                    else 
-                    {
-                        std::cout << "Bomb already planted." << std::endl;
-                    }
+                    //else 
+                    //{
+                    //    std::cout << "Bomb already planted." << std::endl;
+                    //}
                 }
             }
             s_AlrPressedP1 = true;
@@ -211,7 +211,7 @@ void Player::GetInput() {
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_UP)) {
         
             if (!s_AlrPressedP2) {
-                SDL_Log("Key UP pushed.");
+                //SDL_Log("Key UP pushed.");
 
                 nextY -= m_Speed; // set temp value
 
@@ -234,7 +234,7 @@ void Player::GetInput() {
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_DOWN)) {
             
             if (!s_AlrPressedP2) {
-                SDL_Log("Key DOWN pushed.");
+                //SDL_Log("Key DOWN pushed.");
 
                 nextY += m_Speed; // set temp value
 
@@ -257,7 +257,7 @@ void Player::GetInput() {
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_LEFT)) {
 
             if (!s_AlrPressedP2) {
-                SDL_Log("Key LEFT pushed.");
+                //SDL_Log("Key LEFT pushed.");
 
                 nextX -= m_Speed; // set temp value
 
@@ -279,7 +279,7 @@ void Player::GetInput() {
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_RIGHT)) {
 
             if (!s_AlrPressedP2) {
-                SDL_Log("Key RIGHT pushed.");
+                //SDL_Log("Key RIGHT pushed.");
 
                 nextX += m_Speed; // set temp value
                 if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY))
@@ -301,7 +301,7 @@ void Player::GetInput() {
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_COMMA)) {
             if (!s_AlrPressedP2)
             {
-                SDL_Log("Key G pushed.");
+                //SDL_Log("Key COMMA pushed.");
 
                 if (Board::GetInstance()->canPlayerPlant(m_pid, X, Y))
                 {
@@ -311,10 +311,10 @@ void Player::GetInput() {
                         Board::GetInstance()->updateBoardPlant(m_pid, X, Y);
                         Board::GetInstance()->consoleBoard();
                     }
-                    else
-                    {
-                        std::cout << "Bomb already planted." << std::endl;
-                    }
+                    //else
+                    //{
+                    //    std::cout << "Bomb already planted." << std::endl;
+                    //}
                 }
             }
             s_AlrPressedP2 = true;
@@ -327,11 +327,19 @@ void Player::GetInput() {
 
 void Player::collectBomb()
 {
-    m_bombCollectable += 1;
-    if (m_bombCollectable >= MAX_BOMBCOLLECTABLE) {
-        m_bombCollectable -= MAX_BOMBCOLLECTABLE;
-        m_bombHeld += 1;
+    // +1 to m_bombCollectable when player picks an collectable bomb item
+    if (m_bombCollectable < MAX_BOMBCOLLECTABLE) {
+        m_bombCollectable += 1;
     }
+    // players can only hold a maximum of MAX_BOMBHELD number of bombs in their inventory
+    if (m_bombHeld < MAX_BOMBHELD) {
+        // for every MAX_BOMBCOLLECTABLE number of collectable bomb items, convert it to 1 bomb inside the player's inventory.
+        if (m_bombCollectable >= MAX_BOMBCOLLECTABLE) {
+            m_bombCollectable -= MAX_BOMBCOLLECTABLE;
+            m_bombHeld += 1;
+        }
+    }
+    std::cout << m_pid+1 << ": BOMB HELD, BOMB PART: " << m_bombHeld << " , " << m_bombCollectable << std::endl;
 }
 
 void Player::plantBomb()

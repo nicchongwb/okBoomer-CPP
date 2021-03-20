@@ -86,7 +86,7 @@ bool Board::updateBoardMove(int m_pid, int prevX, int prevY, int newX, int newY)
     // Temporarily Offset m_pid so that player 1's pid = 1 & player 2's pid = 2
     m_pid += 1;
 
-    std::printf("PID: %d\tPrevX: %d\tPrevY: %d\tnewX: %d\tnewY: %d\n", m_pid, prevX, prevY, newX, newY);
+    //std::printf("PID: %d\tPrevX: %d\tPrevY: %d\tnewX: %d\tnewY: %d\n", m_pid, prevX, prevY, newX, newY);
 
     int tidPrev = m_board[prevX][prevY];
     int tidNew = m_board[newX][newY];
@@ -99,19 +99,31 @@ bool Board::updateBoardMove(int m_pid, int prevX, int prevY, int newX, int newY)
     }
     // ELSE Player X Move without planting bomb prior
     else {
+        // if next tile empty:
         if (tidNew == 0) {
             m_board[prevX][prevY] = 0;
             m_board[newX][newY] = m_pid;
         }
+        // if next tile is a planted bomb:
         else if (tidNew == 3) {
             m_board[prevX][prevY] = 0;
             m_board[newX][newY] = m_pid;
             // Update respective player's health
             Game::GetInstance()->BombPlayer(m_pid);
         }
+        // if next tile is a bomb collectable item:
         else if (tidNew == 4) {
             m_board[prevX][prevY] = 0;
             m_board[newX][newY] = m_pid;
+
+            std::vector<BombCollectable>* s_bombItemList = Game::GetInstance()->GetBombItemList();
+            // Delete the bomb collectable item from the array
+            for (auto bombItem = s_bombItemList->begin(); bombItem != s_bombItemList->end(); bombItem++) {
+                if (bombItem->getItemX() == newX * 64 && bombItem->getItemY() == newY * 64) {
+                    s_bombItemList->erase(bombItem);
+                    break;
+                }
+            }
             // Update respective player's bombCollectable pouch
             Game::GetInstance()->CollectBomb(m_pid);
         }

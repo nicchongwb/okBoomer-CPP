@@ -6,6 +6,7 @@
 #include <SDL.h>
 #include <SDL_image.h>
 #include "GameMap.h"
+#include "BombCollectable.h"
 
 /* GAME.H AND GAME.CPP CONTAINS GAME LOOP METHODS */
 
@@ -38,6 +39,9 @@ public:
 
     // To get GameMap
     inline GameMap* GetMap() { return m_LevelMap; }
+
+    // Maintain one instance of the number of bomb items spawned on the map.
+    std::vector<BombCollectable>* GetBombItemList();
 
     inline bool IsRunning() { return m_IsRunning; }
     // To render SDL window

@@ -3,6 +3,8 @@
 #ifndef BOARD_H
 #define BOARD_H
 
+#include "Game.h"
+
 class Board
 {
 public:
@@ -25,7 +27,6 @@ private:
 	Board() {};
 
 	static Board* s_Instance;
-
 	// 2D board array
 	int m_board[10][10]; // board array with 10(col = x axis) by 10(row = y axis)
 };

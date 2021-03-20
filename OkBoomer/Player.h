@@ -7,7 +7,8 @@
 #include "Animation.h"
 #include "DrawManager.h"
 
-#define DEFAULT_BOMBHELD 1
+#define DEFAULT_BOMBHELD 0
+#define MAX_BOMBHELD 3 // max number of bombs players can hold onto at one go
 #define DEFAULT_BOMBCOLLECTABLE 0
 #define MAX_BOMBCOLLECTABLE 3 // 3 bomb collectable parts = 1 bomb held
 

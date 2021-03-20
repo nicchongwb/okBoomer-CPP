@@ -23,7 +23,7 @@ void IOHandler::Listen() {
 				break;
 			case SDL_KEYUP:
 				KeyReleased(event.key.keysym.scancode);
-				SDL_Log("Key released");
+				//SDL_Log("Key released");
 				break;
 		}
 	}
