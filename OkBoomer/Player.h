@@ -28,6 +28,13 @@ public:
 	static bool s_AlrPressedP1; // static variables for checking if key is already held down
 	static bool s_AlrPressedP2;
 
+	// Player bomb interaction
+	void collectBomb();
+	
+	void plantBomb();
+
+	void takeDamage();
+
 private:
 	// Initialise variables for animation purposes
 	//int m_Row, m_Frame, m_FrameCount, m_AnimSpeed;
@@ -36,6 +43,9 @@ private:
 	int m_pid; // player id
 
 	int newX, newY; // Temporary variables to hold next player coordinates
+
+	int bombHeld; // Amount of bombs held
+	int bombCollectable; // Amount of bomb collectables
 
 };
 #endif // PLAYER_H

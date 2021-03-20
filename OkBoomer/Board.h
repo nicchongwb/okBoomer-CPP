@@ -15,7 +15,9 @@ public:
 	// 2D board array method
 	bool initBoard(); // initialize 2D board with player 1 in top left, player 2 in bottom right and empty with 0
 	bool canPlayerMove(int m_pid, int prevX, int prevY, int newX, int newY); // check if player input is valid
-	bool updateBoard(int m_pid, int prevX, int prevY, int newX, int newY); // update the board and also update player health, items etc
+	bool canPlayerPlant(int m_pid, int prevX, int prevY); // check if player
+	bool updateBoardMove(int m_pid, int prevX, int prevY, int newX, int newY); // update the board and also update player health, items etc
+	bool updateBoardPlant(int m_pid, int prevX, int prevY);
 	bool consoleBoard();
 
 private:

@@ -100,6 +100,36 @@ void Game::Events() {
     IOHandler::GetInstance()->Listen();
 }
 
+void Game::BombPlayer(int m_pid)
+{
+    if (m_pid == 1) {
+        player1->takeDamage();
+    }
+    else if (m_pid == 2) {
+        player2->takeDamage();
+    }
+}
+
+void Game::CollectBomb(int m_pid)
+{
+    if (m_pid == 1) {
+        player1->collectBomb();
+    }
+    else if (m_pid == 2) {
+        player2->collectBomb();
+    }
+}
+
+void Game::PlantBomb(int m_pid)
+{
+    if (m_pid == 1) {
+        player1->plantBomb();
+    }
+    else if (m_pid == 2) {
+        player2->plantBomb();
+    }
+}
+
 bool Game::Clean() {
     SDL_DestroyRenderer(m_Renderer);
     SDL_DestroyWindow(m_Window);

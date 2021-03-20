@@ -28,6 +28,12 @@ Player::Player(Properties * props): Creature(props) {
     m_pid = s_PlayerCount;
     s_PlayerCount++;
 
+    // Set player health to 10
+    health = 10;
+    bombHeld = 1;
+    bombCollectable = 0;
+
+
 	// Set Player 1 animation
 	if (props->TextureID == "player1") {
 		// Set Properties -> Row, Col, Frame_Count, Animation_Speed, SDL_Flip
@@ -95,7 +101,7 @@ void Player::GetInput() {
                     cout << "Player 1: "; m_Transform->Log();
                     m_DrawManager->ApplyForceY(-64);
 
-                    Board::GetInstance()->updateBoard(m_pid, X, Y, nextX, nextY);
+                    Board::GetInstance()->updateBoardMove(m_pid, X, Y, nextX, nextY);
                     Board::GetInstance()->consoleBoard();
                 }
                 else {
@@ -118,7 +124,7 @@ void Player::GetInput() {
                     cout << "Player 1: "; m_Transform->Log();
                     m_DrawManager->ApplyForceY(64);
 
-                    Board::GetInstance()->updateBoard(m_pid, X, Y, nextX, nextY);
+                    Board::GetInstance()->updateBoardMove(m_pid, X, Y, nextX, nextY);
                     Board::GetInstance()->consoleBoard();
                 }
                 else {
@@ -142,7 +148,7 @@ void Player::GetInput() {
                     cout << "Player 1: "; m_Transform->Log();
                     m_DrawManager->ApplyForceX(-64);
 
-                    Board::GetInstance()->updateBoard(m_pid, X, Y, nextX, nextY);
+                    Board::GetInstance()->updateBoardMove(m_pid, X, Y, nextX, nextY);
                     Board::GetInstance()->consoleBoard();
                 }
                 else {
@@ -166,7 +172,7 @@ void Player::GetInput() {
                     cout << "Player 1: "; m_Transform->Log();
                     m_DrawManager->ApplyForceX(64);
 
-                    Board::GetInstance()->updateBoard(m_pid, X, Y, nextX, nextY);
+                    Board::GetInstance()->updateBoardMove(m_pid, X, Y, nextX, nextY);
                     Board::GetInstance()->consoleBoard();
                 }
                 else {
@@ -178,7 +184,26 @@ void Player::GetInput() {
 
         }
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_G)) {
-            SDL_Log("Key G pushed.");
+
+            if (!s_AlrPressedP1) 
+            {
+                SDL_Log("Key G pushed.");
+
+                if (Board::GetInstance()->canPlayerPlant(m_pid, X, Y))
+                {
+                    if (this->bombHeld > 0) 
+                    {
+                        // X == nextX, Y == nextY | this tells board that a bomb has been placed
+                        Board::GetInstance()->updateBoardPlant(m_pid, X, Y);
+                        Board::GetInstance()->consoleBoard();
+                    }
+                    else 
+                    {
+                        std::cout << "Bomb already planted." << std::endl;
+                    }
+                }
+            }
+            s_AlrPressedP1 = true;
         }
         
     }
@@ -196,7 +221,7 @@ void Player::GetInput() {
                     cout << "Player 2: "; m_Transform->Log();
                     m_DrawManager->ApplyForceY(-64);
 
-                    Board::GetInstance()->updateBoard(m_pid, X, Y, nextX, nextY);
+                    Board::GetInstance()->updateBoardMove(m_pid, X, Y, nextX, nextY);
                     Board::GetInstance()->consoleBoard();
                 }
                 else {
@@ -219,7 +244,7 @@ void Player::GetInput() {
                     cout << "Player 2: "; m_Transform->Log();
                     m_DrawManager->ApplyForceY(64);
 
-                    Board::GetInstance()->updateBoard(m_pid, X, Y, nextX, nextY);
+                    Board::GetInstance()->updateBoardMove(m_pid, X, Y, nextX, nextY);
                     Board::GetInstance()->consoleBoard();
                 }
                 else {
@@ -242,7 +267,7 @@ void Player::GetInput() {
                     cout << "Player 2: "; m_Transform->Log();
                     m_DrawManager->ApplyForceX(-64);
 
-                    Board::GetInstance()->updateBoard(m_pid, X, Y, nextX, nextY);
+                    Board::GetInstance()->updateBoardMove(m_pid, X, Y, nextX, nextY);
                     Board::GetInstance()->consoleBoard();
                 }
                 else {
@@ -263,7 +288,7 @@ void Player::GetInput() {
                     cout << "Player 2: "; m_Transform->Log();
                     m_DrawManager->ApplyForceX(64);
 
-                    Board::GetInstance()->updateBoard(m_pid, X, Y, nextX, nextY);
+                    Board::GetInstance()->updateBoardMove(m_pid, X, Y, nextX, nextY);
                     Board::GetInstance()->consoleBoard();
                 }
                 else {
@@ -275,9 +300,58 @@ void Player::GetInput() {
 
         }
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_COMMA)) {
-            SDL_Log("Key COMMA pushed.");
+            if (!s_AlrPressedP2)
+            {
+                SDL_Log("Key G pushed.");
+
+                if (Board::GetInstance()->canPlayerPlant(m_pid, X, Y))
+                {
+                    if (this->bombHeld > 0)
+                    {
+                        // X == nextX, Y == nextY | this tells board that a bomb has been placed
+                        Board::GetInstance()->updateBoardPlant(m_pid, X, Y);
+                        Board::GetInstance()->consoleBoard();
+                    }
+                    else
+                    {
+                        std::cout << "Bomb already planted." << std::endl;
+                    }
+                }
+            }
+            s_AlrPressedP2 = true;
+
         }
 
     }
 
 }
+
+void Player::collectBomb()
+{
+    bombCollectable += 1;
+    if (bombCollectable >= 3) {
+        bombCollectable -= 3;
+        bombHeld += 1;
+    }
+}
+
+void Player::plantBomb()
+{
+    if (this->bombHeld > 0) {
+        this->bombHeld -= 1;
+        printf("Player %d's bomb left: %d\n", m_pid + 1, this->bombHeld);
+    }
+    else {
+        printf("Player %d's bomb left: %d\n", m_pid + 1, this->bombHeld);
+        printf("No more bombs left!\n");
+    }
+   
+}
+
+void Player::takeDamage()
+{
+    health -= 1;
+    printf("Player %d's health left: %d\n", m_pid + 1, health);
+}
+
+

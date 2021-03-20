@@ -38,13 +38,13 @@ bool IOHandler::KeyPressed(SDL_Scancode key) {
 // On key release
 bool IOHandler::KeyReleased(SDL_Scancode key) {
 
-	if (key == SDL_SCANCODE_W || key == SDL_SCANCODE_A || key == SDL_SCANCODE_S || key == SDL_SCANCODE_D) {
+	if (key == SDL_SCANCODE_W || key == SDL_SCANCODE_A || key == SDL_SCANCODE_S || key == SDL_SCANCODE_D || key == SDL_SCANCODE_G) {
 		if (Player::s_AlrPressedP1) {
 			Player::s_AlrPressedP1 = false;
 		}
 	}
 
-	if (key == SDL_SCANCODE_UP || key == SDL_SCANCODE_DOWN || key == SDL_SCANCODE_LEFT || key == SDL_SCANCODE_RIGHT) {
+	if (key == SDL_SCANCODE_UP || key == SDL_SCANCODE_DOWN || key == SDL_SCANCODE_LEFT || key == SDL_SCANCODE_RIGHT || key == SDL_SCANCODE_COMMA) {
 		if (Player::s_AlrPressedP2) {
 			Player::s_AlrPressedP2 = false;
 		}

@@ -30,6 +30,11 @@ public:
     void Render();
     void Events();
 
+    // Game logic methods
+    void BombPlayer(int m_pid);
+    void CollectBomb(int m_pid);
+    void PlantBomb(int m_pid);
+
     // To get GameMap
     inline GameMap* GetMap() { return m_LevelMap; }
 
