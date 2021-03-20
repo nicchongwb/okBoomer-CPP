@@ -6,6 +6,16 @@
 * Header file is Board.h
 */
 
+/* 2D array Board TID usage:
+    0 = empty, no entity occupying
+    1 = player1 occupying
+    2 = player2 occupying
+    3 = bomb (planted) occupying
+    4 = bomb (collectable) occupying
+    5 = bomb (planted) + player 1 occupying (bomb is planted by p1)
+    6 = bomb (planted) + player 2 occupying (bomb is planted by p2)
+*/
+
 Board* Board::s_Instance = nullptr;
 
 bool Board::initBoard()
@@ -26,23 +36,23 @@ bool Board::canPlayerMove(int m_pid, int prevX, int prevY, int newX, int newY)
     newY /= 64;
     
     // get other player id
-    m_pid += 1;
-    int m_otherPID = -1;
-    if (m_pid == 1) {
-        m_otherPID = 2;
-    }
-    else if (m_pid == 2) {
-        m_otherPID = 1;
-    }
-
+    m_pid += 1; // + 1 because 0 on the array board is 'empty space'. player id inside player class starts from 0.
+    
+    int m_nextTID = m_board[newX][newY];
     //std::printf("PID: %d\tPrevX: %d\tPrevY: %d\tnewX: %d\tnewY: %d\n", m_pid, prevX, prevY, newX, newY);
 
     if (newX >= 0 && newX < 10 && newY >= 0 && newY < 10) { // check if out of board
-        // if its not another player
-        if (m_board[newX][newY] != m_otherPID) {
+        // if its not another player OR bomb + planted player
+        //std::cout << m_otherPID << std::endl;
+        switch (m_nextTID) {
+        case 1:
+        case 2:
+        case 5:
+        case 6:
+            return false;
+        default:
             return true;
         }
-        else { return false; }
     }
     else { return false; }
 }
@@ -146,4 +156,14 @@ bool Board::consoleBoard()
         std::cout << " ]\n";
     }
     return true;
+}
+
+// return tile ID of given coordinates x and y
+int Board::getTileID(int x, int y) {
+    int tid = m_board[x][y];
+    return tid;
+}
+
+void Board::updateBoardWithItem(int x, int y, int iid) {
+    m_board[x][y] = iid;
 }

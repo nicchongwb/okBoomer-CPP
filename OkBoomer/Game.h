@@ -34,6 +34,7 @@ public:
     void BombPlayer(int m_pid);
     void CollectBomb(int m_pid);
     void PlantBomb(int m_pid);
+    void SpawnItem();
 
     // To get GameMap
     inline GameMap* GetMap() { return m_LevelMap; }

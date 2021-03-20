@@ -13,22 +13,17 @@
 
 // Item extends Entity
 
-class Item : public Entity
-{
-public:
-	// Initialise the information from Entity into Creature
-	Item(Properties* props) : Entity(props) {
+class Item : public Entity {
 
+public:
+	// Initialise the information from Entity into Item
+	Item(Properties* props) : Entity(props) {
 	}
 
 	virtual void Draw() = 0;
 	virtual void Clean() = 0;
 	virtual void Update(float dt) = 0;
 
-protected:
-	std::string m_Name;
-
-	// Item characteristics/attributes
 };
 #endif // ITEM_H
 

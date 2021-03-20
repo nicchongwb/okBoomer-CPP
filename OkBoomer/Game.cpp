@@ -5,6 +5,8 @@
 #include "IOHandler.h"
 #include "MapParser.h"
 #include "Board.h"
+#include "BombCollectable.h"
+#include "ItemTimer.h"
 
 #include <iostream>
 
@@ -16,9 +18,15 @@
 Game * Game::s_Instance = nullptr;
 Player * player1 = nullptr;
 Player * player2 = nullptr;
+std::vector <BombCollectable> * bombItemList = nullptr;
+BombCollectable * bombItem = nullptr;
+ItemTimer * itemTimer = nullptr;
 
 bool Game::Init() {
     
+    // Initialise random seed
+    srand(time(NULL));
+
     // If SDL cannot initalise, print error message
     if (SDL_Init(SDL_INIT_VIDEO) != 0 && IMG_Init(IMG_INIT_JPG | IMG_INIT_PNG) != 0) {
         SDL_Log("Failed to initialize SDL: %s", SDL_GetError());
@@ -49,11 +57,10 @@ bool Game::Init() {
 
     m_LevelMap = MapParser::GetInstance()->GetMap("MAP");
 
-
     // load sprite
     TextureManager::GetInstance()->Load("player1", "res/sprites/characternew.png");
     TextureManager::GetInstance()->Load("player2", "res/sprites/characternew.png");
-    //TextureManager::GetInstance()->Load("bomb", "res/sprites/bombs2.bmp");
+    TextureManager::GetInstance()->Load("bomb", "res/sprites/bombs2.bmp");
 
     // Initialise board
     Board::GetInstance()->initBoard();
@@ -63,6 +70,12 @@ bool Game::Init() {
     player1 = new Player(new Properties("player1", 0, 0, 32, 32));
     player2 = new Player(new Properties("player2", 576, 576, 32, 32));
     
+    // Initialise bomb collectable item vector list
+    bombItem = new BombCollectable(new Properties("bomb", 512, 64, 32, 32));
+    bombItemList = bombItem->getListOfSpawnedBombs();
+
+    itemTimer = new ItemTimer();
+
     Transform tf;
 
     tf.Log("Transform: ");
@@ -75,6 +88,8 @@ void Game::Update() {
     player1->Update(0);
     player2->Update(0);
     m_LevelMap->Update();
+    SpawnItem();
+
 }
 
 void Game::Render() {
@@ -91,6 +106,10 @@ void Game::Render() {
 
     player1->Draw();
     player2->Draw();
+    
+    for (int i = 0; i < bombItemList->size(); i++) {
+        bombItemList->at(i).Draw();
+    }
     SDL_RenderPresent(m_Renderer);
 
 }
@@ -100,6 +119,7 @@ void Game::Events() {
     IOHandler::GetInstance()->Listen();
 }
 
+/* Methods to process game logic */
 void Game::BombPlayer(int m_pid)
 {
     if (m_pid == 1) {
@@ -130,6 +150,49 @@ void Game::PlantBomb(int m_pid)
     }
 }
 
+void Game::SpawnItem()
+{
+    // Only one item exists in the game at this moment (bomb part item)
+    // The code below spawns this item.
+
+    // If the number of bomb parts (item) on the map exceeds MAX_BOMBITEM_SPAWNED, stop spawning.
+    if (bombItemList->size() < MAX_BOMBITEM_SPAWNED) {
+        
+        // if timer not started yet, start it.
+        if (!itemTimer->getTimerHasStarted()) {
+            // stop the timer first because it has already been started in Game::init()
+            itemTimer->stopTimer(); 
+            itemTimer->startTimer();
+        }
+        // else, check if item is ready to spawn
+        else {
+        
+            if (itemTimer->getReadyToSpawn()) {
+
+                // if item is ready to spawn, spawn item on random coordinates
+                while (true) {
+                    int randX = rand() % 9;
+                    int randY = rand() % 9;
+
+                    // check if coordinates are valid for spawning.
+                    if (Board::GetInstance()->getTileID(randX, randY) == 0) {
+
+                        auto iter = bombItemList->begin(); // 'iter' is an iterator object that points the elements in bombListItem
+                        bombItemList->insert(iter, BombCollectable(new Properties("bomb", randX * 64, randY * 64, 32, 32)));
+                        // update board array to show that a collectable bomb part has spawned there
+                        Board::GetInstance()->updateBoardWithItem(randX, randY, 4);
+                        std::cout << "Item spawned at " << randX << randY << std::endl;
+                        // reset the item spawn rate, and timer countdown
+                        itemTimer->setReadyToSpawn(false);
+                        itemTimer->setTimerHasStarted(false);
+                        break;
+                    }
+                }
+            }
+        }
+    }
+}
+/* Methods to process SDL GUI */
 bool Game::Clean() {
     SDL_DestroyRenderer(m_Renderer);
     SDL_DestroyWindow(m_Window);

@@ -3,7 +3,6 @@
 #ifndef BOARD_H
 #define BOARD_H
 
-
 class Board
 {
 public:
@@ -15,10 +14,12 @@ public:
 	// 2D board array method
 	bool initBoard(); // initialize 2D board with player 1 in top left, player 2 in bottom right and empty with 0
 	bool canPlayerMove(int m_pid, int prevX, int prevY, int newX, int newY); // check if player input is valid
-	bool canPlayerPlant(int m_pid, int prevX, int prevY); // check if player
+	bool canPlayerPlant(int m_pid, int prevX, int prevY); // check if player can plant a bomb on their current tile
 	bool updateBoardMove(int m_pid, int prevX, int prevY, int newX, int newY); // update the board and also update player health, items etc
 	bool updateBoardPlant(int m_pid, int prevX, int prevY);
 	bool consoleBoard();
+	int getTileID(int x, int y); // return the tile id of given coordinates
+	void updateBoardWithItem(int x, int y, int iid); // update the board when an item spawns
 
 private:
 	Board() {};

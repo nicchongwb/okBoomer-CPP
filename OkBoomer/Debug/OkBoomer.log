@@ -1,4 +1,4 @@
-﻿  Game.cpp
-  TextureManager.cpp
-  Generating Code...
+﻿  Player.cpp
+C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Player.cpp(53,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Player.cpp(53,31): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   OkBoomer.vcxproj -> C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Debug\OkBoomer.exe

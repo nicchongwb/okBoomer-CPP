@@ -7,6 +7,9 @@
 #include "Animation.h"
 #include "DrawManager.h"
 
+#define DEFAULT_BOMBHELD 1
+#define DEFAULT_BOMBCOLLECTABLE 0
+#define MAX_BOMBCOLLECTABLE 3 // 3 bomb collectable parts = 1 bomb held
 
 /* Player header file. Each Player object represents
 *  a distinct player in the game.
@@ -44,8 +47,9 @@ private:
 
 	int newX, newY; // Temporary variables to hold next player coordinates
 
-	int bombHeld; // Amount of bombs held
-	int bombCollectable; // Amount of bomb collectables
+	int m_bombHeld; // Amount of bombs held
+	int m_bombCollectable; // Amount of bomb collectables; Note: 2 bombCollectables = 1 bomb part
+	int m_Health, m_Speed;
 
 };
 #endif // PLAYER_H
