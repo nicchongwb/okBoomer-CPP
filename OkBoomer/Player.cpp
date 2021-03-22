@@ -5,6 +5,8 @@
 #include "Board.h"
 #include <SDL.h>
 #include <iostream>
+#include <windows.h>
+#include <time.h>
 
 /* Player class. Each Player object represents
 *  a distinct player in the game.
@@ -17,7 +19,13 @@ int Player::s_PlayerCount = 0;
 bool Player::s_AlrPressedP1 = false;
 bool Player::s_AlrPressedP2 = false;
 
+int Player::s_p1facing = 1;
+int Player::s_p2facing = 0;
+bool Player::s_countdown = false;
+long Player::s_start;
+
 int X, Y;
+
 // Constructor for Player
 Player::Player(Properties * props): Creature(props) {
 
@@ -33,18 +41,20 @@ Player::Player(Properties * props): Creature(props) {
     m_bombHeld = DEFAULT_BOMBHELD;
     m_bombCollectable = DEFAULT_BOMBCOLLECTABLE;
 
+    m_getBombed = false;
 
 	// Set Player 1 animation
 	if (props->TextureID == "player1") {
 		// Set Properties -> Row, Col, Frame_Count, Animation_Speed, SDL_Flip
 		// Row and Col specifies where to chop on the spritesheet
-        m_Animation->SetProperties(m_TextureID, 4, 3, 3, 500, SDL_FLIP_NONE);       
+        m_Animation->SetProperties(m_TextureID, 4, 3, 3, 500, SDL_FLIP_NONE);
+      
 	}
 	// Set Player 2 animation
 	else if (props->TextureID=="player2"){
-        m_Animation->SetProperties(m_TextureID, 0, 0, 3, 500, SDL_FLIP_NONE);
+        m_Animation->SetProperties(m_TextureID, 3, 0, 3, 500, SDL_FLIP_NONE);
+      
 	}
-
 }
 
 // Draw player to screen
@@ -54,6 +64,13 @@ void Player::Draw() {
 
 // Update player animation & position on the screen
 void Player::Update(float dt) {
+    if (m_getBombed) {
+        Player::bombCountdown();
+        Player::getBombedAnimation();
+    }
+    else {
+        Player::getCurrentAnimation();
+    }
 
     // Update positions on the screen
     m_DrawManager->Update();
@@ -68,6 +85,82 @@ void Player::Update(float dt) {
 
     GetInput();
 
+}
+
+void Player::getBombedAnimation() {
+    if (m_pid == 0) {
+        if (s_p1facing == 0) {
+            m_Animation->SetProperties(m_TextureID, 7, 12, 3, 500, SDL_FLIP_NONE);
+        }
+        if (s_p1facing == 1) {
+            m_Animation->SetProperties(m_TextureID, 4, 12, 3, 500, SDL_FLIP_NONE);
+        }
+        if (s_p1facing == 2) {
+            m_Animation->SetProperties(m_TextureID, 5, 12, 3, 500, SDL_FLIP_NONE);
+        }
+        if (s_p1facing == 3) {
+            m_Animation->SetProperties(m_TextureID, 6, 12, 3, 500, SDL_FLIP_NONE);
+        }
+    }
+    else if (m_pid == 1) {
+
+        if (s_p2facing == 0) {
+            m_Animation->SetProperties(m_TextureID, 3, 12, 3, 500, SDL_FLIP_NONE);
+        }
+        if (s_p2facing == 1) {
+            m_Animation->SetProperties(m_TextureID, 0, 12, 3, 500, SDL_FLIP_NONE);
+        }
+        if (s_p2facing == 2) {
+            m_Animation->SetProperties(m_TextureID, 1, 12, 3, 500, SDL_FLIP_NONE);
+        }
+        if (s_p2facing == 3) {
+            m_Animation->SetProperties(m_TextureID, 2, 12, 3, 500, SDL_FLIP_NONE);
+        }
+    }
+}
+
+void Player::getCurrentAnimation() {
+    if (m_pid == 0) {
+        if (s_p1facing == 0) {
+            m_Animation->SetProperties(m_TextureID, 7, 3, 3, 500, SDL_FLIP_NONE);
+        }
+        if (s_p1facing == 1) {
+            m_Animation->SetProperties(m_TextureID, 4, 3, 3, 500, SDL_FLIP_NONE);
+        }
+        if (s_p1facing == 2) {
+            m_Animation->SetProperties(m_TextureID, 5, 3, 3, 500, SDL_FLIP_NONE);
+        }
+        if (s_p1facing == 3) {
+            m_Animation->SetProperties(m_TextureID, 6, 3, 3, 500, SDL_FLIP_NONE);
+        }
+    }
+    else if (m_pid == 1) {
+
+        if (s_p2facing == 0) {
+            m_Animation->SetProperties(m_TextureID, 3, 0, 3, 500, SDL_FLIP_NONE);
+        }
+        if (s_p2facing == 1) {
+            m_Animation->SetProperties(m_TextureID, 0, 0, 3, 500, SDL_FLIP_NONE);
+        }
+        if (s_p2facing == 2) {
+            m_Animation->SetProperties(m_TextureID, 1, 0, 3, 500, SDL_FLIP_NONE);
+        }
+        if (s_p2facing == 3) {
+            m_Animation->SetProperties(m_TextureID, 2, 0, 3, 500, SDL_FLIP_NONE);
+        }
+    }
+}
+
+void Player::bombCountdown() {
+    if (m_getBombed && !s_countdown) {
+        s_countdown = true;
+        clock_t now = clock();
+        s_start = now;
+    }
+    if (s_start + 2500 < clock()) { //set animations for 2.5s
+        m_getBombed = false;
+        s_countdown = false;
+    }
 }
 
 // Clean screen
@@ -108,6 +201,7 @@ void Player::GetInput() {
                 }
 
                 s_AlrPressedP1 = true;
+                s_p1facing = 0;
             }
         }
 
@@ -131,6 +225,7 @@ void Player::GetInput() {
                 }
 
                 s_AlrPressedP1 = true;
+                s_p1facing = 1;
             }
 
         }
@@ -155,6 +250,7 @@ void Player::GetInput() {
                 }
 
                 s_AlrPressedP1 = true;
+                s_p1facing = 2;
             }
             
         }
@@ -179,6 +275,7 @@ void Player::GetInput() {
                 }
 
                 s_AlrPressedP1 = true;
+                s_p1facing = 3;
             }
 
         }
@@ -228,6 +325,7 @@ void Player::GetInput() {
                 }
 
                 s_AlrPressedP2 = true;
+                s_p2facing = 0;
             }
 
         }
@@ -251,6 +349,7 @@ void Player::GetInput() {
                 }
 
                 s_AlrPressedP2 = true;
+                s_p2facing = 1;
             }
 
         }
@@ -273,6 +372,7 @@ void Player::GetInput() {
                     std::cout << "Invalid move." << std::endl;
                 }
                 s_AlrPressedP2 = true;
+                s_p2facing = 2;
                 
             }
         }
@@ -295,6 +395,7 @@ void Player::GetInput() {
                 }
 
                 s_AlrPressedP2 = true;
+                s_p2facing = 3;
             }
 
         }
@@ -358,6 +459,7 @@ void Player::plantBomb()
 void Player::takeDamage()
 {
     m_Health -= 1;
+    m_getBombed = true;
     printf("Player %d's m_Health left: %d\n", m_pid + 1, m_Health);
 }
 

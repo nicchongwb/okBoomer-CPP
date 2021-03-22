@@ -72,8 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\CPP_Libraries\SDL2-2.0.14\include;C:\CPP_Libraries\SDL2_image-2.0.5\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\CPP_Libraries\SDL2-2.0.14\lib\x86;C:\CPP_Libraries\SDL2_image-2.0.5\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\jiaji\vclib\SDL2_image-devel-2.0.5-VC\SDL2_image-2.0.5\include;C:\Users\jiaji\vclib\SDL2-devel-2.0.14-VC\SDL2-2.0.14\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\jiaji\vclib\SDL2_image-devel-2.0.5-VC\SDL2_image-2.0.5\lib\x86;C:\Users\jiaji\vclib\SDL2-devel-2.0.14-VC\SDL2-2.0.14\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>

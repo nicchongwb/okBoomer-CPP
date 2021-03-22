@@ -1,6 +1,4 @@
-﻿  Game.cpp
-C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Game.cpp(28,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Game.cpp(110,23): warning C4018: '<': signed/unsigned mismatch
-  ItemTimer.cpp
-  Generating Code...
-  OkBoomer.vcxproj -> C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Debug\OkBoomer.exe
+﻿  Player.cpp
+C:\Users\jiaji\source\repos\nic0x96\ICT1009_Game\OkBoomer\Player.cpp(62,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\jiaji\source\repos\nic0x96\ICT1009_Game\OkBoomer\Player.cpp(62,31): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  OkBoomer.vcxproj -> C:\Users\jiaji\source\repos\nic0x96\ICT1009_Game\OkBoomer\Debug\OkBoomer.exe
