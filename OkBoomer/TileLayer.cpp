@@ -6,6 +6,8 @@
 *  Header file is TileLayer.h
 */
 
+#define YOFFSET 60
+
 // Constructor
 TileLayer::TileLayer(int tilesize, int colcount, int rowcount, TileMap tilemap, TilesetsList tilesets) :
     m_TileSize(tilesize), m_ColCount(colcount), m_RowCount(rowcount), m_Tilemap(tilemap), m_Tilesets(tilesets) {
@@ -56,7 +58,7 @@ void TileLayer::Render() {
                 }
 
                 // Use TextureManager to draw
-                TextureManager::GetInstance()->DrawTile(ts.Name, ts.TileSize, j * ts.TileSize, i * ts.TileSize, tileRow, tileCol);
+                TextureManager::GetInstance()->DrawTile(ts.Name, ts.TileSize, j * ts.TileSize, i * ts.TileSize + YOFFSET, tileRow, tileCol);
             }
         }
     }

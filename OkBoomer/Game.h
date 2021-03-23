@@ -5,6 +5,7 @@
 
 #include <SDL.h>
 #include <SDL_image.h>
+#include <SDL_ttf.h>
 #include "GameMap.h"
 #include "BombCollectable.h"
 
@@ -12,7 +13,7 @@
 
 // Define screen dimensions
 #define SCREEN_WIDTH 640
-#define SCREN_HEIGHT 640
+#define SCREN_HEIGHT 760
 
 
 class Game {

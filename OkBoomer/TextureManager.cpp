@@ -37,6 +37,18 @@ void TextureManager::Draw(std::string id, int x, int y, int width, int height, i
     SDL_RenderCopyEx(Game::GetInstance()->GetRenderer(), m_TextureMap[id], &srcRect, &dstRect, 0, nullptr, flip);
 }
 
+void TextureManager::DrawIcon(std::string id, int x, int y, int width, int height, int row, int col, SDL_RendererFlip flip)
+{
+    /* x and y will be the location to draw the image.
+    *  width and height specifies the width and height of the image to crop. (32 x 32)
+    *  row and col specifies WHERE on the image to crop.
+    *  Note: SDL_RendererFlip just specifies if we should flip the sprite. Not used, can remove later on.
+    */
+    SDL_Rect srcRect = { width + (col * width), height * row, width, height };
+    SDL_Rect dstRect = { x, y, 32, 32 }; // scale sprites to 64 x 64
+    SDL_RenderCopyEx(Game::GetInstance()->GetRenderer(), m_TextureMap[id], &srcRect, &dstRect, 0, nullptr, flip);
+}
+
 // Draw Frame for animation.
 void TextureManager::DrawFrame(std::string id, int x, int y, int width, int height, int row, int col, int frame, SDL_RendererFlip flip){
     
@@ -56,6 +68,14 @@ void TextureManager::DrawTile(std::string tilesetID, int tileSize, int x, int y,
     SDL_Rect srcRect = { tileSize * frame, tileSize * row, tileSize, tileSize };
     SDL_Rect dstRect = { x, y, tileSize, tileSize };
     SDL_RenderCopyEx(Game::GetInstance()->GetRenderer(), m_TextureMap[tilesetID], &srcRect, &dstRect, 0, 0, flip);
+}
+
+void TextureManager::AddFont(std::string id, std::string path, int fontSize) {
+    fonts.emplace(id, TTF_OpenFont(path.c_str(), fontSize));
+}
+
+TTF_Font* TextureManager::GetFont(std::string id) {
+    return fonts[id];
 }
 
 void TextureManager::Drop(std::string id){

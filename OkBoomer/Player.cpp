@@ -6,6 +6,8 @@
 #include <SDL.h>
 #include <iostream>
 
+#define YOFFSET 60
+
 /* Player class. Each Player object represents
 *  a distinct player in the game.
 *  Header file is Player.h
@@ -49,7 +51,7 @@ Player::Player(Properties * props): Creature(props) {
 
 // Draw player to screen
 void Player::Draw() {
-	m_Animation->Draw(m_Transform->X, m_Transform->Y, m_Width, m_Height);
+	m_Animation->Draw(m_Transform->X, m_Transform->Y + YOFFSET, m_Width, m_Height);
 }
 
 // Update player animation & position on the screen
@@ -323,6 +325,21 @@ void Player::GetInput() {
 
     }
 
+}
+
+int Player::GetHealth()
+{
+    return m_Health;
+}
+
+int Player::GetBomb()
+{
+    return m_bombHeld;
+}
+
+int Player::GetBombCol()
+{
+    return m_bombCollectable;
 }
 
 void Player::collectBomb()

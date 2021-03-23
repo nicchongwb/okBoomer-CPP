@@ -7,10 +7,10 @@
 #include "Animation.h"
 #include "DrawManager.h"
 
-#define DEFAULT_BOMBHELD 0
+#define DEFAULT_BOMBHELD 3
 #define MAX_BOMBHELD 3 // max number of bombs players can hold onto at one go
 #define DEFAULT_BOMBCOLLECTABLE 0
-#define MAX_BOMBCOLLECTABLE 3 // 3 bomb collectable parts = 1 bomb held
+#define MAX_BOMBCOLLECTABLE 2 // 2 bomb collectable parts = 1 bomb held
 
 /* Player header file. Each Player object represents
 *  a distinct player in the game.
@@ -27,6 +27,9 @@ public:
 	virtual void Clean();
 	virtual void Update(float dt);
 	void GetInput();
+	int GetHealth();
+	int GetBomb();
+	int GetBombCol();
 
 	static int s_PlayerCount; // playerCount initialised to 0 inside class file
 	static bool s_AlrPressedP1; // static variables for checking if key is already held down

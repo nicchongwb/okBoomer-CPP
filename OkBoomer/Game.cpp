@@ -7,8 +7,12 @@
 #include "Board.h"
 #include "BombCollectable.h"
 #include "ItemTimer.h"
+#include "SDL_ttf.h"
+#include "UILabel.h"
 
 #include <iostream>
+
+#define YOFFSET 60
 
 /* Game class. This is where all our game loop methods
 *  are defined.
@@ -33,6 +37,13 @@ bool Game::Init() {
         return false;
     }
 
+    // TTF Init
+    if (TTF_Init() == -1) {
+        printf("Failded to initialize TTL: %s", TTF_GetError());
+    }
+    // load font
+    TextureManager::GetInstance()->AddFont("arialbold", "arialbd.ttf", 13);
+
     // create SDL window
     m_Window = SDL_CreateWindow("OkBoomer", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREN_HEIGHT, 0);
     
@@ -48,6 +59,7 @@ bool Game::Init() {
         SDL_Log("Failed to create Renderer: %s", SDL_GetError());
         return false;
     }
+
 
     // load map
     if (!MapParser::GetInstance()->Load()) {
@@ -95,8 +107,45 @@ void Game::Update() {
 void Game::Render() {
     
     // Setting screen colour
-    SDL_SetRenderDrawColor(m_Renderer, 124, 218, 254, 255);
+    SDL_SetRenderDrawColor(m_Renderer, 13, 165, 149, 255);
     SDL_RenderClear(m_Renderer);
+
+    /* Scoreboard Section */
+    TextureManager::GetInstance()->DrawIcon("player1", 32, 15, 32, 32, 4, 3, SDL_FLIP_NONE);
+    TextureManager::GetInstance()->DrawIcon("player2", 576, 15, 32, 32, 0, 0, SDL_FLIP_NONE);
+
+    SDL_Color color = { 255, 255, 255 };
+    UILabel p1Name(76, 15, "Player 1", "arialbold", color);
+    UILabel p2Name(480, 15, "Player 2", "arialbold", color);
+
+    std::string p1HealthStr = "Health: " + std::to_string(player1->GetHealth()) + "/10";
+    std::string p2HealthStr = "Health: " + std::to_string(player2->GetHealth()) + "/10";
+    UILabel p1Health(76, 30, p1HealthStr, "arialbold", color);
+    UILabel p2Health(480, 30, p2HealthStr, "arialbold", color);
+    
+    p1Name.draw();
+    p2Name.draw();
+    p1Health.draw();
+    p2Health.draw();
+
+    /* Inventory Section */
+    TextureManager::GetInstance()->DrawIcon("bomb", 32, 715, 32, 32, 0, 0, SDL_FLIP_NONE);
+    TextureManager::GetInstance()->DrawIcon("bomb", 590, 715, 32, 32, 0, 0, SDL_FLIP_NONE);
+
+    std::string p1BombStr = "Bombs: " + std::to_string(player1->GetBomb()) + "/3";
+    std::string p2BombStr = "Bombs: " + std::to_string(player2->GetBomb()) + "/3";
+    UILabel p1Bomb(76, 715, p1BombStr, "arialbold", color);
+    UILabel p2Bomb(480, 715, p2BombStr, "arialbold", color);
+
+    std::string p1BombColStr = "Bomb Parts: " + std::to_string(player1->GetBombCol()) + "/2";
+    std::string p2BombColStr = "Bomb Parts: " + std::to_string(player2->GetBombCol()) + "/2";
+    UILabel p1BombCol(76, 730, p1BombColStr, "arialbold", color);
+    UILabel p2BombCol(480, 730, p2BombColStr, "arialbold", color);
+
+    p1Bomb.draw();
+    p2Bomb.draw();
+    p1BombCol.draw();
+    p2BombCol.draw();
 
     // Render Map
     m_LevelMap->Render();
