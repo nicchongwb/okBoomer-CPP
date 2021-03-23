@@ -47,6 +47,7 @@ public:
 	void getBombedAnimation();
 	void getCurrentAnimation();
 	void bombCountdown();
+	void placeBombCountdown();
 
 
 private:
@@ -62,7 +63,8 @@ private:
 	int m_bombCollectable; // Amount of bomb collectables; Note: 2 bombCollectables = 1 bomb part
 	int m_Health, m_Speed;
 
-	bool m_getBombed;
+	bool m_getBombed, m_putBomb, m_bombPlaced;
+	int m_bombx, m_bomby;
 
 };
 #endif // PLAYER_H

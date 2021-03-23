@@ -3,9 +3,9 @@
 #include "Animation.h"
 #include "IOHandler.h"
 #include "Board.h"
+#include "BombPlanted.h"
 #include <SDL.h>
 #include <iostream>
-#include <windows.h>
 #include <time.h>
 
 /* Player class. Each Player object represents
@@ -23,6 +23,7 @@ int Player::s_p1facing = 1;
 int Player::s_p2facing = 0;
 bool Player::s_countdown = false;
 long Player::s_start;
+BombPlanted* bombplanted = nullptr;
 
 int X, Y;
 
@@ -42,6 +43,10 @@ Player::Player(Properties * props): Creature(props) {
     m_bombCollectable = DEFAULT_BOMBCOLLECTABLE;
 
     m_getBombed = false;
+    m_putBomb = false;
+    m_bombPlaced = false;
+    m_bombx;
+    m_bomby;
 
 	// Set Player 1 animation
 	if (props->TextureID == "player1") {
@@ -53,13 +58,17 @@ Player::Player(Properties * props): Creature(props) {
 	// Set Player 2 animation
 	else if (props->TextureID=="player2"){
         m_Animation->SetProperties(m_TextureID, 3, 0, 3, 500, SDL_FLIP_NONE);
-      
 	}
 }
 
 // Draw player to screen
 void Player::Draw() {
-	m_Animation->Draw(m_Transform->X, m_Transform->Y, m_Width, m_Height);
+    if (m_putBomb && !m_getBombed) {
+        Player::placeBombCountdown();
+        bombplanted = new BombPlanted(new Properties("bomb", m_bombx, m_bomby, m_Width, m_Height));
+        bombplanted->Draw();
+    }
+    m_Animation->Draw(m_Transform->X, m_Transform->Y, m_Width, m_Height);
 }
 
 // Update player animation & position on the screen
@@ -148,6 +157,18 @@ void Player::getCurrentAnimation() {
         if (s_p2facing == 3) {
             m_Animation->SetProperties(m_TextureID, 2, 0, 3, 500, SDL_FLIP_NONE);
         }
+    }
+}
+
+void Player::placeBombCountdown() {
+    if (m_putBomb && !s_countdown) {
+        s_countdown = true;
+        clock_t now = clock();
+        s_start = now;
+    }
+    if (s_start + 500 < clock()) { //set animations for 0.5s
+        m_putBomb = false;
+        s_countdown = false;
     }
 }
 
@@ -447,12 +468,16 @@ void Player::plantBomb()
 {
     if (this->m_bombHeld > 0) {
         this->m_bombHeld -= 1;
+        //m_putBomb = true;
         printf("Player %d's bomb left: %d\n", m_pid + 1, this->m_bombHeld);
     }
     else {
         printf("Player %d's bomb left: %d\n", m_pid + 1, this->m_bombHeld);
         printf("No more bombs left!\n");
     }
+    m_putBomb = true;
+    m_bombx = X;
+    m_bomby = Y;
    
 }
 
