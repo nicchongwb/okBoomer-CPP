@@ -1,8 +1,9 @@
 #include "BombPlanted.h"
+#include "Animation.h"
 
 
 BombPlanted::BombPlanted(Properties* props) : Item(props) {
-
+	
 }
 // Draw Bomb Item to screen
 void BombPlanted::Draw() {

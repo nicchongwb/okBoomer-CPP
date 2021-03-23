@@ -67,6 +67,7 @@ void Player::Draw() {
         Player::placeBombCountdown();
         bombplanted = new BombPlanted(new Properties("bomb", m_bombx, m_bomby, m_Width, m_Height));
         bombplanted->Draw();
+
     }
     m_Animation->Draw(m_Transform->X, m_Transform->Y, m_Width, m_Height);
 }
@@ -166,7 +167,7 @@ void Player::placeBombCountdown() {
         clock_t now = clock();
         s_start = now;
     }
-    if (s_start + 500 < clock()) { //set animations for 0.5s
+    if (s_start + 1000 < clock()) { //set animations for 1s
         m_putBomb = false;
         s_countdown = false;
     }

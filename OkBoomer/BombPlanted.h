@@ -6,6 +6,8 @@
 
 #include "Item.h"
 #include "TextureManager.h"
+#include "Animation.h"
+#include "DrawManager.h"
 
 
 class BombPlanted : public Item {
@@ -18,8 +20,7 @@ public:
 	virtual void Update(float dt);
 
 private:
-
-	//TextureManager* m_BombItemTextureM;
+	TextureManager* m_BombItemTextureM;
 };
 
 #endif // BOMBPLANTED_H
