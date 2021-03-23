@@ -32,15 +32,27 @@ public:
 	int GetBombCol();
 
 	static int s_PlayerCount; // playerCount initialised to 0 inside class file
-	static bool s_AlrPressedP1; // static variables for checking if key is already held down
+
+	// static variables for checking if key is already held down
+	static bool s_AlrPressedP1; 
 	static bool s_AlrPressedP2;
+
+	// variables for player animations
+	static int s_p1facing;
+	static int s_p2facing;
+	static bool s_countdown;
+	static long s_start;
 
 	// Player bomb interaction
 	void collectBomb();
-	
 	void plantBomb();
-
 	void takeDamage();
+
+	// Player animations for when player interacts with bomb
+	void getBombedAnimation();
+	void getCurrentAnimation();
+	void bombCountdown();
+	void placeBombCountdown();
 
 private:
 	// Initialise variables for animation purposes
@@ -54,6 +66,10 @@ private:
 	int m_bombHeld; // Amount of bombs held
 	int m_bombCollectable; // Amount of bomb collectables; Note: 2 bombCollectables = 1 bomb part
 	int m_Health, m_Speed;
+
+	// variables for player animations (when player bombed)
+	bool m_getBombed, m_putBomb, m_bombPlaced;
+	int m_bombx, m_bomby;
 
 };
 #endif // PLAYER_H

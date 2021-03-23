@@ -42,7 +42,7 @@ bool Game::Init() {
         printf("Failded to initialize TTL: %s", TTF_GetError());
     }
     // load font
-    TextureManager::GetInstance()->AddFont("arialbold", "arialbd.ttf", 13);
+    TextureManager::GetInstance()->AddFont("arialbold", "res/fonts/arialbd.ttf", 13);
 
     // create SDL window
     m_Window = SDL_CreateWindow("OkBoomer", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREN_HEIGHT, 0);
@@ -149,9 +149,6 @@ void Game::Render() {
 
     // Render Map
     m_LevelMap->Render();
-
-    // Example of using Draw to draw item to the map: (see TextureManager.cpp for more info on fields)
-    // TextureManager::GetInstance()->Draw("bomb", 64, 64, 32, 32, 0, 0);
 
     player1->Draw();
     player2->Draw();

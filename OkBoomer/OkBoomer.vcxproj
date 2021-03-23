@@ -72,8 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\CPP_Libraries\SDL2-2.0.14\include;C:\CPP_Libraries\SDL2_image-2.0.5\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\CPP_Libraries\SDL2-2.0.14\lib\x86;C:\CPP_Libraries\SDL2_image-2.0.5\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\CPP_Libraries\SDL2-2.0.14\include;C:\CPP_Libraries\SDL2_image-2.0.5\include;C:\CPP_Libraries\SDL2_ttf-devel-2.0.15-VC\SDL2_ttf-2.0.15\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\CPP_Libraries\SDL2-2.0.14\lib\x86;C:\CPP_Libraries\SDL2_image-2.0.5\lib\x86;C:\CPP_Libraries\SDL2_ttf-devel-2.0.15-VC\SDL2_ttf-2.0.15\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -148,6 +148,7 @@
   <ItemGroup>
     <ClCompile Include="Animation.cpp" />
     <ClCompile Include="Board.cpp" />
+    <ClCompile Include="BombPlanted.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="IOHandler.cpp" />
     <ClCompile Include="Item.cpp" />
@@ -169,6 +170,7 @@
     <ClInclude Include="Animation.h" />
     <ClInclude Include="Board.h" />
     <ClInclude Include="BombCollectable.h" />
+    <ClInclude Include="BombPlanted.h" />
     <ClInclude Include="Creature.h" />
     <ClInclude Include="DrawManager.h" />
     <ClInclude Include="Entity.h" />
