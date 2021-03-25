@@ -6,6 +6,7 @@
 #include "Creature.h"
 #include "Animation.h"
 #include "DrawManager.h"
+#include "BombPlanted.h"
 
 #define DEFAULT_BOMBHELD 3
 #define MAX_BOMBHELD 3 // max number of bombs players can hold onto at one go
@@ -52,7 +53,7 @@ public:
 	void getBombedAnimation();
 	void getCurrentAnimation();
 	void bombCountdown();
-	void placeBombCountdown();
+	void placeBombCountdown(BombPlanted bombPlanted);
 
 private:
 	// Initialise variables for animation purposes

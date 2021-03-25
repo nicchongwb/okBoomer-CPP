@@ -27,6 +27,7 @@ int Player::s_p2facing = 0;
 bool Player::s_countdown = false;
 long Player::s_start;
 BombPlanted* bombplanted = nullptr;
+std::vector <BombPlanted> * s_PlantedBombList = nullptr;
 
 int X, Y;
 // Constructor for Player
@@ -67,8 +68,8 @@ Player::Player(Properties * props): Creature(props) {
 // Draw player to screen
 void Player::Draw() {
     if (m_putBomb && !m_getBombed) {
-        Player::placeBombCountdown();
-        bombplanted = new BombPlanted(new Properties("bomb", m_bombx, m_bomby + YOFFSET, m_Width, m_Height));
+        
+        Player::placeBombCountdown(*bombplanted);
         bombplanted->Draw();
 
     }
@@ -169,16 +170,22 @@ void Player::getCurrentAnimation() {
 }
 
 // animation for when bomb is planted
-void Player::placeBombCountdown() {
+void Player::placeBombCountdown(BombPlanted bombPlanted) {
+
+    SDL_Texture* bombTexture = TextureManager::GetInstance()->GetTexture(bombPlanted.GetBombPlantedTextureName());
+
     if (m_putBomb && !s_countdown) {
         s_countdown = true;
+
         clock_t now = clock();
         s_start = now;
+
     }
     if (s_start + 1000 < clock()) { //set animations for 1s
         m_putBomb = false;
         s_countdown = false;
     }
+
 }
 
 void Player::bombCountdown() {
@@ -207,6 +214,8 @@ void Player::GetInput() {
     // temp variables for Board newX and newY
     int nextX = X;
     int nextY = Y;
+    newX = X;
+    newY = Y;
 
     if (m_pid == 0) {
         
@@ -219,6 +228,7 @@ void Player::GetInput() {
 
                 if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY)) 
                 {
+                    newY -= m_Speed; // private 'global' coordinate for other methods to use (like takeDamage())
                     std::cout << "Player 1: "; m_Transform->Log();
                     m_DrawManager->ApplyForceY(-m_Speed);
 
@@ -243,6 +253,7 @@ void Player::GetInput() {
 
                 if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY))
                 {
+                    newY += m_Speed; // private 'global' coordinate for other methods to use (like takeDamage())
                     std::cout << "Player 1: "; m_Transform->Log();
                     m_DrawManager->ApplyForceY(m_Speed);
 
@@ -263,12 +274,12 @@ void Player::GetInput() {
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_A)) {
 
             if (!s_AlrPressedP1) {
-                //SDL_Log("Key A pushed.");
 
                 nextX -= m_Speed; // set temp value
 
                 if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY)) 
                 {
+                    newX -= m_Speed; // private 'global' coordinate for other methods to use (like takeDamage())
                     std::cout << "Player 1: "; m_Transform->Log();
                     m_DrawManager->ApplyForceX(-m_Speed);
 
@@ -289,12 +300,12 @@ void Player::GetInput() {
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_D)) {
 
             if (!s_AlrPressedP1) {
-                //SDL_Log("Key D pushed.");
 
                 nextX += m_Speed; // set temp value
 
                 if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY))
                 {
+                    newX += m_Speed; // private 'global' coordinate for other methods to use (like takeDamage())
                     std::cout << "Player 1: "; m_Transform->Log();
                     m_DrawManager->ApplyForceX(m_Speed);
 
@@ -316,7 +327,6 @@ void Player::GetInput() {
 
             if (!s_AlrPressedP1) 
             {
-                //SDL_Log("Key G pushed.");
 
                 if (Board::GetInstance()->canPlayerPlant(m_pid, X, Y))
                 {
@@ -347,6 +357,7 @@ void Player::GetInput() {
 
                 if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY))
                 {
+                    newY -= m_Speed; // private 'global' coordinate for other methods to use (like takeDamage())
                     std::cout << "Player 2: "; m_Transform->Log();
                     m_DrawManager->ApplyForceY(-m_Speed);
 
@@ -371,6 +382,7 @@ void Player::GetInput() {
 
                 if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY))
                 {
+                    newY += m_Speed; // private 'global' coordinate for other methods to use (like takeDamage())
                     std::cout << "Player 2: "; m_Transform->Log();
                     m_DrawManager->ApplyForceY(m_Speed);
 
@@ -395,6 +407,7 @@ void Player::GetInput() {
 
                 if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY))
                 {
+                    newX -= m_Speed; // private 'global' coordinate for other methods to use (like takeDamage())
                     std::cout << "Player 2: "; m_Transform->Log();
                     m_DrawManager->ApplyForceX(-m_Speed);
 
@@ -417,6 +430,7 @@ void Player::GetInput() {
                 nextX += m_Speed; // set temp value
                 if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY))
                 {
+                    newX += m_Speed; // private 'global' coordinate for other methods to use (like takeDamage())
                     std::cout << "Player 2: "; m_Transform->Log();
                     m_DrawManager->ApplyForceX(m_Speed);
 
@@ -506,10 +520,23 @@ void Player::plantBomb()
     m_bombx = X;
     m_bomby = Y;
    
+    bombplanted = new BombPlanted(new Properties("bomb", m_bombx, m_bomby + YOFFSET, m_Width, m_Height));
+    s_PlantedBombList = Game::GetInstance()->GetBombPlantedList();
+    auto iter = s_PlantedBombList->begin(); // 'iter' is an iterator object that points the elements in PlantedBombLIst
+    s_PlantedBombList->insert(iter, *bombplanted); // insert planted bomb object into vector array
+
 }
 
 void Player::takeDamage()
 {
+    // erase Planted Bomb from PlantedBombList vector array so that
+    // it will stop rendering
+    for (int i = 0; i < s_PlantedBombList->size(); i++) {
+        if (s_PlantedBombList->at(i).getItemX() == newX && s_PlantedBombList->at(i).getItemY() == newY +YOFFSET) {
+            s_PlantedBombList->erase(s_PlantedBombList->begin()+i);
+            break;
+       }
+    }
     m_Health -= 1;
     m_getBombed = true;
     printf("Player %d's m_Health left: %d\n", m_pid + 1, m_Health);

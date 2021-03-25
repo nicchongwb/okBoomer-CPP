@@ -8,6 +8,7 @@
 #include <SDL_ttf.h>
 #include "GameMap.h"
 #include "BombCollectable.h"
+#include "BombPlanted.h"
 
 /* GAME.H AND GAME.CPP CONTAINS GAME LOOP METHODS */
 
@@ -43,6 +44,8 @@ public:
 
     // Maintain one instance of the number of bomb items spawned on the map.
     std::vector<BombCollectable>* GetBombItemList();
+    // Maintain one instance of the planted bombs on the map
+    std::vector<BombPlanted>* GetBombPlantedList();
 
     inline bool IsRunning() { return m_IsRunning; }
     // To render SDL window

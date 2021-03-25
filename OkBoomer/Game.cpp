@@ -6,6 +6,7 @@
 #include "MapParser.h"
 #include "Board.h"
 #include "BombCollectable.h"
+#include "BombPlanted.h"
 #include "ItemTimer.h"
 #include "SDL_ttf.h"
 #include "UILabel.h"
@@ -23,7 +24,9 @@ Game * Game::s_Instance = nullptr;
 Player * player1 = nullptr;
 Player * player2 = nullptr;
 std::vector <BombCollectable> * s_bombItemList = nullptr; // we only have one copy of bombItemList at all times.
+std::vector <BombPlanted>* s_bombPlantedList = nullptr;
 BombCollectable * bombItem = nullptr;
+BombPlanted* bombPlanted = nullptr;
 ItemTimer * itemTimer = nullptr;
 
 bool Game::Init() {
@@ -85,6 +88,9 @@ bool Game::Init() {
     // Initialise bomb collectable item vector list
     bombItem = new BombCollectable(new Properties("bomb", 0, 0, 32, 32));
     s_bombItemList = bombItem->getListOfSpawnedBombs();
+
+    bombPlanted = new BombPlanted(new Properties("bomb", 0, 0, 32, 32));
+    s_bombPlantedList = bombPlanted->getListOfPlantedBombs();
 
     itemTimer = new ItemTimer();
 
@@ -156,6 +162,9 @@ void Game::Render() {
     for (int i = 0; i < s_bombItemList->size(); i++) {
         s_bombItemList->at(i).Draw();
     }
+    for (int i = 0; i < s_bombPlantedList->size(); i++) {
+        s_bombPlantedList->at(i).Draw();
+    }
     SDL_RenderPresent(m_Renderer);
 
 }
@@ -199,6 +208,10 @@ void Game::PlantBomb(int m_pid)
 // Used by Board.cpp to get the s_BombItemList
 std::vector<BombCollectable>* Game::GetBombItemList() {
     return s_bombItemList;
+}
+// Used by Player.cpp to get s_bombPlantedList
+std::vector<BombPlanted>* Game::GetBombPlantedList() {
+    return s_bombPlantedList;
 }
 
 void Game::SpawnItem()

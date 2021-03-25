@@ -20,6 +20,8 @@ class TextureManager
         void Drop(std::string id);
         void Clean();
         
+        // Return SDL_Texture from string id;
+        SDL_Texture* GetTexture(std::string id);
         // Draw from image to x to y.
         void Draw(std::string id, int x, int y, int width, int height, int row, int col, SDL_RendererFlip flip=SDL_FLIP_NONE);
         void DrawIcon(std::string id, int x, int y, int width, int height, int row, int col, SDL_RendererFlip flip = SDL_FLIP_NONE);

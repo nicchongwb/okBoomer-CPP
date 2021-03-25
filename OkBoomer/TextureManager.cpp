@@ -25,6 +25,10 @@ bool TextureManager::Load(std::string id, std::string filename){
     return true;
 }
 
+// Get texture from string id
+SDL_Texture* TextureManager::GetTexture(std::string id) {
+    return m_TextureMap[id];
+}
 // Draw from image on screen
 void TextureManager::Draw(std::string id, int x, int y, int width, int height, int row, int col, SDL_RendererFlip flip){
     /* x and y will be the location to draw the image.

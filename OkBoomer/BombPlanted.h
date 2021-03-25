@@ -3,11 +3,13 @@
 #ifndef BOMBPLANTED_H
 #define BOMBPLANTED_H
 
+#define FADE_SPEED 0.07f;
 
 #include "Item.h"
 #include "TextureManager.h"
 #include "Animation.h"
 #include "DrawManager.h"
+#include <vector>
 
 /* The BombPlanted class represents the planted bomb object
 *  placed down by a player. BombPlanted inherits Item.
@@ -22,8 +24,18 @@ public:
 	virtual void Clean();
 	virtual void Update(float dt);
 
+	Uint8 alpha = 255;
+	float alphaCalc = 0;
+
+	std::string GetBombPlantedTextureName() { return this->textureName; }
+	std::vector <BombPlanted>* getListOfPlantedBombs() { return &s_PlantedBombList; };
+	
+
 private:
-	TextureManager* m_BombItemTextureM;
+	SDL_Texture * m_PlantedBombTexture = TextureManager::GetInstance()->GetTexture("bomb");
+	std::vector <BombPlanted> s_PlantedBombList;
+	int bombID = 0;
+	std::string textureName = "bomb";
 };
 
 #endif // BOMBPLANTED_H
