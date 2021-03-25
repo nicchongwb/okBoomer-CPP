@@ -106,6 +106,11 @@ void Game::Update() {
     player1->Update(0);
     player2->Update(0);
     m_LevelMap->Update();
+
+    for (int i = 0; i < s_bombPlantedList->size(); i++) {
+        s_bombPlantedList->at(i).Update(0);
+    }
+
     SpawnItem();
 
 }
@@ -162,6 +167,11 @@ void Game::Render() {
     for (int i = 0; i < s_bombItemList->size(); i++) {
         s_bombItemList->at(i).Draw();
     }
+
+    //if (s_bombPlantedList->size() > 0) {
+    //    s_bombPlantedList->at(0).Draw();
+    //}
+    
     for (int i = 0; i < s_bombPlantedList->size(); i++) {
         s_bombPlantedList->at(i).Draw();
     }

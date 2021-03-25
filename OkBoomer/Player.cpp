@@ -69,9 +69,9 @@ Player::Player(Properties * props): Creature(props) {
 void Player::Draw() {
     if (m_putBomb && !m_getBombed) {
         
-        Player::placeBombCountdown(*bombplanted);
-        bombplanted->Draw();
-
+        /*Player::placeBombCountdown(*bombplanted);
+        bombplanted->Draw();*/
+        //m_Animation->Draw()
     }
     m_Animation->Draw(m_Transform->X, m_Transform->Y + YOFFSET, m_Width, m_Height);
 }

@@ -10,6 +10,7 @@
 #include "Animation.h"
 #include "DrawManager.h"
 #include <vector>
+#include <thread>
 
 /* The BombPlanted class represents the planted bomb object
 *  placed down by a player. BombPlanted inherits Item.
@@ -24,18 +25,18 @@ public:
 	virtual void Clean();
 	virtual void Update(float dt);
 
-	Uint8 alpha = 255;
-	float alphaCalc = 0;
-
 	std::string GetBombPlantedTextureName() { return this->textureName; }
 	std::vector <BombPlanted>* getListOfPlantedBombs() { return &s_PlantedBombList; };
-	
+
+	static int s_bombID;
 
 private:
-	SDL_Texture * m_PlantedBombTexture = TextureManager::GetInstance()->GetTexture("bomb");
+	SDL_Texture * m_PlantedBombTexture;
 	std::vector <BombPlanted> s_PlantedBombList;
-	int bombID = 0;
-	std::string textureName = "bomb";
+	std::string textureName;
+	Animation* m_BombAnimation;
+
+	
 };
 
 #endif // BOMBPLANTED_H
