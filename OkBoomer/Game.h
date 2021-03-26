@@ -24,8 +24,18 @@ public:
         return s_Instance = (s_Instance != nullptr) ? s_Instance : new Game();
     }
 
+    static bool gameOver;
+    static bool playAgain;
+    static bool whoWins;
+
+    // static variables for checking if key is already held down
+    static bool s_AlrPressedSpace;
+   
+
     // Game loop methods
     bool Init();
+    bool getPlayAgain();
+    bool getWhoWins();
     bool Clean();
     void Quit();
 

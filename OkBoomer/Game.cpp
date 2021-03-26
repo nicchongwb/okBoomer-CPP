@@ -1,4 +1,5 @@
 #include "Game.h"
+#include "Menu.h"
 #include "TextureManager.h"
 #include "Transform.h"
 #include "Player.h"
@@ -20,6 +21,12 @@
 *  Header file is Game.h
 */
 
+bool Game::gameOver = false;
+bool Game::playAgain = false;
+//True = Player1 wins, False= Player 2 wins
+bool Game::whoWins;
+bool Game::s_AlrPressedSpace = false;
+
 Game * Game::s_Instance = nullptr;
 Player * player1 = nullptr;
 Player * player2 = nullptr;
@@ -28,6 +35,8 @@ std::vector <BombPlanted>* s_bombPlantedList = nullptr;
 BombCollectable * bombItem = nullptr;
 BombPlanted* bombPlanted = nullptr;
 ItemTimer * itemTimer = nullptr;
+
+
 
 bool Game::Init() {
     
@@ -81,6 +90,7 @@ bool Game::Init() {
     Board::GetInstance()->initBoard();
     Board::GetInstance()->consoleBoard();
 
+
     // draws player1 to 0, 0.
     player1 = new Player(new Properties("player1", 0, 0, 32, 32));
     player2 = new Player(new Properties("player2", 576, 576, 32, 32));
@@ -110,19 +120,64 @@ void Game::Update() {
 
 }
 
+//check playAgain status for start menu display
+bool Game::getPlayAgain() {
+    return playAgain;
+}
+
+//check winner status for gameover menu display
+bool Game::getWhoWins() {
+    return whoWins;
+}
+
 void Game::Render() {
     
+    //Screen for Game State
     // Setting screen colour
     SDL_SetRenderDrawColor(m_Renderer, 13, 165, 149, 255);
+   
     SDL_RenderClear(m_Renderer);
 
+    /*Check if Game Over*/
+    int player1Health = player1->GetHealth();
+    int player2Health = player2->GetHealth();
+
+    if (player1Health == 0) {
+        Game::Clean();
+        gameOver = true;
+        whoWins = false;
+        player1Health += 10;
+
+    }
+    if (player2Health == 0) {
+        Game::Clean();
+        gameOver = true;
+        whoWins = true;
+        player2Health += 10;
+       
+    }
+
+    //go to menu(gameover) screen
+    if (gameOver == true) {
+        gameOver = false;
+        playAgain = true;
+        Game::Clean();
+        Game::Quit();
+        Menu::GetInstance()->Init();
+        //Display Menu
+        while (Menu::GetInstance()->IsRunning()) {
+            Game::GetInstance()->Events();
+            Menu::GetInstance()->Render();
+        }
+    }
+  
     /* Scoreboard Section */
     TextureManager::GetInstance()->DrawIcon("player1", 32, 15, 32, 32, 4, 3, SDL_FLIP_NONE);
     TextureManager::GetInstance()->DrawIcon("player2", 576, 15, 32, 32, 0, 0, SDL_FLIP_NONE);
 
     SDL_Color color = { 255, 255, 255 };
-    UILabel p1Name(76, 15, "Player 1", "arialbold", color);
-    UILabel p2Name(480, 15, "Player 2", "arialbold", color);
+    UILabel p1Name(76, 15, "Luke Skywalker", "arialbold", color);
+    UILabel p2Name(480, 15, "Yoda", "arialbold", color);
 
     std::string p1HealthStr = "Health: " + std::to_string(player1->GetHealth()) + "/10";
     std::string p2HealthStr = "Health: " + std::to_string(player2->GetHealth()) + "/10";
@@ -155,6 +210,7 @@ void Game::Render() {
 
     // Render Map
     m_LevelMap->Render();
+
 
     player1->Draw();
     player2->Draw();

@@ -537,7 +537,7 @@ void Player::takeDamage()
             break;
        }
     }
-    m_Health -= 1;
+    m_Health -= 10;
     m_getBombed = true;
     printf("Player %d's m_Health left: %d\n", m_pid + 1, m_Health);
 }

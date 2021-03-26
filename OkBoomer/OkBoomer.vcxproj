@@ -72,8 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\CPP_Libraries\SDL2-2.0.14\include;C:\CPP_Libraries\SDL2_image-2.0.5\include;C:\CPP_Libraries\SDL2_ttf-devel-2.0.15-VC\SDL2_ttf-2.0.15\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\CPP_Libraries\SDL2-2.0.14\lib\x86;C:\CPP_Libraries\SDL2_image-2.0.5\lib\x86;C:\CPP_Libraries\SDL2_ttf-devel-2.0.15-VC\SDL2_ttf-2.0.15\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\CPP_libraries\SDL2_image-2.0.5\include;C:\CPP_libraries\SDL2_ttf-2.0.15\include;C:\CPP_libraries\SDL2-2.0.14\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\CPP_libraries\SDL2_image-2.0.5\lib\x86;C:\CPP_libraries\SDL2_ttf-2.0.15\lib\x86;C:\CPP_libraries\SDL2-2.0.14\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -156,6 +156,7 @@
     <ClCompile Include="Launcher.cpp" />
     <ClCompile Include="Layer.cpp" />
     <ClCompile Include="MapParser.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="BombCollectable.cpp" />
     <ClCompile Include="TextureManager.cpp" />
@@ -182,6 +183,7 @@
     <ClInclude Include="Layer.h" />
     <ClInclude Include="GameMap.h" />
     <ClInclude Include="MapParser.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Tile.h" />
     <ClInclude Include="TileLayer.h" />
