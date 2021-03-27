@@ -80,7 +80,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>C:\Dev\SDL2-2.0.14\lib\x86;C:\Dev\SDL2_image-2.0.5\lib\x86;$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\vclib\SDL2_image-2.0.5\lib\x64;C:\vclib\SDL2_mixer-2.0.4\lib\x64;C:\vclib\SDL2_ttf-2.0.14\lib\x64;C:\vclib\SDL2-2.0.14\lib\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\vclib\SDL2_image-2.0.5\include;C:\vclib\SDL2_mixer-2.0.4\include;C:\vclib\SDL2_ttf-2.0.14\include;C:\vclib\SDL2-2.0.14\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -126,7 +127,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -159,6 +160,7 @@
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="BombCollectable.cpp" />
+    <ClCompile Include="Sound.cpp" />
     <ClCompile Include="TextureManager.cpp" />
     <ClCompile Include="TileLayer.cpp" />
     <ClCompile Include="tinystr.cpp" />
@@ -185,6 +187,7 @@
     <ClInclude Include="MapParser.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="Sound.h" />
     <ClInclude Include="Tile.h" />
     <ClInclude Include="TileLayer.h" />
     <ClInclude Include="tinystr.h" />

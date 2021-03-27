@@ -1,0 +1,2 @@
+C:\Users\cocov\source\repos\okboomer6\OkBoomer\x64\Debug\OkBoomer.exe
+C:\Users\cocov\source\repos\okboomer6\OkBoomer\x64\Debug\OkBoomer.pdb

@@ -7,7 +7,8 @@
 #include <SDL.h>
 #include <iostream>
 #include <time.h>
-
+//#include "Sound.h"
+#include "Sound.h"
 #define YOFFSET 60
 
 /* Player class. Each Player object represents
@@ -194,7 +195,7 @@ void Player::bombCountdown() {
         clock_t now = clock();
         s_start = now;
     }
-    if (s_start + 2500 < clock()) { //set animations for 2.5s
+    if (s_start + 1500 < clock()) { //set animations for 1.5s
         m_getBombed = false;
         s_countdown = false;
     }
@@ -450,7 +451,7 @@ void Player::GetInput() {
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_COMMA)) {
             if (!s_AlrPressedP2)
             {
-
+                
                 if (Board::GetInstance()->canPlayerPlant(m_pid, X, Y))
                 {
                     if (this->m_bombHeld > 0)
@@ -502,6 +503,7 @@ void Player::collectBomb()
             m_bombHeld += 1;
         }
     }
+    playcollectsound();
     std::cout << m_pid+1 << ": BOMB HELD, BOMB PART: " << m_bombHeld << " , " << m_bombCollectable << std::endl;
 }
 
@@ -515,7 +517,7 @@ void Player::plantBomb()
         printf("Player %d's bomb left: %d\n", m_pid + 1, this->m_bombHeld);
         printf("No more bombs left!\n");
     }
-
+    playdropsound();
     m_putBomb = true;
     m_bombx = X;
     m_bomby = Y;
@@ -537,7 +539,8 @@ void Player::takeDamage()
             break;
        }
     }
-    m_Health -= 10;
+    playbombsound();
+    m_Health -= 1;
     m_getBombed = true;
     printf("Player %d's m_Health left: %d\n", m_pid + 1, m_Health);
 }
