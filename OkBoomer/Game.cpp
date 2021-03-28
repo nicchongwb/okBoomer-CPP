@@ -53,7 +53,7 @@ bool Game::Init() {
     TextureManager::GetInstance()->AddFont("arialbold", "res/fonts/arialbd.ttf", 13);
 
     // create SDL window
-    m_Window = SDL_CreateWindow("OkBoomer", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREN_HEIGHT, 0);
+    m_Window = SDL_CreateWindow("OkBoomer", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREN_HEIGHT, SDL_WINDOW_BORDERLESS);
     
     if (m_Window == nullptr) {
         SDL_Log("Failed to create Window: %s", SDL_GetError());
@@ -169,7 +169,7 @@ void Game::Render() {
         Menu::GetInstance()->Init();
         //Display Menu
         while (Menu::GetInstance()->IsRunning()) {
-            Game::GetInstance()->Events();
+            Menu::GetInstance()->Events();
             Menu::GetInstance()->Render();
         }
     }
@@ -338,7 +338,7 @@ bool Game::Clean() {
     SDL_DestroyWindow(m_Window);
     IMG_Quit();
     SDL_Quit();
-    Mix_Quit();
+    //Mix_Quit();
     return true;
 }
 

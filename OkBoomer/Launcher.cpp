@@ -9,7 +9,7 @@ int main(int argc, char** argv) {
 
     //Display Menu
     while (Menu::GetInstance()->IsRunning()) {
-        Game::GetInstance()->Events();
+        Menu::GetInstance()->Events();
         Menu::GetInstance()->Render();
     }
     // When program exits, clean up memory

@@ -456,6 +456,11 @@ void Player::GetInput() {
 
         }
 
+        //exit program when esc key is pressed
+        if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_ESCAPE)) {
+            exit(1);
+        }
+
     }
 
 }

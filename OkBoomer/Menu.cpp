@@ -13,7 +13,7 @@
 #include "UILabel.h"
 
 #include <iostream>
-#include <SDL_mixer.h>
+//#include <SDL_mixer.h>
 
 #define YOFFSET 60
 
@@ -49,7 +49,7 @@ bool Menu::Init() {
     //TextureManager::GetInstance()->AddFont("arialbold", "res/fonts/arialbd.ttf", 13);
 
     // create SDL window
-    m_Window = SDL_CreateWindow("OkBoomer", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREN_HEIGHT, 0);
+    m_Window = SDL_CreateWindow("OkBoomer", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREN_HEIGHT, SDL_WINDOW_BORDERLESS);
 
     if (m_Window == nullptr) {
         SDL_Log("Failed to create Window: %s", SDL_GetError());
@@ -190,7 +190,7 @@ bool Menu::Clean() {
     SDL_DestroyWindow(m_Window);
     IMG_Quit();
     SDL_Quit();
-    Mix_Quit();
+   // Mix_Quit();
 
     return true;
 }

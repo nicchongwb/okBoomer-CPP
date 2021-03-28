@@ -1,7 +1,29 @@
-﻿  ItemTimer.cpp
-  Player.cpp
-C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Player.cpp(70,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Player.cpp(70,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Player.cpp(522,23): warning C4018: '<': signed/unsigned mismatch
+﻿  Player.cpp
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Player.cpp(70,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Player.cpp(70,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Player.cpp(522,23): warning C4018: '<': signed/unsigned mismatch
+  BombCollectable.cpp
+  Sound.cpp
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Sound.cpp(12,25): error C2065: 'dropeffect': undeclared identifier
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Sound.cpp(12,5): error C3861: 'Mix_PlayChannel': identifier not found
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Sound.cpp(20,25): error C2065: 'bombeffect': undeclared identifier
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Sound.cpp(20,5): error C3861: 'Mix_PlayChannel': identifier not found
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Sound.cpp(28,25): error C2065: 'collecteffect': undeclared identifier
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Sound.cpp(28,5): error C3861: 'Mix_PlayChannel': identifier not found
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Sound.cpp(38,9): error C3861: 'Mix_OpenAudio': identifier not found
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Sound.cpp(42,13): error C3861: 'Mix_GetError': identifier not found
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Sound.cpp(47,5): error C2065: 'dropeffect': undeclared identifier
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Sound.cpp(47,18): error C3861: 'Mix_LoadWAV': identifier not found
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Sound.cpp(48,9): error C2065: 'dropeffect': undeclared identifier
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Sound.cpp(52,13): error C3861: 'Mix_GetError': identifier not found
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Sound.cpp(56,4): error C2065: 'bombeffect': undeclared identifier
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Sound.cpp(56,17): error C3861: 'Mix_LoadWAV': identifier not found
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Sound.cpp(57,9): error C2065: 'bombeffect': undeclared identifier
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Sound.cpp(61,13): error C3861: 'Mix_GetError': identifier not found
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Sound.cpp(65,5): error C2065: 'collecteffect': undeclared identifier
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Sound.cpp(65,21): error C3861: 'Mix_LoadWAV': identifier not found
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Sound.cpp(66,9): error C2065: 'collecteffect': undeclared identifier
+C:\Users\raina\Desktop\school\ICT1009\c++\ICT1009_Game\OkBoomer\Sound.cpp(70,13): error C3861: 'Mix_GetError': identifier not found
+  TextureManager.cpp
+  UILabel.cpp
   Generating Code...
-  OkBoomer.vcxproj -> C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Debug\OkBoomer.exe
