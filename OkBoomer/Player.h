@@ -53,7 +53,8 @@ public:
 	void getBombedAnimation();
 	void getCurrentAnimation();
 	void bombCountdown();
-	void placeBombCountdown(BombPlanted bombPlanted);
+	//void placeBombCountdown(BombPlanted bombPlanted);
+	//void placeBombCountdown();
 
 private:
 	// Initialise variables for animation purposes

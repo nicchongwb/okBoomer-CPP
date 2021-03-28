@@ -28,6 +28,7 @@ std::vector <BombPlanted>* s_bombPlantedList = nullptr;
 BombCollectable * bombItem = nullptr;
 BombPlanted* bombPlanted = nullptr;
 ItemTimer * itemTimer = nullptr;
+bool isBombPlanted = false;
 
 bool Game::Init() {
     
@@ -107,12 +108,11 @@ void Game::Update() {
     player2->Update(0);
     m_LevelMap->Update();
 
+
     for (int i = 0; i < s_bombPlantedList->size(); i++) {
         s_bombPlantedList->at(i).Update(0);
     }
-
     SpawnItem();
-
 }
 
 void Game::Render() {
@@ -171,10 +171,25 @@ void Game::Render() {
     //if (s_bombPlantedList->size() > 0) {
     //    s_bombPlantedList->at(0).Draw();
     //}
-    
-    for (int i = 0; i < s_bombPlantedList->size(); i++) {
-        s_bombPlantedList->at(i).Draw();
+
+    if (isBombPlanted == true) {
+        s_bombPlantedList->at(0).Draw();
+
+        // without this the bomb will loop
+        if (!s_countdown) {
+            s_countdown = true;
+
+            clock_t now = clock();
+            s_start = now;
+        }
+        if (s_start + 1000 < clock()) { //set animations for 1s
+            s_countdown = false;
+            isBombPlanted = false;
+        }
     }
+
+
+
     SDL_RenderPresent(m_Renderer);
 
 }
@@ -209,9 +224,13 @@ void Game::PlantBomb(int m_pid)
 {
     if (m_pid == 1) {
         player1->plantBomb();
+        Game::isBombPlanted = true;
+
     }
     else if (m_pid == 2) {
         player2->plantBomb();
+        Game::isBombPlanted = true;
+
     }
 }
 

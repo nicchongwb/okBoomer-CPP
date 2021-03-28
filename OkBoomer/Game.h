@@ -44,6 +44,7 @@ public:
 
     // Maintain one instance of the number of bomb items spawned on the map.
     std::vector<BombCollectable>* GetBombItemList();
+
     // Maintain one instance of the planted bombs on the map
     std::vector<BombPlanted>* GetBombPlantedList();
 
@@ -62,6 +63,10 @@ private:
     SDL_Window* m_Window;
     SDL_Renderer* m_Renderer;
     static Game * s_Instance;
+
+    bool isBombPlanted;
+    bool m_putBomb, s_countdown;
+    long s_start;
 };
 
 #endif // GAME_H

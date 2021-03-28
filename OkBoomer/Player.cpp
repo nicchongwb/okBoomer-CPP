@@ -68,12 +68,13 @@ Player::Player(Properties * props): Creature(props) {
 // Draw player to screen
 void Player::Draw() {
     if (m_putBomb && !m_getBombed) {
-        
-        /*Player::placeBombCountdown(*bombplanted);
-        bombplanted->Draw();*/
-        //m_Animation->Draw()
+        //Player::placeBombCountdown();
+        //bombplanted = new BombPlanted(new Properties("bomb", m_bombx, m_bomby, m_Width, m_Height));
+        //bombplanted->Draw();
     }
+    //m_Animation->Draw(m_Transform->X, m_Transform->Y, m_Width, m_Height);
     m_Animation->Draw(m_Transform->X, m_Transform->Y + YOFFSET, m_Width, m_Height);
+
 }
 
 // Update player animation & position on the screen
@@ -167,25 +168,6 @@ void Player::getCurrentAnimation() {
             m_Animation->SetProperties(m_TextureID, 2, 0, 3, 500, SDL_FLIP_NONE);
         }
     }
-}
-
-// animation for when bomb is planted
-void Player::placeBombCountdown(BombPlanted bombPlanted) {
-
-    SDL_Texture* bombTexture = TextureManager::GetInstance()->GetTexture(bombPlanted.GetBombPlantedTextureName());
-
-    if (m_putBomb && !s_countdown) {
-        s_countdown = true;
-
-        clock_t now = clock();
-        s_start = now;
-
-    }
-    if (s_start + 1000 < clock()) { //set animations for 1s
-        m_putBomb = false;
-        s_countdown = false;
-    }
-
 }
 
 void Player::bombCountdown() {
@@ -419,7 +401,6 @@ void Player::GetInput() {
                 }
                 s_AlrPressedP2 = true;
                 s_p2facing = 2;
-                
             }
         }
         // P2 - Key RIGHT Pushed
@@ -443,6 +424,7 @@ void Player::GetInput() {
 
                 s_AlrPressedP2 = true;
                 s_p2facing = 3;
+
             }
 
         }
@@ -505,8 +487,23 @@ void Player::collectBomb()
     std::cout << m_pid+1 << ": BOMB HELD, BOMB PART: " << m_bombHeld << " , " << m_bombCollectable << std::endl;
 }
 
+/*
+void Player::placeBombCountdown() {
+    if (m_putBomb && !s_countdown) {
+        s_countdown = true;
+        clock_t now = clock();
+        s_start = now;
+    }
+    if (s_start + 500 < clock()) { //set animations for 0.5s
+        m_putBomb = false;
+        s_countdown = false;
+    }
+}
+*/
+
 void Player::plantBomb()
 {
+    //Game::isBombPlanted = true;
     if (this->m_bombHeld > 0) {
         this->m_bombHeld -= 1;
         printf("Player %d's bomb left: %d\n", m_pid + 1, this->m_bombHeld);
@@ -519,12 +516,11 @@ void Player::plantBomb()
     m_putBomb = true;
     m_bombx = X;
     m_bomby = Y;
-   
+    
     bombplanted = new BombPlanted(new Properties("bomb", m_bombx, m_bomby + YOFFSET, m_Width, m_Height));
     s_PlantedBombList = Game::GetInstance()->GetBombPlantedList();
     auto iter = s_PlantedBombList->begin(); // 'iter' is an iterator object that points the elements in PlantedBombLIst
     s_PlantedBombList->insert(iter, *bombplanted); // insert planted bomb object into vector array
-
 }
 
 void Player::takeDamage()
@@ -541,5 +537,3 @@ void Player::takeDamage()
     m_getBombed = true;
     printf("Player %d's m_Health left: %d\n", m_pid + 1, m_Health);
 }
-
-
