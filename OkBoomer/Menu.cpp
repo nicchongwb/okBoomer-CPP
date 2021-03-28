@@ -13,7 +13,7 @@
 #include "UILabel.h"
 
 #include <iostream>
-//#include <SDL_mixer.h>
+#include <SDL_mixer.h>
 
 #define YOFFSET 60
 
@@ -190,7 +190,7 @@ bool Menu::Clean() {
     SDL_DestroyWindow(m_Window);
     IMG_Quit();
     SDL_Quit();
-   // Mix_Quit();
+    Mix_Quit();
 
     return true;
 }

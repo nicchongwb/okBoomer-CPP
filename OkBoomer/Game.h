@@ -7,7 +7,7 @@
 #include <SDL_image.h>
 #include <SDL_ttf.h>
 #include <iostream>
-//#include <SDL_mixer.h>
+#include <SDL_mixer.h>
 #include "GameMap.h"
 #include "BombCollectable.h"
 #include "BombPlanted.h"
