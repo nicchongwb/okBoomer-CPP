@@ -34,9 +34,6 @@ public:
     void Render();
     void Events();
 
-
-
-
     inline bool IsRunning() { return m_IsRunning; }
     // To render SDL window
     inline SDL_Renderer* GetRenderer() { return m_Renderer; }

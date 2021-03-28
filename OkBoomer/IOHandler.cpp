@@ -1,5 +1,6 @@
 #include "IOHandler.h"
 #include "Game.h"
+#include "Menu.h"
 #include "Player.h"
 
 // initialise
@@ -16,7 +17,8 @@ void IOHandler::Listen() {
 	while (SDL_PollEvent(&event)) {
 		switch (event.type) {
 			case SDL_QUIT: 
-				Game::GetInstance()->Quit(); 
+				Game::GetInstance()->Quit();
+				Menu::GetInstance()->Quit();
 				break;
 			case SDL_KEYDOWN: 
 				KeyDown();

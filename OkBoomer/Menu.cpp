@@ -49,7 +49,7 @@ bool Menu::Init() {
     //TextureManager::GetInstance()->AddFont("arialbold", "res/fonts/arialbd.ttf", 13);
 
     // create SDL window
-    m_Window = SDL_CreateWindow("OkBoomer", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREN_HEIGHT, SDL_WINDOW_BORDERLESS);
+    m_Window = SDL_CreateWindow("OkBoomer", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREN_HEIGHT, 0);
 
     if (m_Window == nullptr) {
         SDL_Log("Failed to create Window: %s", SDL_GetError());
