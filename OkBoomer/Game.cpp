@@ -6,14 +6,9 @@
 #include "IOHandler.h"
 #include "MapParser.h"
 #include "Board.h"
-#include "BombCollectable.h"
-#include "BombPlanted.h"
 #include "ItemTimer.h"
 #include "SDL_ttf.h"
 #include "UILabel.h"
-
-#include <iostream>
-#include <SDL_mixer.h>
 
 #define YOFFSET 60
 
@@ -107,16 +102,23 @@ bool Game::Init() {
 
     Transform tf;
 
-    tf.Log("Transform: ");
-
     return m_IsRunning = true;
 }
 
 void Game::Update() {
 
+    // Update players
     player1->Update(0);
     player2->Update(0);
+    // Update Map
     m_LevelMap->Update();
+
+    // Update planted bombs
+    for (int i = 0; i < s_bombPlantedList->size(); i++) {
+        s_bombPlantedList->at(i).Update(0);
+    }
+
+    // Function for spawning items
     SpawnItem();
 
 }
@@ -212,15 +214,32 @@ void Game::Render() {
     // Render Map
     m_LevelMap->Render();
 
-
+    // Draw players
     player1->Draw();
     player2->Draw();
     
+    // Draw spawned bomb collectables
     for (int i = 0; i < s_bombItemList->size(); i++) {
         s_bombItemList->at(i).Draw();
     }
+    // Draw planted bombs
     for (int i = 0; i < s_bombPlantedList->size(); i++) {
-        s_bombPlantedList->at(i).Draw();
+        if (s_bombPlantedList->at(i).m_isBombPlanted == true)
+            s_bombPlantedList->at(i).Draw();
+
+        // make sure the bomb animation does not loop
+        if (!s_bombPlantedList->at(i).m_countDown) {
+            s_bombPlantedList->at(i).m_countDown = true;
+            // start timer
+            clock_t now = clock();
+            s_bombPlantedList->at(i).m_start = now;
+
+        }
+        //set animations for 1s
+        if (s_bombPlantedList->at(i).m_start + 1000 < clock()) {
+            s_bombPlantedList->at(i).m_countDown = false;
+            s_bombPlantedList->at(i).m_isBombPlanted = false;
+        }
     }
     SDL_RenderPresent(m_Renderer);
 
@@ -302,7 +321,7 @@ void Game::SpawnItem()
                         s_bombItemList->insert(iter, BombCollectable(new Properties("bomb", randX * 64, randY * 64, 32, 32)));
                         // update board array to show that a collectable bomb part has spawned there
                         Board::GetInstance()->updateBoardWithItem(randX, randY, 4);
-                        std::cout << "Item spawned at " << randX << randY << std::endl;
+                        std::cout << "Item spawned at " << randX << ", " << randY << std::endl;
                         // reset the item spawn rate, and timer countdown
                         itemTimer->setReadyToSpawn(false);
                         itemTimer->setTimerHasStarted(false);

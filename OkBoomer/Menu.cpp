@@ -66,8 +66,6 @@ bool Menu::Init() {
 
     Transform tf;
 
-    tf.Log("Transform: ");
-
     return m_IsRunning = true;
 }
 
@@ -155,8 +153,7 @@ void Menu::Render() {
     if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_SPACE)) {
         
         if (s_AlrPressedSpace==false) {
-            printf("inside");
-            printf("START");
+            printf("START\n");
             Menu::Clean();
             // Initialise Game
             Player::s_PlayerCount = 0;

@@ -3,8 +3,6 @@
 #ifndef BOMBPLANTED_H
 #define BOMBPLANTED_H
 
-#define FADE_SPEED 0.07f;
-
 #include "Item.h"
 #include "TextureManager.h"
 #include "Animation.h"
@@ -24,18 +22,20 @@ public:
 	virtual void Clean();
 	virtual void Update(float dt);
 
-	Uint8 alpha = 255;
-	float alphaCalc = 0;
-
 	std::string GetBombPlantedTextureName() { return this->textureName; }
 	std::vector <BombPlanted>* getListOfPlantedBombs() { return &s_PlantedBombList; };
-	
+
+	static int s_bombID;
+	bool m_isBombPlanted; // boolean var for animating bomb if it is freshly planted. (bomb anim will run for 1 second)
+	bool m_countDown; // boolean var for animating bomb (checks if 1 second countdown timer has started)
+	long m_start; // used to check if the 1 second is up
 
 private:
-	SDL_Texture * m_PlantedBombTexture = TextureManager::GetInstance()->GetTexture("bomb");
+	SDL_Texture* m_PlantedBombTexture;
 	std::vector <BombPlanted> s_PlantedBombList;
-	int bombID = 0;
-	std::string textureName = "bomb";
+	std::string textureName;
+	Animation* m_BombAnimation;
+
 };
 
 #endif // BOMBPLANTED_H

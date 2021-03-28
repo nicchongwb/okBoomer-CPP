@@ -8,7 +8,7 @@
 */
 void ItemTimer::startTimer() {
 
-	std::cout << "Timer has started!" << std::endl;
+	//std::cout << "Timer has started!" << std::endl;
 	m_TimerHasStarted = true;
 	// choose a number between lowerBound and upperBound
 	int time = intRand(MIN_ITEMSPAWNRATE, MAX_ITEMSPAWNRATE);
@@ -16,7 +16,7 @@ void ItemTimer::startTimer() {
 	m_timerThread = std::thread([=]() {
 		// sleeps the thread for the specified amount of time
 		std::this_thread::sleep_for(std::chrono::seconds(time));
-		std::cout << "Timer has ended!" << std::endl;
+		//std::cout << "Timer has ended!" << std::endl;
 		m_ReadyToSpawn = true;
 	});
 	

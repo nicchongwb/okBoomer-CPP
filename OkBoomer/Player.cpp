@@ -7,7 +7,6 @@
 #include <SDL.h>
 #include <iostream>
 #include <time.h>
-//#include "Sound.h"
 #include "Sound.h"
 #define YOFFSET 60
 
@@ -68,12 +67,6 @@ Player::Player(Properties * props): Creature(props) {
 
 // Draw player to screen
 void Player::Draw() {
-    if (m_putBomb && !m_getBombed) {
-        
-        Player::placeBombCountdown(*bombplanted);
-        bombplanted->Draw();
-
-    }
     m_Animation->Draw(m_Transform->X, m_Transform->Y + YOFFSET, m_Width, m_Height);
 }
 
@@ -230,11 +223,11 @@ void Player::GetInput() {
                 if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY)) 
                 {
                     newY -= m_Speed; // private 'global' coordinate for other methods to use (like takeDamage())
-                    std::cout << "Player 1: "; m_Transform->Log();
+                    //std::cout << "Player 1: "; m_Transform->Log(); // uncomment to display player coordinate on screen
                     m_DrawManager->ApplyForceY(-m_Speed);
 
                     Board::GetInstance()->updateBoardMove(m_pid, X, Y, nextX, nextY);
-                    Board::GetInstance()->consoleBoard();
+                    //Board::GetInstance()->consoleBoard(); // uncomment to see 2d console board on terminal
                 }
                 else {
                     std::cout << "Invalid move." << std::endl;
@@ -255,11 +248,11 @@ void Player::GetInput() {
                 if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY))
                 {
                     newY += m_Speed; // private 'global' coordinate for other methods to use (like takeDamage())
-                    std::cout << "Player 1: "; m_Transform->Log();
+                    //std::cout << "Player 1: "; m_Transform->Log(); // uncomment to display player coordinate on screen
                     m_DrawManager->ApplyForceY(m_Speed);
 
                     Board::GetInstance()->updateBoardMove(m_pid, X, Y, nextX, nextY);
-                    Board::GetInstance()->consoleBoard();
+                    //Board::GetInstance()->consoleBoard(); // uncomment to see 2d console board on terminal
                 }
                 else {
                     std::cout << "Invalid move." << std::endl;
@@ -281,11 +274,11 @@ void Player::GetInput() {
                 if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY)) 
                 {
                     newX -= m_Speed; // private 'global' coordinate for other methods to use (like takeDamage())
-                    std::cout << "Player 1: "; m_Transform->Log();
+                    //std::cout << "Player 1: "; m_Transform->Log(); // uncomment to display player coordinate on screen
                     m_DrawManager->ApplyForceX(-m_Speed);
 
                     Board::GetInstance()->updateBoardMove(m_pid, X, Y, nextX, nextY);
-                    Board::GetInstance()->consoleBoard();
+                    //Board::GetInstance()->consoleBoard(); // uncomment to see 2d console board on terminal
                 }
                 else {
                     std::cout << "Invalid move." << std::endl;
@@ -307,11 +300,11 @@ void Player::GetInput() {
                 if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY))
                 {
                     newX += m_Speed; // private 'global' coordinate for other methods to use (like takeDamage())
-                    std::cout << "Player 1: "; m_Transform->Log();
+                    //std::cout << "Player 1: "; m_Transform->Log(); // uncomment to display player coordinate on screen
                     m_DrawManager->ApplyForceX(m_Speed);
 
                     Board::GetInstance()->updateBoardMove(m_pid, X, Y, nextX, nextY);
-                    Board::GetInstance()->consoleBoard();
+                    //Board::GetInstance()->consoleBoard(); // uncomment to see 2d console board on terminal
                 }
                 else {
                     std::cout << "Invalid move." << std::endl;
@@ -335,12 +328,8 @@ void Player::GetInput() {
                     {
                         // X == nextX, Y == nextY | this tells board that a bomb has been placed
                         Board::GetInstance()->updateBoardPlant(m_pid, X, Y);
-                        Board::GetInstance()->consoleBoard();
+                        //Board::GetInstance()->consoleBoard(); // uncomment to see 2d console board on terminal
                     }
-                    //else 
-                    //{
-                    //    std::cout << "Bomb already planted." << std::endl;
-                    //}
                 }
             }
             s_AlrPressedP1 = true;
@@ -359,11 +348,11 @@ void Player::GetInput() {
                 if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY))
                 {
                     newY -= m_Speed; // private 'global' coordinate for other methods to use (like takeDamage())
-                    std::cout << "Player 2: "; m_Transform->Log();
+                    //std::cout << "Player 2: "; m_Transform->Log(); // uncomment to display player coordinate on screen
                     m_DrawManager->ApplyForceY(-m_Speed);
 
                     Board::GetInstance()->updateBoardMove(m_pid, X, Y, nextX, nextY);
-                    Board::GetInstance()->consoleBoard();
+                    //Board::GetInstance()->consoleBoard(); // uncomment to see 2d console board on terminal
                 }
                 else {
                     std::cout << "Invalid move." << std::endl;
@@ -384,11 +373,11 @@ void Player::GetInput() {
                 if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY))
                 {
                     newY += m_Speed; // private 'global' coordinate for other methods to use (like takeDamage())
-                    std::cout << "Player 2: "; m_Transform->Log();
+                    //std::cout << "Player 2: "; m_Transform->Log(); // uncomment to display player coordinate on screen
                     m_DrawManager->ApplyForceY(m_Speed);
 
                     Board::GetInstance()->updateBoardMove(m_pid, X, Y, nextX, nextY);
-                    Board::GetInstance()->consoleBoard();
+                    //Board::GetInstance()->consoleBoard(); // uncomment to see 2d console board on terminal
                 }
                 else {
                     std::cout << "Invalid move." << std::endl;
@@ -409,11 +398,11 @@ void Player::GetInput() {
                 if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY))
                 {
                     newX -= m_Speed; // private 'global' coordinate for other methods to use (like takeDamage())
-                    std::cout << "Player 2: "; m_Transform->Log();
+                    //std::cout << "Player 2: "; m_Transform->Log(); // uncomment to display player coordinate on screen
                     m_DrawManager->ApplyForceX(-m_Speed);
 
                     Board::GetInstance()->updateBoardMove(m_pid, X, Y, nextX, nextY);
-                    Board::GetInstance()->consoleBoard();
+                    //Board::GetInstance()->consoleBoard(); // uncomment to see 2d console board on terminal
                 }
                 else {
                     std::cout << "Invalid move." << std::endl;
@@ -432,11 +421,11 @@ void Player::GetInput() {
                 if (Board::GetInstance()->canPlayerMove(m_pid, X, Y, nextX, nextY))
                 {
                     newX += m_Speed; // private 'global' coordinate for other methods to use (like takeDamage())
-                    std::cout << "Player 2: "; m_Transform->Log();
+                    //std::cout << "Player 2: "; m_Transform->Log(); // uncomment to display player coordinate on screen
                     m_DrawManager->ApplyForceX(m_Speed);
 
                     Board::GetInstance()->updateBoardMove(m_pid, X, Y, nextX, nextY);
-                    Board::GetInstance()->consoleBoard();
+                    //Board::GetInstance()->consoleBoard(); // uncomment to see 2d console board on terminal
                 }
                 else {
                     std::cout << "Invalid move." << std::endl;
@@ -458,12 +447,9 @@ void Player::GetInput() {
                     {
                         // X == nextX, Y == nextY | this tells board that a bomb has been placed
                         Board::GetInstance()->updateBoardPlant(m_pid, X, Y);
-                        Board::GetInstance()->consoleBoard();
+                        //Board::GetInstance()->consoleBoard(); // uncomment to see 2d console board on terminal
                     }
-                    //else
-                    //{
-                    //    std::cout << "Bomb already planted." << std::endl;
-                    //}
+
                 }
             }
             s_AlrPressedP2 = true;
@@ -504,19 +490,19 @@ void Player::collectBomb()
         }
     }
     playcollectsound();
-    std::cout << m_pid+1 << ": BOMB HELD, BOMB PART: " << m_bombHeld << " , " << m_bombCollectable << std::endl;
+    //std::cout << m_pid+1 << ": BOMB HELD, BOMB PART: " << m_bombHeld << " , " << m_bombCollectable << std::endl;
 }
 
 void Player::plantBomb()
 {
     if (this->m_bombHeld > 0) {
         this->m_bombHeld -= 1;
-        printf("Player %d's bomb left: %d\n", m_pid + 1, this->m_bombHeld);
+        //printf("Player %d's bomb left: %d\n", m_pid + 1, this->m_bombHeld);
     }
-    else {
-        printf("Player %d's bomb left: %d\n", m_pid + 1, this->m_bombHeld);
-        printf("No more bombs left!\n");
-    }
+    //else {
+    //    printf("Player %d's bomb left: %d\n", m_pid + 1, this->m_bombHeld);
+    //    printf("No more bombs left!\n");
+    //}
     playdropsound();
     m_putBomb = true;
     m_bombx = X;
@@ -542,7 +528,7 @@ void Player::takeDamage()
     playbombsound();
     m_Health -= 1;
     m_getBombed = true;
-    printf("Player %d's m_Health left: %d\n", m_pid + 1, m_Health);
+    //printf("Player %d's m_Health left: %d\n", m_pid + 1, m_Health);
 }
 
 
