@@ -1,4 +1,5 @@
-﻿  BombPlanted.cpp
-C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\BombPlanted.cpp(27,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\BombPlanted.cpp(27,38): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+﻿  Game.cpp
+C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Game.cpp(36,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Game.cpp(168,23): warning C4018: '<': signed/unsigned mismatch
+C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Game.cpp(173,23): warning C4018: '<': signed/unsigned mismatch
   OkBoomer.vcxproj -> C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Debug\OkBoomer.exe

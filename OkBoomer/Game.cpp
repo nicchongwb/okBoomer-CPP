@@ -112,6 +112,7 @@ void Game::Update() {
     for (int i = 0; i < s_bombPlantedList->size(); i++) {
         s_bombPlantedList->at(i).Update(0);
     }
+
     SpawnItem();
 }
 
@@ -164,30 +165,30 @@ void Game::Render() {
     player1->Draw();
     player2->Draw();
     
+    // Draw spawned bomb collectables
     for (int i = 0; i < s_bombItemList->size(); i++) {
         s_bombItemList->at(i).Draw();
     }
 
-    //if (s_bombPlantedList->size() > 0) {
-    //    s_bombPlantedList->at(0).Draw();
-    //}
+    // Draw planted bombs
+    for (int i = 0; i < s_bombPlantedList->size(); i++) {
+        if(s_bombPlantedList->at(i).m_isBombPlanted == true)
+            s_bombPlantedList->at(i).Draw();
 
-    if (isBombPlanted == true) {
-        s_bombPlantedList->at(0).Draw();
-
-        // without this the bomb will loop
-        if (!s_countdown) {
-            s_countdown = true;
-
+        // make sure the bomb animation does not loop
+        if (!s_bombPlantedList->at(i).m_countDown) {
+            s_bombPlantedList->at(i).m_countDown = true;
+            // start timer
             clock_t now = clock();
-            s_start = now;
+            s_bombPlantedList->at(i).m_start = now;
+
         }
-        if (s_start + 1000 < clock()) { //set animations for 1s
-            s_countdown = false;
-            isBombPlanted = false;
+        //set animations for 1s
+        if (s_bombPlantedList->at(i).m_start + 1000 < clock()) { 
+            s_bombPlantedList->at(i).m_countDown = false;
+            s_bombPlantedList->at(i).m_isBombPlanted = false;
         }
     }
-
 
 
     SDL_RenderPresent(m_Renderer);
@@ -224,12 +225,10 @@ void Game::PlantBomb(int m_pid)
 {
     if (m_pid == 1) {
         player1->plantBomb();
-        Game::isBombPlanted = true;
 
     }
     else if (m_pid == 2) {
         player2->plantBomb();
-        Game::isBombPlanted = true;
 
     }
 }

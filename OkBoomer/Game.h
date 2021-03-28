@@ -64,9 +64,6 @@ private:
     SDL_Renderer* m_Renderer;
     static Game * s_Instance;
 
-    bool isBombPlanted;
-    bool m_putBomb, s_countdown;
-    long s_start;
 };
 
 #endif // GAME_H

@@ -29,13 +29,15 @@ public:
 	std::vector <BombPlanted>* getListOfPlantedBombs() { return &s_PlantedBombList; };
 
 	static int s_bombID;
+	bool m_isBombPlanted; // boolean var for animating bomb if it is freshly planted. (bomb anim will run for 1 second)
+	bool m_countDown; // boolean var for animating bomb (checks if 1 second countdown timer has started)
+	long m_start; // used to check if the 1 second is up
 
 private:
 	SDL_Texture * m_PlantedBombTexture;
 	std::vector <BombPlanted> s_PlantedBombList;
 	std::string textureName;
 	Animation* m_BombAnimation;
-
 	
 };
 
