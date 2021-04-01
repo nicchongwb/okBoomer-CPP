@@ -1,19 +1,11 @@
-﻿  BombPlanted.cpp
-C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\BombPlanted.cpp(29,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\BombPlanted.cpp(29,38): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Game.cpp
+﻿  Game.cpp
 C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Game.cpp(40,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
 C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Game.cpp(117,23): warning C4018: '<': signed/unsigned mismatch
 C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Game.cpp(222,23): warning C4018: '<': signed/unsigned mismatch
 C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Game.cpp(226,23): warning C4018: '<': signed/unsigned mismatch
-  IOHandler.cpp
-C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\IOHandler.cpp(37,33): warning C4805: '==': unsafe mix of type 'const Uint8' and type 'bool' in operation
   Menu.cpp
 C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Menu.cpp(36,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
 C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Menu.cpp(110,23): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-  Player.cpp
-C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Player.cpp(70,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Player.cpp(70,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Player.cpp(527,23): warning C4018: '<': signed/unsigned mismatch
+  Sound.cpp
   Generating Code...
   OkBoomer.vcxproj -> C:\SIT\Year 1\1009 - Object Orientated Programming\Assignment_CPP\OkBoomer\Debug\OkBoomer.exe

@@ -2,6 +2,7 @@
 #include "TextureManager.h"
 #include "Animation.h"
 #include "IOHandler.h"
+#include "Menu.h"
 #include "Board.h"
 #include "BombPlanted.h"
 #include <SDL.h>
@@ -458,7 +459,8 @@ void Player::GetInput() {
 
         //exit program when esc key is pressed
         if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_ESCAPE)) {
-            exit(1);
+            Game::GetInstance()->Quit();
+            Menu::GetInstance()->Quit();
         }
 
     }

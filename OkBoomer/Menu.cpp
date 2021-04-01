@@ -170,7 +170,7 @@ void Menu::Render() {
     }
     //exit program when esc key is pressed
     else if (IOHandler::GetInstance()->KeyPressed(SDL_SCANCODE_ESCAPE)) {
-        exit(1);
+        Menu::GetInstance()->Quit();
     }
     SDL_RenderPresent(m_Renderer);
     
