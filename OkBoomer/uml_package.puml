@@ -1,0 +1,409 @@
+@startuml
+/' Objects '/
+abstract class entities.Entity {
+	+Entity(Properties* props)
+	#m_Flip : SDL_RendererFlip
+	#m_Transform : Transform*
+	#m_Height : int
+	#m_Width : int
+	#m_TextureID : std::string
+	+{abstract} Clean() : void
+	+{abstract} Draw() : void
+	+{abstract} Update(float dt) : void
+}
+
+abstract class entities.items.Item {
+	+Item(Properties* props)
+	+getItemX() : int
+	+getItemY() : int
+	+{abstract} Clean() : void
+	+{abstract} Draw() : void
+	+{abstract} Update(float dt) : void
+}
+
+class entities.items.BombCollectable {
+	+BombCollectable(Properties* props)
+	-m_BombItemTextureM : TextureManager*
+	-m_ItemBombID : int
+	-m_NumBombsSpawned : int
+	-s_BombsSpawnedList : std::vector<BombCollectable>
+	+getListOfSpawnedBombs() : std::vector<BombCollectable>*
+	+Clean() : void
+	+Draw() : void
+	+Update(float dt) : void
+}
+
+
+class entities.items.BombPlanted {
+	+BombPlanted(Properties* props)
+	-m_BombAnimation : Animation*
+	-m_PlantedBombTexture : SDL_Texture*
+	+m_countDown : bool
+	+m_isBombPlanted : bool
+	+m_start : long
+	+{static} s_bombID : static int
+	+GetBombPlantedTextureName() : std::string
+	-textureName : std::string
+	-s_PlantedBombList : std::vector<BombPlanted>
+	+getListOfPlantedBombs() : std::vector<BombPlanted>*
+	+Clean() : void
+	+Draw() : void
+	+Update(float dt) : void
+}
+
+
+abstract class entities.creatures.Creature {
+	+Creature(Properties* props)
+	#m_Health : int
+	#m_Speed : int
+	#m_Name : std::string
+	+{abstract} Clean() : void
+	+{abstract} Draw() : void
+	+{abstract} Update(float dt) : void
+}
+
+class entities.creatures.Player {
+	+Player(Properties* props)
+	-m_Animation : Animation*
+	-m_DrawManager : DrawManager*
+	-m_bombPlaced : bool
+	-m_getBombed : bool
+	-m_putBomb : bool
+	+GetBomb() : int
+	+GetBombCol() : int
+	+GetHealth() : int
+	-m_Health : int
+	-m_Speed : int
+	-m_bombCollectable : int
+	-m_bombHeld : int
+	-m_bombx : int
+	-m_bomby : int
+	-m_pid : int
+	-newX : int
+	-newY : int
+	+{static} s_AlrPressedP1 : static bool
+	+{static} s_AlrPressedP2 : static bool
+	+{static} s_countdown : static bool
+	+{static} s_PlayerCount : static int
+	+{static} s_p1facing : static int
+	+{static} s_p2facing : static int
+	+{static} s_start : static long
+	+Clean() : void
+	+Draw() : void
+	+GetInput() : void
+	+Update(float dt) : void
+	+bombCountdown() : void
+	+collectBomb() : void
+	+getBombedAnimation() : void
+	+getCurrentAnimation() : void
+	+placeBombCountdown(BombPlanted bombPlanted) : void
+	+plantBomb() : void
+	+takeDamage() : void
+}
+
+class gfx.Animation {
+	+Animation()
+	-m_Flip : SDL_RendererFlip
+	-m_AnimSpeed : int
+	-m_FrameCount : int
+	-m_SpriteCol : int
+	-m_SpriteFrame : int
+	-m_SpriteRow : int
+	-m_TextureID : std::string
+	+Draw(float x, float y, int spriteWidth, int spriteHeight) : void
+	+SetProperties(std::string textureID, int spriteRow, int spriteCol, int frameCount, int animSpeed, SDL_RendererFlip flip) : void
+	+Update() : void
+}
+
+
+class gfx.DrawManager {
+	+DrawManager()
+	+GetPosition() : Vector2D
+	-m_Force : Vector2D
+	-m_Position : Vector2D
+	+ApplyForce(Vector2D F) : void
+	+ApplyForceX(int Fx) : void
+	+ApplyForceY(int Fy) : void
+	+UnsetForce() : void
+	+Update() : void
+}
+
+abstract class world.Layer {
+	+{abstract} Render() : void
+	+{abstract} Update() : void
+}
+
+
+class world.MapParser {
+	-MapParser()
+	+GetMap(std::string id) : GameMap*
+	+{static} GetInstance() : MapParser*
+	-ParseTileLayer(TiXmlElement* xmlLayer, std::vector<Tileset> tilesets, int tilesize, int rowcount, int colcount) : TileLayer*
+	-ParseTileset(TiXmlElement* xmlTileset) : Tileset
+	+Load() : bool
+	-Parse(std::string id, std::string source) : bool
+	-{static} s_Instance : static MapParser*
+	-m_MapDict : std::map<std::string, GameMap*>
+	+Clean() : void
+}
+
+
+class states.Menu {
+	-Menu()
+	+{static} GetInstance() : Menu*
+	+GetRenderer() : SDL_Renderer*
+	-m_Renderer : SDL_Renderer*
+	-m_Window : SDL_Window*
+	+Clean() : bool
+	+Init() : bool
+	+IsRunning() : bool
+	-m_IsRunning : bool
+	-{static} s_Instance : static Menu*
+	+{static} s_AlrPressedSpace : static bool
+	+Events() : void
+	+Quit() : void
+	+Render() : void
+}
+
+class gfx.TextureManager {
+	-TextureManager()
+	+GetTexture(std::string id) : SDL_Texture*
+	+GetFont(std::string) : TTF_Font*
+	+{static} GetInstance() : TextureManager*
+	+Load(std::string id, std::string filename) : bool
+	-{static} s_Instance : static TextureManager*
+	-m_TextureMap : std::map<std::string, SDL_Texture*>
+	-fonts : std::map<std::string, TTF_Font*>
+	+AddFont(std::string, std::string, int) : void
+	+Clean() : void
+	+Draw(std::string id, int x, int y, int width, int height, int row, int col, SDL_RendererFlip flip) : void
+	+DrawFrame(std::string id, int x, int y, int width, int height, int row, int col, int frame, SDL_RendererFlip flip) : void
+	+DrawIcon(std::string id, int x, int y, int width, int height, int row, int col, SDL_RendererFlip flip) : void
+	+DrawTile(std::string tilesetID, int tileSize, int x, int y, int row, int frame, SDL_RendererFlip flip) : void
+	+Drop(std::string id) : void
+}
+
+
+class gfx.Transform {
+	+Transform(int x, int y)
+	+X : int
+	+Y : int
+	+Log(std::string msg) : void
+	+Translate(Vector2D v) : void
+	+TranslateX(int x) : void
+	+TranslateY(int y) : void
+}
+
+
+class gfx.Vector2D {
+	+Vector2D(int x, int y)
+	+operator+(const Vector2D& v2) : Vector2D {query}
+	+operator-(const Vector2D& v2) : Vector2D {query}
+	+X : int
+	+Y : int
+	+Log(std::string msg) : void
+}
+
+class entities.Properties {
+	+Properties(std::string textureID, int x, int y, int width, int height, SDL_RendererFlip flip)
+	+Flip : SDL_RendererFlip
+	+Height : int
+	+PrevX : int
+	+PrevY : int
+	+Width : int
+	+X : int
+	+Y : int
+	+TextureID : std::string
+}
+
+class states.Game {
+	-Game()
+	+{static} GetInstance() : Game*
+	+GetMap() : GameMap*
+	-m_LevelMap : GameMap*
+	+GetRenderer() : SDL_Renderer*
+	-m_Renderer : SDL_Renderer*
+	-m_Window : SDL_Window*
+	+Clean() : bool
+	+Init() : bool
+	+IsRunning() : bool
+	+getPlayAgain() : bool
+	+getWhoWins() : bool
+	-m_IsRunning : bool
+	-{static} s_Instance : static Game*
+	+{static} gameOver : static bool
+	+{static} playAgain : static bool
+	+{static} s_AlrPressedSpace : static bool
+	+{static} whoWins : static bool
+	+GetBombItemList() : std::vector<BombCollectable>*
+	+GetBombPlantedList() : std::vector<BombPlanted>*
+	+BombPlayer(int m_pid) : void
+	+CollectBomb(int m_pid) : void
+	+Events() : void
+	+PlantBomb(int m_pid) : void
+	+Quit() : void
+	+Render() : void
+	+SpawnItem() : void
+	+Update() : void
+}
+
+class interfaces.Board {
+	-Board()
+	+{static} GetInstance() : Board*
+	+canPlayerMove(int m_pid, int prevX, int prevY, int newX, int newY) : bool
+	+canPlayerPlant(int m_pid, int prevX, int prevY) : bool
+	+consoleBoard() : bool
+	+initBoard() : bool
+	+updateBoardMove(int m_pid, int prevX, int prevY, int newX, int newY) : bool
+	+updateBoardPlant(int m_pid, int prevX, int prevY) : bool
+	+getTileID(int x, int y) : int
+	-m_board : int
+	-{static} s_Instance : static Board*
+	+updateBoardWithItem(int x, int y, int iid) : void
+}
+
+
+class world.GameMap {
+	+GameMap()
+	+GetLayers() : std::vector<Layer*>
+	-m_MapLayers : std::vector<Layer*>
+	+Render() : void
+	+Update() : void
+}
+
+class gfx.UILabel {
+	+UILabel(int xpos, int ypos, std::string text, std::string font, SDL_Color& colour)
+	-textColour : SDL_Color
+	-position : SDL_Rect
+	-labelTexture : SDL_Texture*
+	-labelFont : std::string
+	-labelText : std::string
+	+SetLabelText(std::string text, std::string font) : void
+	+draw() : void
+}
+
+class world.Tile {
+	-Tile()
+	-{static} s_Instance : static Tile*
+	-m_Tile : std::map<std::string, SDL_Texture*>
+}
+
+
+class world.TileLayer {
+	+TileLayer(int tilesize, int width, int height, vector<std::vector<int>> tilemap, vector<Tileset> tilesets)
+	+GetTileMap() : TileMap
+	-m_ColCount : int
+	-m_RowCount : int
+	-m_TileSize : int
+	-m_Tilesets : vector<Tileset>
+	-m_Tilemap : vector<std::vector<int>>
+	+Render() : void
+	+Update() : void
+}
+
+class world.Tileset {
+	+ColCount : int
+	+FirstID : int
+	+LastID : int
+	+RowCount : int
+	+TileCount : int
+	+TileSize : int
+	+Name : std::string
+	+Source : std::string
+}
+
+class utils.IOHandler {
+	-IOHandler()
+	+{static} GetInstance() : IOHandler*
+	+KeyPressed(SDL_Scancode key) : bool
+	+KeyReleased(SDL_Scancode key) : bool
+	-m_KeyStates : const Uint8*
+	-{static} s_Instance : static IOHandler*
+	-KeyDown() : void
+	-KeyUp() : void
+	+Listen() : void
+}
+
+
+abstract class utils.IOObject {
+	+{abstract} Clean() : void
+	+{abstract} Draw() : void
+	+{abstract} Update(float dt) : void
+}
+
+class utils.ItemTimer {
+	+ItemTimer()
+	+getReadyToSpawn() : bool
+	+getTimerHasStarted() : bool
+	-m_ReadyToSpawn : bool
+	-m_TimerHasStarted : bool
+	-intRand(const int& min, const int& max) : int
+	-m_timerThread : std::thread
+	+setReadyToSpawn(bool val) : void
+	+setTimerHasStarted(bool val) : void
+	+startTimer() : void
+	+stopTimer() : void
+}
+
+/' Inheritance relationships '/
+
+.entities.creatures.Creature <|-- .entities.creatures.Player
+
+
+.entities.Entity <|-- .entities.creatures.Creature
+
+
+.entities.Entity <|-- .entities.items.Item
+
+
+.utils.IOHandler <|-- .entities.Entity
+
+
+.entities.items.Item <|-- .entities.items.BombCollectable
+
+
+.entities.items.Item <|-- .entities.items.BombPlanted
+
+
+.world.Layer <|-- .world.TileLayer
+
+/' Aggregation relationships '/
+
+
+.entities.items.BombCollectable o-- .gfx.TextureManager
+
+
+.entities.items.BombPlanted o-- .gfx.Animation
+
+
+.gfx.DrawManager o-- .gfx.Vector2D
+
+
+.entities.Entity o-- .gfx.Transform
+
+
+.states.Game o-- .world.GameMap
+
+
+.world.GameMap o-- .world.Layer
+
+
+.world.MapParser o-- .world.GameMap
+
+
+.entities.creatures.Player o-- .gfx.Animation
+
+
+.entities.creatures.Player o-- .gfx.DrawManager
+
+
+.gfx.Animation o-- .gfx.TextureManager
+
+
+.world.TileLayer *-- .world.Tileset
+
+
+/' Nested objects '/
+
+
+@enduml

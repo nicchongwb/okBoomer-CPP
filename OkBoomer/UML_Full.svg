@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1886.16px" preserveAspectRatio="none" style="width:3038px;height:1886px;" version="1.1" viewBox="0 0 3038 1886" width="3038.04px" zoomAndPan="magnify"><defs><filter height="300%" id="f1ltwwl18eeja0" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="1.74"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="3.48" dy="3.48" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[2a013135f1f90689be40a3c084fed702]
+cluster entities--><polygon fill="#FFFFFF" filter="url(#f1ltwwl18eeja0)" points="567.6315,449.79,618.9615,449.79,625.0515,470.3302,1138.3515,470.3302,1138.3515,645.54,567.6315,645.54,567.6315,449.79" style="stroke:#000000;stroke-width:1.305;"/><line style="stroke:#000000;stroke-width:1.305;" x1="567.6315" x2="625.0515" y1="470.3302" y2="470.3302"/><text fill="#000000" font-family="sans-serif" font-size="12.18" font-weight="bold" lengthAdjust="spacing" textLength="46.11" x="571.1115" y="464.1739">entities</text><!--MD5=[1cda01132c61fe02d01ee0e1238bf64b]
+cluster entities.items--><polygon fill="#FFFFFF" filter="url(#f1ltwwl18eeja0)" points="277.9215,672.51,365.7915,672.51,371.8815,693.0502,858.2115,693.0502,858.2115,1232.79,277.9215,1232.79,277.9215,672.51" style="stroke:#000000;stroke-width:1.305;"/><line style="stroke:#000000;stroke-width:1.305;" x1="277.9215" x2="371.8815" y1="693.0502" y2="693.0502"/><text fill="#000000" font-family="sans-serif" font-size="12.18" font-weight="bold" lengthAdjust="spacing" textLength="82.65" x="281.4015" y="686.8939">entities.items</text><!--MD5=[b47934f7eddf50b05bebba079a2d5c33]
+cluster entities.creatures--><polygon fill="#FFFFFF" filter="url(#f1ltwwl18eeja0)" points="913.8915,666.42,1027.8615,666.42,1033.9515,686.9602,1200.9915,686.9602,1200.9915,1365.03,913.8915,1365.03,913.8915,666.42" style="stroke:#000000;stroke-width:1.305;"/><line style="stroke:#000000;stroke-width:1.305;" x1="913.8915" x2="1033.9515" y1="686.9602" y2="686.9602"/><text fill="#000000" font-family="sans-serif" font-size="12.18" font-weight="bold" lengthAdjust="spacing" textLength="108.75" x="917.3715" y="680.8039">entities.creatures</text><!--MD5=[67f236fd0af0b11b2ef5a832d8415319]
+cluster gfx--><polygon fill="#FFFFFF" filter="url(#f1ltwwl18eeja0)" points="61.2915,1385.91,85.6515,1385.91,91.7415,1406.4502,1355.8515,1406.4502,1355.8515,1880.07,61.2915,1880.07,61.2915,1385.91" style="stroke:#000000;stroke-width:1.305;"/><line style="stroke:#000000;stroke-width:1.305;" x1="61.2915" x2="91.7415" y1="1406.4502" y2="1406.4502"/><text fill="#000000" font-family="sans-serif" font-size="12.18" font-weight="bold" lengthAdjust="spacing" textLength="19.14" x="64.7715" y="1400.2939">gfx</text><!--MD5=[38fe1c859229b9f23ba24ebfd54228a3]
+cluster world--><polygon fill="#FFFFFF" filter="url(#f1ltwwl18eeja0)" points="1376.7315,113.535,1415.8815,113.535,1421.9715,134.0752,2161.4715,134.0752,2161.4715,1587.315,1376.7315,1587.315,1376.7315,113.535" style="stroke:#000000;stroke-width:1.305;"/><line style="stroke:#000000;stroke-width:1.305;" x1="1376.7315" x2="1421.9715" y1="134.0752" y2="134.0752"/><text fill="#000000" font-family="sans-serif" font-size="12.18" font-weight="bold" lengthAdjust="spacing" textLength="33.93" x="1380.2115" y="127.9189">world</text><!--MD5=[61ef0e7cedb036059990bfe942fe9360]
+cluster states--><polygon fill="#FFFFFF" filter="url(#f1ltwwl18eeja0)" points="2182.3515,5.22,2224.9815,5.22,2231.0715,25.7602,2633.8815,25.7602,2633.8815,428.91,2182.3515,428.91,2182.3515,5.22" style="stroke:#000000;stroke-width:1.305;"/><line style="stroke:#000000;stroke-width:1.305;" x1="2182.3515" x2="2231.0715" y1="25.7602" y2="25.7602"/><text fill="#000000" font-family="sans-serif" font-size="12.18" font-weight="bold" lengthAdjust="spacing" textLength="37.41" x="2185.8315" y="19.6039">states</text><!--MD5=[e25d2abf3c472b89b03b52c7e4262e29]
+cluster interfaces--><polygon fill="#FFFFFF" filter="url(#f1ltwwl18eeja0)" points="2654.7615,101.355,2721.7515,101.355,2727.8415,121.8952,3023.6415,121.8952,3023.6415,332.775,2654.7615,332.775,2654.7615,101.355" style="stroke:#000000;stroke-width:1.305;"/><line style="stroke:#000000;stroke-width:1.305;" x1="2654.7615" x2="2727.8415" y1="121.8952" y2="121.8952"/><text fill="#000000" font-family="sans-serif" font-size="12.18" font-weight="bold" lengthAdjust="spacing" textLength="61.77" x="2658.2415" y="115.7389">interfaces</text><!--MD5=[c52f45833d539af9e29a9d34b8b7302b]
+cluster utils--><polygon fill="#FFFFFF" filter="url(#f1ltwwl18eeja0)" points="569.3715,107.445,600.6915,107.445,606.7815,127.9852,1167.9315,127.9852,1167.9315,326.685,569.3715,326.685,569.3715,107.445" style="stroke:#000000;stroke-width:1.305;"/><line style="stroke:#000000;stroke-width:1.305;" x1="569.3715" x2="606.7815" y1="127.9852" y2="127.9852"/><text fill="#000000" font-family="sans-serif" font-size="12.18" font-weight="bold" lengthAdjust="spacing" textLength="26.1" x="572.8515" y="121.8289">utils</text><!--MD5=[6ea7ee656260804a75c4cf9e9f7baa9f]
+class entities.Entity--><rect codeLine="2" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="150.0954" id="entities.Entity" style="stroke:#A80036;stroke-width:1.305;" width="133.11" x="990.8865" y="481.11"/><ellipse cx="1040.694" cy="495.03" fill="#A9DCDF" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M1042.2165,496.335 L1039.3482,496.335 L1038.9676,497.205 L1038.9676,497.205 L1039.3754,497.205 L1039.824,497.7488 L1039.824,498.075 L1039.824,498.4013 L1039.3754,498.945 L1038.9676,498.945 L1037.3228,498.945 L1036.7926,498.945 L1036.344,498.4013 L1036.344,498.075 L1036.344,497.7488 L1036.7926,497.205 L1037.3228,497.205 L1039.3346,491.985 L1038.5734,491.985 L1037.6626,491.985 L1037.214,491.4413 L1037.214,491.115 L1037.214,490.7888 L1037.6626,490.245 L1038.5734,490.245 L1041.7679,490.245 L1044.106,497.205 L1044.5954,497.205 L1044.5954,497.205 L1045.044,497.7488 L1045.044,498.075 L1045.044,498.4013 L1044.5954,498.945 L1044.106,498.945 L1042.4612,498.945 L1042.0126,498.945 L1041.564,498.4013 L1041.564,498.075 L1041.564,497.7488 L1042.0126,497.205 L1042.4612,497.205 L1042.4612,497.205 L1042.2165,496.335 Z M1041.7407,494.595 L1040.694,491.482 L1039.7968,494.595 L1041.7407,494.595 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" font-style="italic" lengthAdjust="spacing" textLength="26.1" x="1058.529" y="499.3018">Entity</text><line style="stroke:#A80036;stroke-width:1.305;" x1="991.7565" x2="1123.1265" y1="508.95" y2="508.95"/><polygon fill="none" points="1000.4565,514.17,1003.9365,517.65,1000.4565,521.13,996.9765,517.65" style="stroke:#B38D22;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="109.62" x="1008.2865" y="522.3645">m_Flip : SDL_RendererFlip</text><polygon fill="none" points="1000.4565,526.2073,1003.9365,529.6873,1000.4565,533.1673,996.9765,529.6873" style="stroke:#B38D22;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="110.49" x="1008.2865" y="534.4017">m_Transform : Transform*</text><polygon fill="none" points="1000.4565,538.2445,1003.9365,541.7245,1000.4565,545.2045,996.9765,541.7245" style="stroke:#B38D22;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="55.68" x="1008.2865" y="546.439">m_Height : int</text><polygon fill="none" points="1000.4565,550.2818,1003.9365,553.7618,1000.4565,557.2418,996.9765,553.7618" style="stroke:#B38D22;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="53.07" x="1008.2865" y="558.4763">m_Width : int</text><polygon fill="none" points="1000.4565,562.3191,1003.9365,565.7991,1000.4565,569.2791,996.9765,565.7991" style="stroke:#B38D22;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="101.79" x="1008.2865" y="570.5135">m_TextureID : std::string</text><line style="stroke:#A80036;stroke-width:1.305;" x1="991.7565" x2="1123.1265" y1="576.0963" y2="576.0963"/><ellipse cx="1000.4565" cy="585.6663" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="102.66" x="1008.2865" y="589.5108">Entity(Properties* props)</text><ellipse cx="1000.4565" cy="597.7036" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" font-style="italic" lengthAdjust="spacing" textLength="57.42" x="1008.2865" y="601.5481">Clean() : void</text><ellipse cx="1000.4565" cy="609.7409" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" font-style="italic" lengthAdjust="spacing" textLength="53.94" x="1008.2865" y="613.5853">Draw() : void</text><ellipse cx="1000.4565" cy="621.7781" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" font-style="italic" lengthAdjust="spacing" textLength="90.48" x="1008.2865" y="625.6226">Update(float dt) : void</text><!--MD5=[70e37a7b411d2923c69276d426f1144b]
+class entities.Properties--><rect codeLine="206" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="150.0954" id="entities.Properties" style="stroke:#A80036;stroke-width:1.305;" width="378.45" x="581.9865" y="481.11"/><ellipse cx="742.719" cy="495.03" fill="#ADD1B2" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M744.459,491.985 Q744.6357,491.55 744.8396,491.3325 Q745.0435,491.115 745.2746,491.115 Q745.6824,491.115 745.9407,491.3597 Q746.199,491.6044 746.199,492.1753 L746.199,493.5347 Q746.199,494.1056 745.9543,494.3503 Q745.7096,494.595 745.329,494.595 Q744.9892,494.595 744.7717,494.4455 Q744.5542,494.2959 744.459,493.9017 Q744.4182,493.6298 744.2687,493.4803 Q743.9968,493.1948 743.5074,493.0317 Q743.0181,492.855 742.5287,492.855 Q741.917,492.855 741.4004,493.0997 Q740.8974,493.3444 740.5032,493.8881 Q740.109,494.4319 740.109,495.1795 L740.109,495.9816 Q740.109,496.8788 740.8431,497.4769 Q741.5771,498.075 742.8821,498.075 Q743.657,498.075 744.2007,497.8983 Q744.5134,497.8031 744.8668,497.4905 Q745.0979,497.3137 745.2203,497.2594 Q745.3426,497.205 745.4921,497.205 Q745.7776,497.205 745.9815,497.4361 Q746.199,497.6536 746.199,497.9663 Q746.199,498.2653 745.8999,498.6188 Q745.4649,499.1353 744.7717,499.4208 Q743.8609,499.815 742.7462,499.815 Q741.4412,499.815 740.3945,499.2984 Q739.5517,498.8906 738.9535,498.007 Q738.369,497.1234 738.369,496.0767 L738.369,495.1252 Q738.369,494.0377 738.8856,493.0861 Q739.4157,492.1345 740.3265,491.6316 Q741.2509,491.115 742.284,491.115 Q742.9093,491.115 743.4531,491.3325 Q743.9968,491.55 744.459,491.985 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" lengthAdjust="spacing" textLength="49.59" x="760.554" y="499.3018">Properties</text><line style="stroke:#A80036;stroke-width:1.305;" x1="582.8565" x2="959.5665" y1="508.95" y2="508.95"/><ellipse cx="591.5565" cy="518.52" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="97.44" x="599.3865" y="522.3645">Flip : SDL_RendererFlip</text><ellipse cx="591.5565" cy="530.5573" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="43.5" x="599.3865" y="534.4017">Height : int</text><ellipse cx="591.5565" cy="542.5945" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="42.63" x="599.3865" y="546.439">PrevX : int</text><ellipse cx="591.5565" cy="554.6318" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="43.5" x="599.3865" y="558.4763">PrevY : int</text><ellipse cx="591.5565" cy="566.6691" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="40.89" x="599.3865" y="570.5135">Width : int</text><ellipse cx="591.5565" cy="578.7063" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="23.49" x="599.3865" y="582.5508">X : int</text><ellipse cx="591.5565" cy="590.7436" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="24.36" x="599.3865" y="594.5881">Y : int</text><ellipse cx="591.5565" cy="602.7809" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="89.61" x="599.3865" y="606.6253">TextureID : std::string</text><line style="stroke:#A80036;stroke-width:1.305;" x1="582.8565" x2="959.5665" y1="612.2081" y2="612.2081"/><ellipse cx="591.5565" cy="621.7781" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="355.83" x="599.3865" y="625.6226">Properties(std::string textureID, int x, int y, int width, int height, SDL_RendererFlip flip)</text><!--MD5=[940610cbb1f849f08cd09d0d13097334]
+class entities.items.Item--><rect codeLine="14" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="113.9836" id="entities.items.Item" style="stroke:#A80036;stroke-width:1.305;" width="119.19" x="660.2865" y="703.83"/><ellipse cx="705.309" cy="717.75" fill="#A9DCDF" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M706.8315,719.055 L703.9632,719.055 L703.5826,719.925 L703.5826,719.925 L703.9904,719.925 L704.439,720.4688 L704.439,720.795 L704.439,721.1213 L703.9904,721.665 L703.5826,721.665 L701.9377,721.665 L701.4076,721.665 L700.959,721.1213 L700.959,720.795 L700.959,720.4688 L701.4076,719.925 L701.9377,719.925 L703.9496,714.705 L703.1884,714.705 L702.2776,714.705 L701.829,714.1613 L701.829,713.835 L701.829,713.5088 L702.2776,712.965 L703.1884,712.965 L706.3829,712.965 L708.721,719.925 L709.2104,719.925 L709.2104,719.925 L709.659,720.4688 L709.659,720.795 L709.659,721.1213 L709.2104,721.665 L708.721,721.665 L707.0762,721.665 L706.6276,721.665 L706.179,721.1213 L706.179,720.795 L706.179,720.4688 L706.6276,719.925 L707.0762,719.925 L707.0762,719.925 L706.8315,719.055 Z M706.3557,717.315 L705.309,714.202 L704.4118,717.315 L706.3557,717.315 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" font-style="italic" lengthAdjust="spacing" textLength="21.75" x="723.144" y="722.0218">Item</text><line style="stroke:#A80036;stroke-width:1.305;" x1="661.1565" x2="778.6065" y1="731.67" y2="731.67"/><line style="stroke:#A80036;stroke-width:1.305;" x1="661.1565" x2="778.6065" y1="738.63" y2="738.63"/><ellipse cx="669.8565" cy="748.2" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="96.57" x="677.6865" y="752.0445">Item(Properties* props)</text><ellipse cx="669.8565" cy="760.2373" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="60.03" x="677.6865" y="764.0817">getItemX() : int</text><ellipse cx="669.8565" cy="772.2745" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="60.9" x="677.6865" y="776.119">getItemY() : int</text><ellipse cx="669.8565" cy="784.3118" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" font-style="italic" lengthAdjust="spacing" textLength="57.42" x="677.6865" y="788.1563">Clean() : void</text><ellipse cx="669.8565" cy="796.3491" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" font-style="italic" lengthAdjust="spacing" textLength="53.94" x="677.6865" y="800.1935">Draw() : void</text><ellipse cx="669.8565" cy="808.3863" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" font-style="italic" lengthAdjust="spacing" textLength="90.48" x="677.6865" y="812.2308">Update(float dt) : void</text><!--MD5=[20708c2183c059c6e7611171a8a57f32]
+class entities.items.BombCollectable--><rect codeLine="23" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="150.0954" id="entities.items.BombCollectable" style="stroke:#A80036;stroke-width:1.305;" width="273.18" x="291.8415" y="1038.345"/><ellipse cx="383.409" cy="1052.265" fill="#ADD1B2" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M385.149,1049.22 Q385.3257,1048.785 385.5296,1048.5675 Q385.7335,1048.35 385.9646,1048.35 Q386.3724,1048.35 386.6307,1048.5947 Q386.889,1048.8394 386.889,1049.4103 L386.889,1050.7697 Q386.889,1051.3406 386.6443,1051.5853 Q386.3996,1051.83 386.019,1051.83 Q385.6792,1051.83 385.4617,1051.6805 Q385.2442,1051.5309 385.149,1051.1367 Q385.1082,1050.8648 384.9587,1050.7153 Q384.6868,1050.4298 384.1974,1050.2667 Q383.7081,1050.09 383.2187,1050.09 Q382.607,1050.09 382.0904,1050.3347 Q381.5874,1050.5794 381.1932,1051.1231 Q380.799,1051.6669 380.799,1052.4145 L380.799,1053.2166 Q380.799,1054.1138 381.5331,1054.7119 Q382.2671,1055.31 383.5721,1055.31 Q384.347,1055.31 384.8907,1055.1333 Q385.2034,1055.0381 385.5568,1054.7255 Q385.7879,1054.5488 385.9102,1054.4944 Q386.0326,1054.44 386.1821,1054.44 Q386.4676,1054.44 386.6715,1054.6711 Q386.889,1054.8886 386.889,1055.2013 Q386.889,1055.5003 386.5899,1055.8538 Q386.1549,1056.3703 385.4617,1056.6558 Q384.5509,1057.05 383.4362,1057.05 Q382.1312,1057.05 381.0845,1056.5334 Q380.2417,1056.1256 379.6435,1055.242 Q379.059,1054.3584 379.059,1053.3117 L379.059,1052.3602 Q379.059,1051.2727 379.5756,1050.3211 Q380.1057,1049.3695 381.0165,1048.8666 Q381.9409,1048.35 382.974,1048.35 Q383.5993,1048.35 384.1431,1048.5675 Q384.6868,1048.785 385.149,1049.22 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" lengthAdjust="spacing" textLength="82.65" x="401.244" y="1056.5368">BombCollectable</text><line style="stroke:#A80036;stroke-width:1.305;" x1="292.7115" x2="564.1515" y1="1066.185" y2="1066.185"/><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="298.8015" y="1073.145"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="171.39" x="309.2415" y="1079.5995">m_BombItemTextureM : TextureManager*</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="298.8015" y="1085.1823"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="77.43" x="309.2415" y="1091.6367">m_ItemBombID : int</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="298.8015" y="1097.2195"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="117.45" x="309.2415" y="1103.674">m_NumBombsSpawned : int</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="298.8015" y="1109.2568"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="227.07" x="309.2415" y="1115.7113">s_BombsSpawnedList : std::vector&lt;BombCollectable&gt;</text><line style="stroke:#A80036;stroke-width:1.305;" x1="292.7115" x2="564.1515" y1="1121.2941" y2="1121.2941"/><ellipse cx="301.4115" cy="1130.8641" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="148.77" x="309.2415" y="1134.7085">BombCollectable(Properties* props)</text><ellipse cx="301.4115" cy="1142.9013" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="250.56" x="309.2415" y="1146.7458">getListOfSpawnedBombs() : std::vector&lt;BombCollectable&gt;*</text><ellipse cx="301.4115" cy="1154.9386" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="55.68" x="309.2415" y="1158.7831">Clean() : void</text><ellipse cx="301.4115" cy="1166.9759" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="55.68" x="309.2415" y="1170.8203">Draw() : void</text><ellipse cx="301.4115" cy="1179.0131" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="90.48" x="309.2415" y="1182.8576">Update(float dt) : void</text><!--MD5=[165d5a49fb56ee5d873275063b7611fd]
+class entities.items.BombPlanted--><rect codeLine="36" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="210.2817" id="entities.items.BombPlanted" style="stroke:#A80036;stroke-width:1.305;" width="247.95" x="595.9065" y="1008.33"/><ellipse cx="683.559" cy="1022.25" fill="#ADD1B2" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M685.299,1019.205 Q685.4757,1018.77 685.6796,1018.5525 Q685.8835,1018.335 686.1146,1018.335 Q686.5224,1018.335 686.7807,1018.5797 Q687.039,1018.8244 687.039,1019.3953 L687.039,1020.7547 Q687.039,1021.3256 686.7943,1021.5703 Q686.5496,1021.815 686.169,1021.815 Q685.8292,1021.815 685.6117,1021.6655 Q685.3942,1021.5159 685.299,1021.1217 Q685.2582,1020.8498 685.1087,1020.7003 Q684.8368,1020.4148 684.3474,1020.2517 Q683.8581,1020.075 683.3687,1020.075 Q682.757,1020.075 682.2404,1020.3197 Q681.7374,1020.5644 681.3432,1021.1081 Q680.949,1021.6519 680.949,1022.3995 L680.949,1023.2016 Q680.949,1024.0987 681.6831,1024.6969 Q682.4171,1025.295 683.7221,1025.295 Q684.497,1025.295 685.0407,1025.1183 Q685.3534,1025.0231 685.7068,1024.7105 Q685.9379,1024.5338 686.0602,1024.4794 Q686.1826,1024.425 686.3321,1024.425 Q686.6176,1024.425 686.8215,1024.6561 Q687.039,1024.8736 687.039,1025.1863 Q687.039,1025.4853 686.7399,1025.8388 Q686.3049,1026.3553 685.6117,1026.6408 Q684.7009,1027.035 683.5862,1027.035 Q682.2812,1027.035 681.2345,1026.5184 Q680.3917,1026.1106 679.7935,1025.227 Q679.209,1024.3434 679.209,1023.2967 L679.209,1022.3452 Q679.209,1021.2577 679.7256,1020.3061 Q680.2557,1019.3545 681.1665,1018.8516 Q682.0909,1018.335 683.124,1018.335 Q683.7493,1018.335 684.2931,1018.5525 Q684.8368,1018.77 685.299,1019.205 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" lengthAdjust="spacing" textLength="65.25" x="701.394" y="1026.5218">BombPlanted</text><line style="stroke:#A80036;stroke-width:1.305;" x1="596.7765" x2="842.9865" y1="1036.17" y2="1036.17"/><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="602.8665" y="1043.13"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="128.76" x="613.3065" y="1049.5845">m_BombAnimation : Animation*</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="602.8665" y="1055.1673"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="164.43" x="613.3065" y="1061.6217">m_PlantedBombTexture : SDL_Texture*</text><ellipse cx="605.4765" cy="1069.8145" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="86.13" x="613.3065" y="1073.659">m_countDown : bool</text><ellipse cx="605.4765" cy="1081.8518" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="98.31" x="613.3065" y="1085.6963">m_isBombPlanted : bool</text><ellipse cx="605.4765" cy="1093.8891" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="56.55" x="613.3065" y="1097.7335">m_start : long</text><ellipse cx="605.4765" cy="1105.9263" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="83.52" x="613.3065" y="1109.7708">s_bombID : static int</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="602.8665" y="1115.3536"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="102.66" x="613.3065" y="1121.8081">textureName : std::string</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="602.8665" y="1127.3909"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="196.62" x="613.3065" y="1133.8453">s_PlantedBombList : std::vector&lt;BombPlanted&gt;</text><line style="stroke:#A80036;stroke-width:1.305;" x1="596.7765" x2="842.9865" y1="1139.4281" y2="1139.4281"/><ellipse cx="605.4765" cy="1148.9981" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="133.98" x="613.3065" y="1152.8426">BombPlanted(Properties* props)</text><ellipse cx="605.4765" cy="1161.0354" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="180.96" x="613.3065" y="1164.8799">GetBombPlantedTextureName() : std::string</text><ellipse cx="605.4765" cy="1173.0727" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="225.33" x="613.3065" y="1176.9171">getListOfPlantedBombs() : std::vector&lt;BombPlanted&gt;*</text><ellipse cx="605.4765" cy="1185.1099" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="55.68" x="613.3065" y="1188.9544">Clean() : void</text><ellipse cx="605.4765" cy="1197.1472" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="55.68" x="613.3065" y="1200.9917">Draw() : void</text><ellipse cx="605.4765" cy="1209.1845" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="90.48" x="613.3065" y="1213.0289">Update(float dt) : void</text><!--MD5=[fff4fbefb74200d5cc792fdc24d62f59]
+class entities.creatures.Creature--><rect codeLine="54" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="126.0209" id="entities.creatures.Creature" style="stroke:#A80036;stroke-width:1.305;" width="139.2" x="987.8415" y="697.74"/><ellipse cx="1032.864" cy="711.66" fill="#A9DCDF" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M1034.3865,712.965 L1031.5182,712.965 L1031.1376,713.835 L1031.1376,713.835 L1031.5454,713.835 L1031.994,714.3788 L1031.994,714.705 L1031.994,715.0313 L1031.5454,715.575 L1031.1376,715.575 L1029.4928,715.575 L1028.9626,715.575 L1028.514,715.0313 L1028.514,714.705 L1028.514,714.3788 L1028.9626,713.835 L1029.4928,713.835 L1031.5046,708.615 L1030.7434,708.615 L1029.8326,708.615 L1029.384,708.0713 L1029.384,707.745 L1029.384,707.4188 L1029.8326,706.875 L1030.7434,706.875 L1033.9379,706.875 L1036.276,713.835 L1036.7654,713.835 L1036.7654,713.835 L1037.214,714.3788 L1037.214,714.705 L1037.214,715.0313 L1036.7654,715.575 L1036.276,715.575 L1034.6312,715.575 L1034.1826,715.575 L1033.734,715.0313 L1033.734,714.705 L1033.734,714.3788 L1034.1826,713.835 L1034.6312,713.835 L1034.6312,713.835 L1034.3865,712.965 Z M1033.9107,711.225 L1032.864,708.112 L1031.9668,711.225 L1033.9107,711.225 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" font-style="italic" lengthAdjust="spacing" textLength="41.76" x="1050.699" y="715.9318">Creature</text><line style="stroke:#A80036;stroke-width:1.305;" x1="988.7115" x2="1126.1715" y1="725.58" y2="725.58"/><polygon fill="none" points="997.4115,730.8,1000.8915,734.28,997.4115,737.76,993.9315,734.28" style="stroke:#B38D22;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="55.68" x="1005.2415" y="738.9945">m_Health : int</text><polygon fill="none" points="997.4115,742.8373,1000.8915,746.3173,997.4115,749.7973,993.9315,746.3173" style="stroke:#B38D22;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="56.55" x="1005.2415" y="751.0317">m_Speed : int</text><polygon fill="none" points="997.4115,754.8745,1000.8915,758.3545,997.4115,761.8345,993.9315,758.3545" style="stroke:#B38D22;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="85.26" x="1005.2415" y="763.069">m_Name : std::string</text><line style="stroke:#A80036;stroke-width:1.305;" x1="988.7115" x2="1126.1715" y1="768.6518" y2="768.6518"/><ellipse cx="997.4115" cy="778.2218" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="116.58" x="1005.2415" y="782.0663">Creature(Properties* props)</text><ellipse cx="997.4115" cy="790.2591" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" font-style="italic" lengthAdjust="spacing" textLength="57.42" x="1005.2415" y="794.1035">Clean() : void</text><ellipse cx="997.4115" cy="802.2963" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" font-style="italic" lengthAdjust="spacing" textLength="53.94" x="1005.2415" y="806.1408">Draw() : void</text><ellipse cx="997.4115" cy="814.3336" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" font-style="italic" lengthAdjust="spacing" textLength="90.48" x="1005.2415" y="818.1781">Update(float dt) : void</text><!--MD5=[79e611175aab30d878e28b1060269c5b]
+class entities.creatures.Player--><rect codeLine="64" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="475.1016" id="entities.creatures.Player" style="stroke:#A80036;stroke-width:1.305;" width="259.26" x="927.8115" y="876.09"/><ellipse cx="1038.954" cy="890.01" fill="#ADD1B2" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M1040.694,886.965 Q1040.8707,886.53 1041.0746,886.3125 Q1041.2785,886.095 1041.5096,886.095 Q1041.9174,886.095 1042.1757,886.3397 Q1042.434,886.5844 1042.434,887.1553 L1042.434,888.5147 Q1042.434,889.0856 1042.1893,889.3303 Q1041.9446,889.575 1041.564,889.575 Q1041.2242,889.575 1041.0067,889.4255 Q1040.7892,889.2759 1040.694,888.8817 Q1040.6532,888.6098 1040.5037,888.4603 Q1040.2318,888.1748 1039.7424,888.0117 Q1039.2531,887.835 1038.7637,887.835 Q1038.152,887.835 1037.6354,888.0797 Q1037.1324,888.3244 1036.7382,888.8681 Q1036.344,889.4119 1036.344,890.1595 L1036.344,890.9616 Q1036.344,891.8588 1037.0781,892.4569 Q1037.8121,893.055 1039.1171,893.055 Q1039.892,893.055 1040.4357,892.8783 Q1040.7484,892.7831 1041.1018,892.4705 Q1041.3329,892.2938 1041.4553,892.2394 Q1041.5776,892.185 1041.7271,892.185 Q1042.0126,892.185 1042.2165,892.4161 Q1042.434,892.6336 1042.434,892.9463 Q1042.434,893.2453 1042.1349,893.5988 Q1041.6999,894.1153 1041.0067,894.4008 Q1040.0959,894.795 1038.9812,894.795 Q1037.6762,894.795 1036.6295,894.2784 Q1035.7867,893.8706 1035.1885,892.987 Q1034.604,892.1034 1034.604,891.0567 L1034.604,890.1052 Q1034.604,889.0177 1035.1206,888.0661 Q1035.6507,887.1145 1036.5615,886.6116 Q1037.4859,886.095 1038.519,886.095 Q1039.1443,886.095 1039.6881,886.3125 Q1040.2318,886.53 1040.694,886.965 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" lengthAdjust="spacing" textLength="29.58" x="1056.789" y="894.2818">Player</text><line style="stroke:#A80036;stroke-width:1.305;" x1="928.6815" x2="1186.2015" y1="903.93" y2="903.93"/><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="934.7715" y="910.89"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="105.27" x="945.2115" y="917.3445">m_Animation : Animation*</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="934.7715" y="922.9273"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="143.55" x="945.2115" y="929.3817">m_DrawManager : DrawManager*</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="934.7715" y="934.9645"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="87.87" x="945.2115" y="941.419">m_bombPlaced : bool</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="934.7715" y="947.0018"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="84.39" x="945.2115" y="953.4563">m_getBombed : bool</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="934.7715" y="959.0391"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="73.95" x="945.2115" y="965.4935">m_putBomb : bool</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="934.7715" y="971.0763"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="55.68" x="945.2115" y="977.5308">m_Health : int</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="934.7715" y="983.1136"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="56.55" x="945.2115" y="989.5681">m_Speed : int</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="934.7715" y="995.1509"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="97.44" x="945.2115" y="1001.6053">m_bombCollectable : int</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="934.7715" y="1007.1881"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="70.47" x="945.2115" y="1013.6426">m_bombHeld : int</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="934.7715" y="1019.2254"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="57.42" x="945.2115" y="1025.6799">m_bombx : int</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="934.7715" y="1031.2627"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="57.42" x="945.2115" y="1037.7171">m_bomby : int</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="934.7715" y="1043.2999"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="41.76" x="945.2115" y="1049.7544">m_pid : int</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="934.7715" y="1055.3372"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="42.63" x="945.2115" y="1061.7917">newX : int</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="934.7715" y="1067.3745"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="43.5" x="945.2115" y="1073.8289">newY : int</text><ellipse cx="937.3815" cy="1082.0217" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="118.32" x="945.2115" y="1085.8662">s_AlrPressedP1 : static bool</text><ellipse cx="937.3815" cy="1094.059" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="118.32" x="945.2115" y="1097.9035">s_AlrPressedP2 : static bool</text><ellipse cx="937.3815" cy="1106.0963" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="108.75" x="945.2115" y="1109.9407">s_countdown : static bool</text><ellipse cx="937.3815" cy="1118.1335" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="103.53" x="945.2115" y="1121.978">s_PlayerCount : static int</text><ellipse cx="937.3815" cy="1130.1708" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="89.61" x="945.2115" y="1134.0153">s_p1facing : static int</text><ellipse cx="937.3815" cy="1142.208" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="89.61" x="945.2115" y="1146.0525">s_p2facing : static int</text><ellipse cx="937.3815" cy="1154.2453" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="80.04" x="945.2115" y="1158.0898">s_start : static long</text><line style="stroke:#A80036;stroke-width:1.305;" x1="928.6815" x2="1186.2015" y1="1163.6726" y2="1163.6726"/><ellipse cx="937.3815" cy="1173.2426" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="106.14" x="945.2115" y="1177.0871">Player(Properties* props)</text><ellipse cx="937.3815" cy="1185.2798" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="62.64" x="945.2115" y="1189.1243">GetBomb() : int</text><ellipse cx="937.3815" cy="1197.3171" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="75.69" x="945.2115" y="1201.1616">GetBombCol() : int</text><ellipse cx="937.3815" cy="1209.3544" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="65.25" x="945.2115" y="1213.1989">GetHealth() : int</text><ellipse cx="937.3815" cy="1221.3916" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="55.68" x="945.2115" y="1225.2361">Clean() : void</text><ellipse cx="937.3815" cy="1233.4289" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="55.68" x="945.2115" y="1237.2734">Draw() : void</text><ellipse cx="937.3815" cy="1245.4662" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="66.99" x="945.2115" y="1249.3107">GetInput() : void</text><ellipse cx="937.3815" cy="1257.5034" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="90.48" x="945.2115" y="1261.3479">Update(float dt) : void</text><ellipse cx="937.3815" cy="1269.5407" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="103.53" x="945.2115" y="1273.3852">bombCountdown() : void</text><ellipse cx="937.3815" cy="1281.578" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="82.65" x="945.2115" y="1285.4225">collectBomb() : void</text><ellipse cx="937.3815" cy="1293.6152" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="120.06" x="945.2115" y="1297.4597">getBombedAnimation() : void</text><ellipse cx="937.3815" cy="1305.6525" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="117.45" x="945.2115" y="1309.497">getCurrentAnimation() : void</text><ellipse cx="937.3815" cy="1317.6898" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="236.64" x="945.2115" y="1321.5342">placeBombCountdown(BombPlanted bombPlanted) : void</text><ellipse cx="937.3815" cy="1329.727" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="75.69" x="945.2115" y="1333.5715">plantBomb() : void</text><ellipse cx="937.3815" cy="1341.7643" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="83.52" x="945.2115" y="1345.6088">takeDamage() : void</text><!--MD5=[31b39ed9b6cb36778e2b2be9841862c5]
+class gfx.Animation--><rect codeLine="103" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="174.1699" id="gfx.Animation" style="stroke:#A80036;stroke-width:1.305;" width="533.31" x="453.2265" y="1417.23"/><ellipse cx="692.259" cy="1431.15" fill="#ADD1B2" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M693.999,1428.105 Q694.1757,1427.67 694.3796,1427.4525 Q694.5835,1427.235 694.8146,1427.235 Q695.2224,1427.235 695.4807,1427.4797 Q695.739,1427.7244 695.739,1428.2953 L695.739,1429.6547 Q695.739,1430.2256 695.4943,1430.4703 Q695.2496,1430.715 694.869,1430.715 Q694.5292,1430.715 694.3117,1430.5655 Q694.0942,1430.4159 693.999,1430.0217 Q693.9582,1429.7498 693.8087,1429.6003 Q693.5368,1429.3148 693.0474,1429.1517 Q692.5581,1428.975 692.0687,1428.975 Q691.457,1428.975 690.9404,1429.2197 Q690.4374,1429.4644 690.0432,1430.0081 Q689.649,1430.5519 689.649,1431.2995 L689.649,1432.1016 Q689.649,1432.9988 690.3831,1433.5969 Q691.1171,1434.195 692.4221,1434.195 Q693.197,1434.195 693.7407,1434.0183 Q694.0534,1433.9231 694.4068,1433.6105 Q694.6379,1433.4338 694.7602,1433.3794 Q694.8826,1433.325 695.0321,1433.325 Q695.3176,1433.325 695.5215,1433.5561 Q695.739,1433.7736 695.739,1434.0863 Q695.739,1434.3853 695.4399,1434.7388 Q695.0049,1435.2553 694.3117,1435.5408 Q693.4009,1435.935 692.2862,1435.935 Q690.9812,1435.935 689.9345,1435.4184 Q689.0917,1435.0106 688.4935,1434.127 Q687.909,1433.2434 687.909,1432.1967 L687.909,1431.2452 Q687.909,1430.1577 688.4256,1429.2061 Q688.9557,1428.2545 689.8665,1427.7516 Q690.7909,1427.235 691.824,1427.235 Q692.4493,1427.235 692.9931,1427.4525 Q693.5368,1427.67 693.999,1428.105 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" lengthAdjust="spacing" textLength="47.85" x="710.094" y="1435.4218">Animation</text><line style="stroke:#A80036;stroke-width:1.305;" x1="454.0965" x2="985.6665" y1="1445.07" y2="1445.07"/><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="460.1865" y="1452.03"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="109.62" x="470.6265" y="1458.4845">m_Flip : SDL_RendererFlip</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="460.1865" y="1464.0673"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="77.43" x="470.6265" y="1470.5217">m_AnimSpeed : int</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="460.1865" y="1476.1045"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="80.04" x="470.6265" y="1482.559">m_FrameCount : int</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="460.1865" y="1488.1418"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="66.99" x="470.6265" y="1494.5963">m_SpriteCol : int</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="460.1865" y="1500.1791"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="80.04" x="470.6265" y="1506.6335">m_SpriteFrame : int</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="460.1865" y="1512.2163"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="73.95" x="470.6265" y="1518.6708">m_SpriteRow : int</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="460.1865" y="1524.2536"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="101.79" x="470.6265" y="1530.7081">m_TextureID : std::string</text><line style="stroke:#A80036;stroke-width:1.305;" x1="454.0965" x2="985.6665" y1="1536.2909" y2="1536.2909"/><ellipse cx="462.7965" cy="1545.8609" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="47.85" x="470.6265" y="1549.7053">Animation()</text><ellipse cx="462.7965" cy="1557.8981" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="244.47" x="470.6265" y="1561.7426">Draw(float x, float y, int spriteWidth, int spriteHeight) : void</text><ellipse cx="462.7965" cy="1569.9354" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="510.69" x="470.6265" y="1573.7799">SetProperties(std::string textureID, int spriteRow, int spriteCol, int frameCount, int animSpeed, SDL_RendererFlip flip) : void</text><ellipse cx="462.7965" cy="1581.9727" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="61.77" x="470.6265" y="1585.8171">Update() : void</text><!--MD5=[61c3fa5585ca85434ecfc87dbde0af51]
+class gfx.DrawManager--><rect codeLine="118" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="150.0954" id="gfx.DrawManager" style="stroke:#A80036;stroke-width:1.305;" width="151.38" x="1017.4215" y="1428.975"/><ellipse cx="1055.919" cy="1442.895" fill="#ADD1B2" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M1057.659,1439.85 Q1057.8357,1439.415 1058.0396,1439.1975 Q1058.2435,1438.98 1058.4746,1438.98 Q1058.8824,1438.98 1059.1407,1439.2247 Q1059.399,1439.4694 1059.399,1440.0403 L1059.399,1441.3997 Q1059.399,1441.9706 1059.1543,1442.2153 Q1058.9096,1442.46 1058.529,1442.46 Q1058.1892,1442.46 1057.9717,1442.3105 Q1057.7542,1442.1609 1057.659,1441.7667 Q1057.6182,1441.4948 1057.4687,1441.3453 Q1057.1968,1441.0598 1056.7074,1440.8967 Q1056.2181,1440.72 1055.7287,1440.72 Q1055.117,1440.72 1054.6004,1440.9647 Q1054.0974,1441.2094 1053.7032,1441.7531 Q1053.309,1442.2969 1053.309,1443.0445 L1053.309,1443.8466 Q1053.309,1444.7438 1054.0431,1445.3419 Q1054.7771,1445.94 1056.0821,1445.94 Q1056.857,1445.94 1057.4007,1445.7633 Q1057.7134,1445.6681 1058.0668,1445.3555 Q1058.2979,1445.1788 1058.4203,1445.1244 Q1058.5426,1445.07 1058.6921,1445.07 Q1058.9776,1445.07 1059.1815,1445.3011 Q1059.399,1445.5186 1059.399,1445.8313 Q1059.399,1446.1303 1059.0999,1446.4838 Q1058.6649,1447.0003 1057.9717,1447.2858 Q1057.0609,1447.68 1055.9462,1447.68 Q1054.6412,1447.68 1053.5945,1447.1634 Q1052.7517,1446.7556 1052.1535,1445.872 Q1051.569,1444.9884 1051.569,1443.9417 L1051.569,1442.9902 Q1051.569,1441.9027 1052.0856,1440.9511 Q1052.6157,1439.9995 1053.5265,1439.4966 Q1054.4509,1438.98 1055.484,1438.98 Q1056.1093,1438.98 1056.6531,1439.1975 Q1057.1968,1439.415 1057.659,1439.85 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" lengthAdjust="spacing" textLength="66.99" x="1073.754" y="1447.1668">DrawManager</text><line style="stroke:#A80036;stroke-width:1.305;" x1="1018.2915" x2="1167.9315" y1="1456.815" y2="1456.815"/><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="1024.3815" y="1463.775"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="84.39" x="1034.8215" y="1470.2295">m_Force : Vector2D</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="1024.3815" y="1475.8123"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="92.22" x="1034.8215" y="1482.2667">m_Position : Vector2D</text><line style="stroke:#A80036;stroke-width:1.305;" x1="1018.2915" x2="1167.9315" y1="1487.8495" y2="1487.8495"/><ellipse cx="1026.9915" cy="1497.4195" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="66.99" x="1034.8215" y="1501.264">DrawManager()</text><ellipse cx="1026.9915" cy="1509.4568" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="101.79" x="1034.8215" y="1513.3013">GetPosition() : Vector2D</text><ellipse cx="1026.9915" cy="1521.4941" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="128.76" x="1034.8215" y="1525.3385">ApplyForce(Vector2D F) : void</text><ellipse cx="1026.9915" cy="1533.5313" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="109.62" x="1034.8215" y="1537.3758">ApplyForceX(int Fx) : void</text><ellipse cx="1026.9915" cy="1545.5686" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="110.49" x="1034.8215" y="1549.4131">ApplyForceY(int Fy) : void</text><ellipse cx="1026.9915" cy="1557.6059" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="80.91" x="1034.8215" y="1561.4503">UnsetForce() : void</text><ellipse cx="1026.9915" cy="1569.6431" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="61.77" x="1034.8215" y="1573.4876">Update() : void</text><!--MD5=[15af45a6dbda0b46b9bcc7341b4758d2]
+class gfx.TextureManager--><rect codeLine="167" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="222.319" id="gfx.TextureManager" style="stroke:#A80036;stroke-width:1.305;" width="486.33" x="267.0465" y="1643.43"/><ellipse cx="468.234" cy="1657.35" fill="#ADD1B2" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M469.974,1654.305 Q470.1507,1653.87 470.3546,1653.6525 Q470.5585,1653.435 470.7896,1653.435 Q471.1974,1653.435 471.4557,1653.6797 Q471.714,1653.9244 471.714,1654.4953 L471.714,1655.8547 Q471.714,1656.4256 471.4693,1656.6703 Q471.2246,1656.915 470.844,1656.915 Q470.5042,1656.915 470.2867,1656.7655 Q470.0692,1656.6159 469.974,1656.2217 Q469.9332,1655.9498 469.7837,1655.8003 Q469.5118,1655.5148 469.0224,1655.3517 Q468.5331,1655.175 468.0437,1655.175 Q467.432,1655.175 466.9154,1655.4197 Q466.4124,1655.6644 466.0182,1656.2081 Q465.624,1656.7519 465.624,1657.4995 L465.624,1658.3016 Q465.624,1659.1988 466.3581,1659.7969 Q467.0921,1660.395 468.3971,1660.395 Q469.172,1660.395 469.7157,1660.2183 Q470.0284,1660.1231 470.3818,1659.8105 Q470.6129,1659.6338 470.7353,1659.5794 Q470.8576,1659.525 471.0071,1659.525 Q471.2926,1659.525 471.4965,1659.7561 Q471.714,1659.9736 471.714,1660.2862 Q471.714,1660.5853 471.4149,1660.9388 Q470.9799,1661.4553 470.2867,1661.7408 Q469.3759,1662.135 468.2612,1662.135 Q466.9562,1662.135 465.9095,1661.6184 Q465.0667,1661.2106 464.4685,1660.327 Q463.884,1659.4434 463.884,1658.3967 L463.884,1657.4452 Q463.884,1656.3577 464.4006,1655.4061 Q464.9307,1654.4545 465.8415,1653.9516 Q466.7659,1653.435 467.799,1653.435 Q468.4243,1653.435 468.9681,1653.6525 Q469.5118,1653.87 469.974,1654.305 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" lengthAdjust="spacing" textLength="76.56" x="486.069" y="1661.6218">TextureManager</text><line style="stroke:#A80036;stroke-width:1.305;" x1="267.9165" x2="752.5065" y1="1671.27" y2="1671.27"/><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="274.0065" y="1678.23"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="151.38" x="284.4465" y="1684.6845">s_Instance : static TextureManager*</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="274.0065" y="1690.2673"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="220.98" x="284.4465" y="1696.7217">m_TextureMap : std::map&lt;std::string, SDL_Texture*&gt;</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="274.0065" y="1702.3045"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="165.3" x="284.4465" y="1708.759">fonts : std::map&lt;std::string, TTF_Font*&gt;</text><line style="stroke:#A80036;stroke-width:1.305;" x1="267.9165" x2="752.5065" y1="1714.3418" y2="1714.3418"/><rect fill="#F24D5C" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="274.0065" y="1721.3018"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="75.69" x="284.4465" y="1727.7563">TextureManager()</text><ellipse cx="276.6165" cy="1735.9491" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="171.39" x="284.4465" y="1739.7935">GetTexture(std::string id) : SDL_Texture*</text><ellipse cx="276.6165" cy="1747.9863" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="132.24" x="284.4465" y="1751.8308">GetFont(std::string) : TTF_Font*</text><ellipse cx="276.6165" cy="1760.0236" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="137.46" x="284.4465" y="1763.8681">GetInstance() : TextureManager*</text><ellipse cx="276.6165" cy="1772.0609" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="188.79" x="284.4465" y="1775.9053">Load(std::string id, std::string filename) : bool</text><ellipse cx="276.6165" cy="1784.0981" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="171.39" x="284.4465" y="1787.9426">AddFont(std::string, std::string, int) : void</text><ellipse cx="276.6165" cy="1796.1354" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="55.68" x="284.4465" y="1799.9799">Clean() : void</text><ellipse cx="276.6165" cy="1808.1727" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="395.85" x="284.4465" y="1812.0171">Draw(std::string id, int x, int y, int width, int height, int row, int col, SDL_RendererFlip flip) : void</text><ellipse cx="276.6165" cy="1820.2099" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="463.71" x="284.4465" y="1824.0544">DrawFrame(std::string id, int x, int y, int width, int height, int row, int col, int frame, SDL_RendererFlip flip) : void</text><ellipse cx="276.6165" cy="1832.2472" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="413.25" x="284.4465" y="1836.0917">DrawIcon(std::string id, int x, int y, int width, int height, int row, int col, SDL_RendererFlip flip) : void</text><ellipse cx="276.6165" cy="1844.2845" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="410.64" x="284.4465" y="1848.1289">DrawTile(std::string tilesetID, int tileSize, int x, int y, int row, int frame, SDL_RendererFlip flip) : void</text><ellipse cx="276.6165" cy="1856.3217" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="103.53" x="284.4465" y="1860.1662">Drop(std::string id) : void</text><!--MD5=[4c7c7f33a1ec25f7be8040bd6777f2d6]
+class gfx.Transform--><rect codeLine="186" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="126.0209" id="gfx.Transform" style="stroke:#A80036;stroke-width:1.305;" width="141.81" x="1199.6865" y="1441.155"/><ellipse cx="1242.099" cy="1455.075" fill="#ADD1B2" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M1243.839,1452.03 Q1244.0157,1451.595 1244.2196,1451.3775 Q1244.4235,1451.16 1244.6546,1451.16 Q1245.0624,1451.16 1245.3207,1451.4047 Q1245.579,1451.6494 1245.579,1452.2203 L1245.579,1453.5797 Q1245.579,1454.1506 1245.3343,1454.3953 Q1245.0896,1454.64 1244.709,1454.64 Q1244.3692,1454.64 1244.1517,1454.4905 Q1243.9342,1454.3409 1243.839,1453.9467 Q1243.7982,1453.6748 1243.6487,1453.5253 Q1243.3768,1453.2398 1242.8874,1453.0767 Q1242.3981,1452.9 1241.9087,1452.9 Q1241.297,1452.9 1240.7804,1453.1447 Q1240.2774,1453.3894 1239.8832,1453.9331 Q1239.489,1454.4769 1239.489,1455.2245 L1239.489,1456.0266 Q1239.489,1456.9238 1240.2231,1457.5219 Q1240.9571,1458.12 1242.2621,1458.12 Q1243.037,1458.12 1243.5807,1457.9433 Q1243.8934,1457.8481 1244.2468,1457.5355 Q1244.4779,1457.3588 1244.6003,1457.3044 Q1244.7226,1457.25 1244.8721,1457.25 Q1245.1576,1457.25 1245.3615,1457.4811 Q1245.579,1457.6986 1245.579,1458.0113 Q1245.579,1458.3103 1245.2799,1458.6638 Q1244.8449,1459.1803 1244.1517,1459.4658 Q1243.2409,1459.86 1242.1262,1459.86 Q1240.8212,1459.86 1239.7745,1459.3434 Q1238.9317,1458.9356 1238.3335,1458.052 Q1237.749,1457.1684 1237.749,1456.1217 L1237.749,1455.1702 Q1237.749,1454.0827 1238.2656,1453.1311 Q1238.7957,1452.1795 1239.7065,1451.6766 Q1240.6309,1451.16 1241.664,1451.16 Q1242.2893,1451.16 1242.8331,1451.3775 Q1243.3768,1451.595 1243.839,1452.03 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" lengthAdjust="spacing" textLength="49.59" x="1259.934" y="1459.3468">Transform</text><line style="stroke:#A80036;stroke-width:1.305;" x1="1200.5565" x2="1340.6265" y1="1468.995" y2="1468.995"/><ellipse cx="1209.2565" cy="1478.565" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="23.49" x="1217.0865" y="1482.4095">X : int</text><ellipse cx="1209.2565" cy="1490.6023" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="24.36" x="1217.0865" y="1494.4467">Y : int</text><line style="stroke:#A80036;stroke-width:1.305;" x1="1200.5565" x2="1340.6265" y1="1500.0295" y2="1500.0295"/><ellipse cx="1209.2565" cy="1509.5995" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="90.48" x="1217.0865" y="1513.444">Transform(int x, int y)</text><ellipse cx="1209.2565" cy="1521.6368" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="109.62" x="1217.0865" y="1525.4813">Log(std::string msg) : void</text><ellipse cx="1209.2565" cy="1533.6741" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="119.19" x="1217.0865" y="1537.5185">Translate(Vector2D v) : void</text><ellipse cx="1209.2565" cy="1545.7113" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="94.83" x="1217.0865" y="1549.5558">TranslateX(int x) : void</text><ellipse cx="1209.2565" cy="1557.7486" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="95.7" x="1217.0865" y="1561.5931">TranslateY(int y) : void</text><!--MD5=[408c1a95a6004acb5e587067bbcd0af8]
+class gfx.Vector2D--><rect codeLine="197" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="113.9836" id="gfx.Vector2D" style="stroke:#A80036;stroke-width:1.305;" width="237.51" x="974.3565" y="1697.805"/><ellipse cx="1067.664" cy="1711.725" fill="#ADD1B2" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M1069.404,1708.68 Q1069.5807,1708.245 1069.7846,1708.0275 Q1069.9885,1707.81 1070.2196,1707.81 Q1070.6274,1707.81 1070.8857,1708.0547 Q1071.144,1708.2994 1071.144,1708.8703 L1071.144,1710.2297 Q1071.144,1710.8006 1070.8993,1711.0453 Q1070.6546,1711.29 1070.274,1711.29 Q1069.9342,1711.29 1069.7167,1711.1405 Q1069.4992,1710.9909 1069.404,1710.5967 Q1069.3632,1710.3248 1069.2137,1710.1753 Q1068.9418,1709.8898 1068.4524,1709.7267 Q1067.9631,1709.55 1067.4737,1709.55 Q1066.862,1709.55 1066.3454,1709.7947 Q1065.8424,1710.0394 1065.4482,1710.5831 Q1065.054,1711.1269 1065.054,1711.8745 L1065.054,1712.6766 Q1065.054,1713.5738 1065.7881,1714.1719 Q1066.5221,1714.77 1067.8271,1714.77 Q1068.602,1714.77 1069.1457,1714.5933 Q1069.4584,1714.4981 1069.8118,1714.1855 Q1070.0429,1714.0088 1070.1653,1713.9544 Q1070.2876,1713.9 1070.4371,1713.9 Q1070.7226,1713.9 1070.9265,1714.1311 Q1071.144,1714.3486 1071.144,1714.6612 Q1071.144,1714.9603 1070.8449,1715.3138 Q1070.4099,1715.8303 1069.7167,1716.1158 Q1068.8059,1716.51 1067.6912,1716.51 Q1066.3862,1716.51 1065.3395,1715.9934 Q1064.4967,1715.5856 1063.8985,1714.702 Q1063.314,1713.8184 1063.314,1712.7717 L1063.314,1711.8202 Q1063.314,1710.7327 1063.8306,1709.7811 Q1064.3607,1708.8295 1065.2715,1708.3266 Q1066.1959,1707.81 1067.229,1707.81 Q1067.8543,1707.81 1068.3981,1708.0275 Q1068.9418,1708.245 1069.404,1708.68 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" lengthAdjust="spacing" textLength="43.5" x="1085.499" y="1715.9968">Vector2D</text><line style="stroke:#A80036;stroke-width:1.305;" x1="975.2265" x2="1210.9965" y1="1725.645" y2="1725.645"/><ellipse cx="983.9265" cy="1735.215" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="23.49" x="991.7565" y="1739.0595">X : int</text><ellipse cx="983.9265" cy="1747.2523" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="24.36" x="991.7565" y="1751.0967">Y : int</text><line style="stroke:#A80036;stroke-width:1.305;" x1="975.2265" x2="1210.9965" y1="1756.6795" y2="1756.6795"/><ellipse cx="983.9265" cy="1766.2495" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="87" x="991.7565" y="1770.094">Vector2D(int x, int y)</text><ellipse cx="983.9265" cy="1778.2868" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="214.89" x="991.7565" y="1782.1313">operator+(const Vector2D&amp; v2) : Vector2D {query}</text><ellipse cx="983.9265" cy="1790.3241" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="213.15" x="991.7565" y="1794.1685">operator-(const Vector2D&amp; v2) : Vector2D {query}</text><ellipse cx="983.9265" cy="1802.3613" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="109.62" x="991.7565" y="1806.2058">Log(std::string msg) : void</text><!--MD5=[57210c06e20415b9d54619e815cd0c71]
+class gfx.UILabel--><rect codeLine="273" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="138.0581" id="gfx.UILabel" style="stroke:#A80036;stroke-width:1.305;" width="347.13" x="75.6465" y="1435.065"/><ellipse cx="226.809" cy="1448.985" fill="#ADD1B2" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M228.549,1445.94 Q228.7257,1445.505 228.9296,1445.2875 Q229.1335,1445.07 229.3646,1445.07 Q229.7724,1445.07 230.0307,1445.3147 Q230.289,1445.5594 230.289,1446.1303 L230.289,1447.4897 Q230.289,1448.0606 230.0443,1448.3053 Q229.7996,1448.55 229.419,1448.55 Q229.0792,1448.55 228.8617,1448.4005 Q228.6442,1448.2509 228.549,1447.8567 Q228.5082,1447.5848 228.3587,1447.4353 Q228.0868,1447.1498 227.5974,1446.9867 Q227.1081,1446.81 226.6187,1446.81 Q226.007,1446.81 225.4904,1447.0547 Q224.9874,1447.2994 224.5932,1447.8431 Q224.199,1448.3869 224.199,1449.1345 L224.199,1449.9366 Q224.199,1450.8338 224.9331,1451.4319 Q225.6671,1452.03 226.9721,1452.03 Q227.747,1452.03 228.2907,1451.8533 Q228.6034,1451.7581 228.9568,1451.4455 Q229.1879,1451.2688 229.3103,1451.2144 Q229.4326,1451.16 229.5821,1451.16 Q229.8676,1451.16 230.0715,1451.3911 Q230.289,1451.6086 230.289,1451.9213 Q230.289,1452.2203 229.9899,1452.5738 Q229.5549,1453.0903 228.8617,1453.3758 Q227.9509,1453.77 226.8362,1453.77 Q225.5312,1453.77 224.4845,1453.2534 Q223.6417,1452.8456 223.0435,1451.962 Q222.459,1451.0784 222.459,1450.0317 L222.459,1449.0802 Q222.459,1447.9927 222.9756,1447.0411 Q223.5057,1446.0895 224.4165,1445.5866 Q225.3409,1445.07 226.374,1445.07 Q226.9993,1445.07 227.5431,1445.2875 Q228.0868,1445.505 228.549,1445.94 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" lengthAdjust="spacing" textLength="37.41" x="244.644" y="1453.2568">UILabel</text><line style="stroke:#A80036;stroke-width:1.305;" x1="76.5165" x2="421.9065" y1="1462.905" y2="1462.905"/><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="82.6065" y="1469.865"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="94.83" x="93.0465" y="1476.3195">textColour : SDL_Color</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="82.6065" y="1481.9023"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="81.78" x="93.0465" y="1488.3567">position : SDL_Rect</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="82.6065" y="1493.9395"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="117.45" x="93.0465" y="1500.394">labelTexture : SDL_Texture*</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="82.6065" y="1505.9768"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="87" x="93.0465" y="1512.4313">labelFont : std::string</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="82.6065" y="1518.0141"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="87" x="93.0465" y="1524.4685">labelText : std::string</text><line style="stroke:#A80036;stroke-width:1.305;" x1="76.5165" x2="421.9065" y1="1530.0513" y2="1530.0513"/><ellipse cx="85.2165" cy="1539.6213" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="324.51" x="93.0465" y="1543.4658">UILabel(int xpos, int ypos, std::string text, std::string font, SDL_Color&amp; colour)</text><ellipse cx="85.2165" cy="1551.6586" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="213.15" x="93.0465" y="1555.5031">SetLabelText(std::string text, std::string font) : void</text><ellipse cx="85.2165" cy="1563.6959" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="54.81" x="93.0465" y="1567.5403">draw() : void</text><!--MD5=[032b4da80d473f4495ac8a06202750d4]
+class world.Layer--><rect codeLine="130" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="65.8345" id="world.Layer" style="stroke:#A80036;stroke-width:1.305;" width="86.13" x="1866.1065" y="727.755"/><ellipse cx="1893.2505" cy="741.675" fill="#A9DCDF" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M1894.773,742.98 L1891.9047,742.98 L1891.5241,743.85 L1891.5241,743.85 L1891.9319,743.85 L1892.3805,744.3938 L1892.3805,744.72 L1892.3805,745.0463 L1891.9319,745.59 L1891.5241,745.59 L1889.8793,745.59 L1889.3491,745.59 L1888.9005,745.0463 L1888.9005,744.72 L1888.9005,744.3938 L1889.3491,743.85 L1889.8793,743.85 L1891.8911,738.63 L1891.1299,738.63 L1890.2191,738.63 L1889.7705,738.0863 L1889.7705,737.76 L1889.7705,737.4338 L1890.2191,736.89 L1891.1299,736.89 L1894.3244,736.89 L1896.6625,743.85 L1897.1519,743.85 L1897.1519,743.85 L1897.6005,744.3938 L1897.6005,744.72 L1897.6005,745.0463 L1897.1519,745.59 L1896.6625,745.59 L1895.0177,745.59 L1894.5691,745.59 L1894.1205,745.0463 L1894.1205,744.72 L1894.1205,744.3938 L1894.5691,743.85 L1895.0177,743.85 L1895.0177,743.85 L1894.773,742.98 Z M1894.2972,741.24 L1893.2505,738.127 L1892.3533,741.24 L1894.2972,741.24 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" font-style="italic" lengthAdjust="spacing" textLength="26.97" x="1908.5625" y="745.9468">Layer</text><line style="stroke:#A80036;stroke-width:1.305;" x1="1866.9765" x2="1951.3665" y1="755.595" y2="755.595"/><line style="stroke:#A80036;stroke-width:1.305;" x1="1866.9765" x2="1951.3665" y1="762.555" y2="762.555"/><ellipse cx="1875.6765" cy="772.125" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" font-style="italic" lengthAdjust="spacing" textLength="63.51" x="1883.5065" y="775.9695">Render() : void</text><ellipse cx="1875.6765" cy="784.1623" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" font-style="italic" lengthAdjust="spacing" textLength="61.77" x="1883.5065" y="788.0067">Update() : void</text><!--MD5=[058b60769bf24e6f858063701ad81ab7]
+class world.MapParser--><rect codeLine="136" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="162.1327" id="world.MapParser" style="stroke:#A80036;stroke-width:1.305;" width="517.65" x="1629.4665" y="144.855"/><ellipse cx="1858.494" cy="158.775" fill="#ADD1B2" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M1860.234,155.73 Q1860.4107,155.295 1860.6146,155.0775 Q1860.8185,154.86 1861.0496,154.86 Q1861.4574,154.86 1861.7157,155.1047 Q1861.974,155.3494 1861.974,155.9203 L1861.974,157.2797 Q1861.974,157.8506 1861.7293,158.0953 Q1861.4846,158.34 1861.104,158.34 Q1860.7642,158.34 1860.5467,158.1905 Q1860.3292,158.0409 1860.234,157.6467 Q1860.1932,157.3748 1860.0437,157.2253 Q1859.7718,156.9398 1859.2824,156.7767 Q1858.7931,156.6 1858.3037,156.6 Q1857.692,156.6 1857.1754,156.8447 Q1856.6724,157.0894 1856.2782,157.6331 Q1855.884,158.1769 1855.884,158.9245 L1855.884,159.7266 Q1855.884,160.6238 1856.6181,161.2219 Q1857.3521,161.82 1858.6571,161.82 Q1859.432,161.82 1859.9757,161.6433 Q1860.2884,161.5481 1860.6418,161.2355 Q1860.8729,161.0588 1860.9953,161.0044 Q1861.1176,160.95 1861.2671,160.95 Q1861.5526,160.95 1861.7565,161.1811 Q1861.974,161.3986 1861.974,161.7113 Q1861.974,162.0103 1861.6749,162.3638 Q1861.2399,162.8803 1860.5467,163.1658 Q1859.6359,163.56 1858.5212,163.56 Q1857.2162,163.56 1856.1695,163.0434 Q1855.3267,162.6356 1854.7285,161.752 Q1854.144,160.8684 1854.144,159.8217 L1854.144,158.8702 Q1854.144,157.7827 1854.6606,156.8311 Q1855.1907,155.8795 1856.1015,155.3766 Q1857.0259,154.86 1858.059,154.86 Q1858.6843,154.86 1859.2281,155.0775 Q1859.7718,155.295 1860.234,155.73 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" lengthAdjust="spacing" textLength="52.2" x="1876.329" y="163.0468">MapParser</text><line style="stroke:#A80036;stroke-width:1.305;" x1="1630.3365" x2="2146.2465" y1="172.695" y2="172.695"/><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="1636.4265" y="179.655"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="127.89" x="1646.8665" y="186.1095">s_Instance : static MapParser*</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="1636.4265" y="191.6923"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="191.4" x="1646.8665" y="198.1467">m_MapDict : std::map&lt;std::string, GameMap*&gt;</text><line style="stroke:#A80036;stroke-width:1.305;" x1="1630.3365" x2="2146.2465" y1="203.7295" y2="203.7295"/><rect fill="#F24D5C" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="1636.4265" y="210.6895"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="52.2" x="1646.8665" y="217.144">MapParser()</text><ellipse cx="1639.0365" cy="225.3368" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="143.55" x="1646.8665" y="229.1813">GetMap(std::string id) : GameMap*</text><ellipse cx="1639.0365" cy="237.3741" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="113.97" x="1646.8665" y="241.2185">GetInstance() : MapParser*</text><rect fill="#F24D5C" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="1636.4265" y="246.8013"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="495.03" x="1646.8665" y="253.2558">ParseTileLayer(TiXmlElement* xmlLayer, std::vector&lt;Tileset&gt; tilesets, int tilesize, int rowcount, int colcount) : TileLayer*</text><rect fill="#F24D5C" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="1636.4265" y="258.8386"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="194.01" x="1646.8665" y="265.2931">ParseTileset(TiXmlElement* xmlTileset) : Tileset</text><ellipse cx="1639.0365" cy="273.4859" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="53.07" x="1646.8665" y="277.3303">Load() : bool</text><rect fill="#F24D5C" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="1636.4265" y="282.9131"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="187.05" x="1646.8665" y="289.3676">Parse(std::string id, std::string source) : bool</text><ellipse cx="1639.0365" cy="297.5604" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="55.68" x="1646.8665" y="301.4049">Clean() : void</text><!--MD5=[3558dd23c0f3351bc17b27f38620e6cf]
+class world.GameMap--><rect codeLine="265" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="101.9463" id="world.GameMap" style="stroke:#A80036;stroke-width:1.305;" width="173.13" x="1822.6065" y="505.47"/><ellipse cx="1880.679" cy="519.39" fill="#ADD1B2" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M1882.419,516.345 Q1882.5957,515.91 1882.7996,515.6925 Q1883.0035,515.475 1883.2346,515.475 Q1883.6424,515.475 1883.9007,515.7197 Q1884.159,515.9644 1884.159,516.5353 L1884.159,517.8947 Q1884.159,518.4656 1883.9143,518.7103 Q1883.6696,518.955 1883.289,518.955 Q1882.9492,518.955 1882.7317,518.8055 Q1882.5142,518.6559 1882.419,518.2617 Q1882.3782,517.9898 1882.2287,517.8403 Q1881.9568,517.5548 1881.4674,517.3917 Q1880.9781,517.215 1880.4887,517.215 Q1879.877,517.215 1879.3604,517.4597 Q1878.8574,517.7044 1878.4632,518.2481 Q1878.069,518.7919 1878.069,519.5395 L1878.069,520.3416 Q1878.069,521.2388 1878.8031,521.8369 Q1879.5371,522.435 1880.8421,522.435 Q1881.617,522.435 1882.1607,522.2583 Q1882.4734,522.1631 1882.8268,521.8505 Q1883.0579,521.6738 1883.1803,521.6194 Q1883.3026,521.565 1883.4521,521.565 Q1883.7376,521.565 1883.9415,521.7961 Q1884.159,522.0136 1884.159,522.3263 Q1884.159,522.6253 1883.8599,522.9788 Q1883.4249,523.4953 1882.7317,523.7808 Q1881.8209,524.175 1880.7062,524.175 Q1879.4012,524.175 1878.3545,523.6584 Q1877.5117,523.2506 1876.9135,522.367 Q1876.329,521.4834 1876.329,520.4367 L1876.329,519.4852 Q1876.329,518.3977 1876.8456,517.4461 Q1877.3757,516.4945 1878.2865,515.9916 Q1879.2109,515.475 1880.244,515.475 Q1880.8693,515.475 1881.4131,515.6925 Q1881.9568,515.91 1882.419,516.345 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" lengthAdjust="spacing" textLength="49.59" x="1898.514" y="523.6618">GameMap</text><line style="stroke:#A80036;stroke-width:1.305;" x1="1823.4765" x2="1994.8665" y1="533.31" y2="533.31"/><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="1829.5665" y="540.27"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="150.51" x="1840.0065" y="546.7245">m_MapLayers : std::vector&lt;Layer*&gt;</text><line style="stroke:#A80036;stroke-width:1.305;" x1="1823.4765" x2="1994.8665" y1="552.3073" y2="552.3073"/><ellipse cx="1832.1765" cy="561.8773" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="48.72" x="1840.0065" y="565.7217">GameMap()</text><ellipse cx="1832.1765" cy="573.9145" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="142.68" x="1840.0065" y="577.759">GetLayers() : std::vector&lt;Layer*&gt;</text><ellipse cx="1832.1765" cy="585.9518" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="62.64" x="1840.0065" y="589.7963">Render() : void</text><ellipse cx="1832.1765" cy="597.9891" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="61.77" x="1840.0065" y="601.8335">Update() : void</text><!--MD5=[48516c7a7bc1f05290f510d0ff4cfebc]
+class world.Tile--><rect codeLine="284" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="77.8718" id="world.Tile" style="stroke:#A80036;stroke-width:1.305;" width="207.93" x="1391.0865" y="186.615"/><ellipse cx="1482.654" cy="200.535" fill="#ADD1B2" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M1484.394,197.49 Q1484.5707,197.055 1484.7746,196.8375 Q1484.9785,196.62 1485.2096,196.62 Q1485.6174,196.62 1485.8757,196.8647 Q1486.134,197.1094 1486.134,197.6803 L1486.134,199.0397 Q1486.134,199.6106 1485.8893,199.8553 Q1485.6446,200.1 1485.264,200.1 Q1484.9242,200.1 1484.7067,199.9505 Q1484.4892,199.8009 1484.394,199.4067 Q1484.3532,199.1348 1484.2037,198.9853 Q1483.9318,198.6998 1483.4424,198.5367 Q1482.9531,198.36 1482.4637,198.36 Q1481.852,198.36 1481.3354,198.6047 Q1480.8324,198.8494 1480.4382,199.3931 Q1480.044,199.9369 1480.044,200.6845 L1480.044,201.4866 Q1480.044,202.3838 1480.7781,202.9819 Q1481.5121,203.58 1482.8171,203.58 Q1483.592,203.58 1484.1357,203.4033 Q1484.4484,203.3081 1484.8018,202.9955 Q1485.0329,202.8188 1485.1553,202.7644 Q1485.2776,202.71 1485.4271,202.71 Q1485.7126,202.71 1485.9165,202.9411 Q1486.134,203.1586 1486.134,203.4713 Q1486.134,203.7703 1485.8349,204.1238 Q1485.3999,204.6403 1484.7067,204.9258 Q1483.7959,205.32 1482.6812,205.32 Q1481.3762,205.32 1480.3295,204.8034 Q1479.4867,204.3956 1478.8885,203.512 Q1478.304,202.6284 1478.304,201.5817 L1478.304,200.6302 Q1478.304,199.5427 1478.8206,198.5911 Q1479.3507,197.6395 1480.2615,197.1366 Q1481.1859,196.62 1482.219,196.62 Q1482.8443,196.62 1483.3881,196.8375 Q1483.9318,197.055 1484.394,197.49 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" lengthAdjust="spacing" textLength="17.4" x="1500.489" y="204.8068">Tile</text><line style="stroke:#A80036;stroke-width:1.305;" x1="1391.9565" x2="1598.1465" y1="214.455" y2="214.455"/><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="1398.0465" y="221.415"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="96.57" x="1408.4865" y="227.8695">s_Instance : static Tile*</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="1398.0465" y="233.4523"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="185.31" x="1408.4865" y="239.9067">m_Tile : std::map&lt;std::string, SDL_Texture*&gt;</text><line style="stroke:#A80036;stroke-width:1.305;" x1="1391.9565" x2="1598.1465" y1="245.4895" y2="245.4895"/><rect fill="#F24D5C" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="1398.0465" y="252.4495"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="20.88" x="1408.4865" y="258.904">Tile()</text><!--MD5=[664963052afdfdad2e4e93f6abfb1c33]
+class world.TileLayer--><rect codeLine="291" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="150.0954" id="world.TileLayer" style="stroke:#A80036;stroke-width:1.305;" width="433.26" x="1692.5415" y="1038.345"/><ellipse cx="1883.724" cy="1052.265" fill="#ADD1B2" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M1885.464,1049.22 Q1885.6407,1048.785 1885.8446,1048.5675 Q1886.0485,1048.35 1886.2796,1048.35 Q1886.6874,1048.35 1886.9457,1048.5947 Q1887.204,1048.8394 1887.204,1049.4103 L1887.204,1050.7697 Q1887.204,1051.3406 1886.9593,1051.5853 Q1886.7146,1051.83 1886.334,1051.83 Q1885.9942,1051.83 1885.7767,1051.6805 Q1885.5592,1051.5309 1885.464,1051.1367 Q1885.4232,1050.8648 1885.2737,1050.7153 Q1885.0018,1050.4298 1884.5124,1050.2667 Q1884.0231,1050.09 1883.5337,1050.09 Q1882.922,1050.09 1882.4054,1050.3347 Q1881.9024,1050.5794 1881.5082,1051.1231 Q1881.114,1051.6669 1881.114,1052.4145 L1881.114,1053.2166 Q1881.114,1054.1138 1881.8481,1054.7119 Q1882.5821,1055.31 1883.8871,1055.31 Q1884.662,1055.31 1885.2057,1055.1333 Q1885.5184,1055.0381 1885.8718,1054.7255 Q1886.1029,1054.5488 1886.2252,1054.4944 Q1886.3476,1054.44 1886.4971,1054.44 Q1886.7826,1054.44 1886.9865,1054.6711 Q1887.204,1054.8886 1887.204,1055.2013 Q1887.204,1055.5003 1886.9049,1055.8538 Q1886.4699,1056.3703 1885.7767,1056.6558 Q1884.8659,1057.05 1883.7512,1057.05 Q1882.4462,1057.05 1881.3995,1056.5334 Q1880.5567,1056.1256 1879.9585,1055.242 Q1879.374,1054.3584 1879.374,1053.3117 L1879.374,1052.3602 Q1879.374,1051.2727 1879.8906,1050.3211 Q1880.4207,1049.3695 1881.3315,1048.8666 Q1882.2559,1048.35 1883.289,1048.35 Q1883.9143,1048.35 1884.4581,1048.5675 Q1885.0018,1048.785 1885.464,1049.22 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" lengthAdjust="spacing" textLength="43.5" x="1901.559" y="1056.5368">TileLayer</text><line style="stroke:#A80036;stroke-width:1.305;" x1="1693.4115" x2="2124.9315" y1="1066.185" y2="1066.185"/><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="1699.5015" y="1073.145"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="66.99" x="1709.9415" y="1079.5995">m_ColCount : int</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="1699.5015" y="1085.1823"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="73.95" x="1709.9415" y="1091.6367">m_RowCount : int</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="1699.5015" y="1097.2195"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="61.77" x="1709.9415" y="1103.674">m_TileSize : int</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="1699.5015" y="1109.2568"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="116.58" x="1709.9415" y="1115.7113">m_Tilesets : vector&lt;Tileset&gt;</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="1699.5015" y="1121.2941"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="153.99" x="1709.9415" y="1127.7485">m_Tilemap : vector&lt;std::vector&lt;int&gt;&gt;</text><line style="stroke:#A80036;stroke-width:1.305;" x1="1693.4115" x2="2124.9315" y1="1133.3313" y2="1133.3313"/><ellipse cx="1702.1115" cy="1142.9013" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="410.64" x="1709.9415" y="1146.7458">TileLayer(int tilesize, int width, int height, vector&lt;std::vector&lt;int&gt;&gt; tilemap, vector&lt;Tileset&gt; tilesets)</text><ellipse cx="1702.1115" cy="1154.9386" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="92.22" x="1709.9415" y="1158.7831">GetTileMap() : TileMap</text><ellipse cx="1702.1115" cy="1166.9759" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="62.64" x="1709.9415" y="1170.8203">Render() : void</text><ellipse cx="1702.1115" cy="1179.0131" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="61.77" x="1709.9415" y="1182.8576">Update() : void</text><!--MD5=[16a2a2eaaa6a5cc5f4df8c56f6e29488]
+class world.Tileset--><rect codeLine="303" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="138.0581" id="world.Tileset" style="stroke:#A80036;stroke-width:1.305;" width="102.66" x="1857.8415" y="1435.065"/><ellipse cx="1890.075" cy="1448.985" fill="#ADD1B2" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M1891.815,1445.94 Q1891.9917,1445.505 1892.1956,1445.2875 Q1892.3995,1445.07 1892.6306,1445.07 Q1893.0384,1445.07 1893.2967,1445.3147 Q1893.555,1445.5594 1893.555,1446.1303 L1893.555,1447.4897 Q1893.555,1448.0606 1893.3103,1448.3053 Q1893.0656,1448.55 1892.685,1448.55 Q1892.3452,1448.55 1892.1277,1448.4005 Q1891.9102,1448.2509 1891.815,1447.8567 Q1891.7742,1447.5848 1891.6247,1447.4353 Q1891.3528,1447.1498 1890.8634,1446.9867 Q1890.3741,1446.81 1889.8847,1446.81 Q1889.273,1446.81 1888.7564,1447.0547 Q1888.2534,1447.2994 1887.8592,1447.8431 Q1887.465,1448.3869 1887.465,1449.1345 L1887.465,1449.9366 Q1887.465,1450.8338 1888.1991,1451.4319 Q1888.9331,1452.03 1890.2381,1452.03 Q1891.013,1452.03 1891.5567,1451.8533 Q1891.8694,1451.7581 1892.2228,1451.4455 Q1892.4539,1451.2688 1892.5763,1451.2144 Q1892.6986,1451.16 1892.8481,1451.16 Q1893.1336,1451.16 1893.3375,1451.3911 Q1893.555,1451.6086 1893.555,1451.9213 Q1893.555,1452.2203 1893.2559,1452.5738 Q1892.8209,1453.0903 1892.1277,1453.3758 Q1891.2169,1453.77 1890.1022,1453.77 Q1888.7972,1453.77 1887.7505,1453.2534 Q1886.9077,1452.8456 1886.3095,1451.962 Q1885.725,1451.0784 1885.725,1450.0317 L1885.725,1449.0802 Q1885.725,1447.9927 1886.2416,1447.0411 Q1886.7717,1446.0895 1887.6825,1445.5866 Q1888.6069,1445.07 1889.64,1445.07 Q1890.2653,1445.07 1890.8091,1445.2875 Q1891.3528,1445.505 1891.815,1445.94 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" lengthAdjust="spacing" textLength="32.19" x="1906.518" y="1453.2568">Tileset</text><line style="stroke:#A80036;stroke-width:1.305;" x1="1858.7115" x2="1959.6315" y1="1462.905" y2="1462.905"/><ellipse cx="1867.4115" cy="1472.475" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="54.81" x="1875.2415" y="1476.3195">ColCount : int</text><ellipse cx="1867.4115" cy="1484.5123" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="43.5" x="1875.2415" y="1488.3567">FirstID : int</text><ellipse cx="1867.4115" cy="1496.5495" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="43.5" x="1875.2415" y="1500.394">LastID : int</text><ellipse cx="1867.4115" cy="1508.5868" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="61.77" x="1875.2415" y="1512.4313">RowCount : int</text><ellipse cx="1867.4115" cy="1520.6241" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="55.68" x="1875.2415" y="1524.4685">TileCount : int</text><ellipse cx="1867.4115" cy="1532.6613" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="49.59" x="1875.2415" y="1536.5058">TileSize : int</text><ellipse cx="1867.4115" cy="1544.6986" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="73.08" x="1875.2415" y="1548.5431">Name : std::string</text><ellipse cx="1867.4115" cy="1556.7359" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="80.04" x="1875.2415" y="1560.5803">Source : std::string</text><line style="stroke:#A80036;stroke-width:1.305;" x1="1858.7115" x2="1959.6315" y1="1566.1631" y2="1566.1631"/><!--MD5=[9b15561b5a79df87694001dece61cd3f]
+class states.Menu--><rect codeLine="150" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="210.2817" id="states.Menu" style="stroke:#A80036;stroke-width:1.305;" width="157.47" x="2462.0565" y="120.495"/><ellipse cx="2524.044" cy="134.415" fill="#ADD1B2" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M2525.784,131.37 Q2525.9607,130.935 2526.1646,130.7175 Q2526.3685,130.5 2526.5996,130.5 Q2527.0074,130.5 2527.2657,130.7447 Q2527.524,130.9894 2527.524,131.5603 L2527.524,132.9197 Q2527.524,133.4906 2527.2793,133.7353 Q2527.0346,133.98 2526.654,133.98 Q2526.3142,133.98 2526.0967,133.8305 Q2525.8792,133.6809 2525.784,133.2867 Q2525.7432,133.0148 2525.5937,132.8653 Q2525.3218,132.5798 2524.8324,132.4167 Q2524.3431,132.24 2523.8537,132.24 Q2523.242,132.24 2522.7254,132.4847 Q2522.2224,132.7294 2521.8282,133.2731 Q2521.434,133.8169 2521.434,134.5645 L2521.434,135.3666 Q2521.434,136.2638 2522.1681,136.8619 Q2522.9021,137.46 2524.2071,137.46 Q2524.982,137.46 2525.5257,137.2833 Q2525.8384,137.1881 2526.1918,136.8755 Q2526.4229,136.6988 2526.5453,136.6444 Q2526.6676,136.59 2526.8171,136.59 Q2527.1026,136.59 2527.3065,136.8211 Q2527.524,137.0386 2527.524,137.3513 Q2527.524,137.6503 2527.2249,138.0038 Q2526.7899,138.5203 2526.0967,138.8058 Q2525.1859,139.2 2524.0712,139.2 Q2522.7662,139.2 2521.7195,138.6834 Q2520.8767,138.2756 2520.2785,137.392 Q2519.694,136.5084 2519.694,135.4617 L2519.694,134.5102 Q2519.694,133.4227 2520.2106,132.4711 Q2520.7407,131.5195 2521.6515,131.0166 Q2522.5759,130.5 2523.609,130.5 Q2524.2343,130.5 2524.7781,130.7175 Q2525.3218,130.935 2525.784,131.37 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" lengthAdjust="spacing" textLength="26.1" x="2541.879" y="138.6868">Menu</text><line style="stroke:#A80036;stroke-width:1.305;" x1="2462.9265" x2="2618.6565" y1="148.335" y2="148.335"/><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="2469.0165" y="155.295"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="124.41" x="2479.4565" y="161.7495">m_Renderer : SDL_Renderer*</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="2469.0165" y="167.3323"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="115.71" x="2479.4565" y="173.7867">m_Window : SDL_Window*</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="2469.0165" y="179.3695"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="78.3" x="2479.4565" y="185.824">m_IsRunning : bool</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="2469.0165" y="191.4068"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="105.27" x="2479.4565" y="197.8613">s_Instance : static Menu*</text><ellipse cx="2471.6265" cy="206.0541" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="134.85" x="2479.4565" y="209.8985">s_AlrPressedSpace : static bool</text><line style="stroke:#A80036;stroke-width:1.305;" x1="2462.9265" x2="2618.6565" y1="215.4813" y2="215.4813"/><rect fill="#F24D5C" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="2469.0165" y="222.4413"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="29.58" x="2479.4565" y="228.8958">Menu()</text><ellipse cx="2471.6265" cy="237.0886" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="91.35" x="2479.4565" y="240.9331">GetInstance() : Menu*</text><ellipse cx="2471.6265" cy="249.1259" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="133.98" x="2479.4565" y="252.9703">GetRenderer() : SDL_Renderer*</text><ellipse cx="2471.6265" cy="261.1631" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="55.68" x="2479.4565" y="265.0076">Clean() : bool</text><ellipse cx="2471.6265" cy="273.2004" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="43.5" x="2479.4565" y="277.0449">Init() : bool</text><ellipse cx="2471.6265" cy="285.2377" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="73.08" x="2479.4565" y="289.0821">IsRunning() : bool</text><ellipse cx="2471.6265" cy="297.2749" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="60.9" x="2479.4565" y="301.1194">Events() : void</text><ellipse cx="2471.6265" cy="309.3122" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="48.72" x="2479.4565" y="313.1567">Quit() : void</text><ellipse cx="2471.6265" cy="321.3495" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="62.64" x="2479.4565" y="325.1939">Render() : void</text><!--MD5=[161adf73dd9d2b0eaa5a51b7c8d9fcc3]
+class states.Game--><rect codeLine="218" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="378.8034" id="states.Game" style="stroke:#A80036;stroke-width:1.305;" width="234.9" x="2196.2715" y="36.54"/><ellipse cx="2295.234" cy="50.46" fill="#ADD1B2" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M2296.974,47.415 Q2297.1507,46.98 2297.3546,46.7625 Q2297.5585,46.545 2297.7896,46.545 Q2298.1974,46.545 2298.4557,46.7897 Q2298.714,47.0344 2298.714,47.6053 L2298.714,48.9647 Q2298.714,49.5356 2298.4693,49.7803 Q2298.2246,50.025 2297.844,50.025 Q2297.5042,50.025 2297.2867,49.8755 Q2297.0692,49.7259 2296.974,49.3317 Q2296.9332,49.0598 2296.7837,48.9103 Q2296.5118,48.6248 2296.0224,48.4617 Q2295.5331,48.285 2295.0437,48.285 Q2294.432,48.285 2293.9154,48.5297 Q2293.4124,48.7744 2293.0182,49.3181 Q2292.624,49.8619 2292.624,50.6095 L2292.624,51.4116 Q2292.624,52.3087 2293.3581,52.9069 Q2294.0921,53.505 2295.3971,53.505 Q2296.172,53.505 2296.7157,53.3283 Q2297.0284,53.2331 2297.3818,52.9205 Q2297.6129,52.7438 2297.7353,52.6894 Q2297.8576,52.635 2298.0071,52.635 Q2298.2926,52.635 2298.4965,52.8661 Q2298.714,53.0836 2298.714,53.3963 Q2298.714,53.6953 2298.4149,54.0488 Q2297.9799,54.5653 2297.2867,54.8508 Q2296.3759,55.245 2295.2612,55.245 Q2293.9562,55.245 2292.9095,54.7284 Q2292.0667,54.3206 2291.4685,53.437 Q2290.884,52.5534 2290.884,51.5067 L2290.884,50.5552 Q2290.884,49.4677 2291.4006,48.5161 Q2291.9307,47.5645 2292.8415,47.0616 Q2293.7659,46.545 2294.799,46.545 Q2295.4243,46.545 2295.9681,46.7625 Q2296.5118,46.98 2296.974,47.415 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" lengthAdjust="spacing" textLength="29.58" x="2313.069" y="54.7318">Game</text><line style="stroke:#A80036;stroke-width:1.305;" x1="2197.1415" x2="2430.3015" y1="64.38" y2="64.38"/><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="2203.2315" y="71.34"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="105.27" x="2213.6715" y="77.7945">m_LevelMap : GameMap*</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="2203.2315" y="83.3773"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="124.41" x="2213.6715" y="89.8317">m_Renderer : SDL_Renderer*</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="2203.2315" y="95.4145"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="115.71" x="2213.6715" y="101.869">m_Window : SDL_Window*</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="2203.2315" y="107.4518"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="78.3" x="2213.6715" y="113.9063">m_IsRunning : bool</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="2203.2315" y="119.4891"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="107.01" x="2213.6715" y="125.9435">s_Instance : static Game*</text><ellipse cx="2205.8415" cy="134.1363" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="93.96" x="2213.6715" y="137.9808">gameOver : static bool</text><ellipse cx="2205.8415" cy="146.1736" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="92.22" x="2213.6715" y="150.0181">playAgain : static bool</text><ellipse cx="2205.8415" cy="158.2109" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="134.85" x="2213.6715" y="162.0553">s_AlrPressedSpace : static bool</text><ellipse cx="2205.8415" cy="170.2481" fill="none" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="90.48" x="2213.6715" y="174.0926">whoWins : static bool</text><line style="stroke:#A80036;stroke-width:1.305;" x1="2197.1415" x2="2430.3015" y1="179.6754" y2="179.6754"/><rect fill="#F24D5C" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="2203.2315" y="186.6354"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="31.32" x="2213.6715" y="193.0899">Game()</text><ellipse cx="2205.8415" cy="201.2827" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="93.09" x="2213.6715" y="205.1271">GetInstance() : Game*</text><ellipse cx="2205.8415" cy="213.3199" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="92.22" x="2213.6715" y="217.1644">GetMap() : GameMap*</text><ellipse cx="2205.8415" cy="225.3572" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="133.98" x="2213.6715" y="229.2017">GetRenderer() : SDL_Renderer*</text><ellipse cx="2205.8415" cy="237.3945" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="55.68" x="2213.6715" y="241.2389">Clean() : bool</text><ellipse cx="2205.8415" cy="249.4317" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="43.5" x="2213.6715" y="253.2762">Init() : bool</text><ellipse cx="2205.8415" cy="261.469" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="73.08" x="2213.6715" y="265.3135">IsRunning() : bool</text><ellipse cx="2205.8415" cy="273.5063" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="87" x="2213.6715" y="277.3507">getPlayAgain() : bool</text><ellipse cx="2205.8415" cy="285.5435" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="85.26" x="2213.6715" y="289.388">getWhoWins() : bool</text><ellipse cx="2205.8415" cy="297.5808" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="212.28" x="2213.6715" y="301.4253">GetBombItemList() : std::vector&lt;BombCollectable&gt;*</text><ellipse cx="2205.8415" cy="309.618" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="211.41" x="2213.6715" y="313.4625">GetBombPlantedList() : std::vector&lt;BombPlanted&gt;*</text><ellipse cx="2205.8415" cy="321.6553" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="118.32" x="2213.6715" y="325.4998">BombPlayer(int m_pid) : void</text><ellipse cx="2205.8415" cy="333.6926" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="120.06" x="2213.6715" y="337.5371">CollectBomb(int m_pid) : void</text><ellipse cx="2205.8415" cy="345.7298" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="60.9" x="2213.6715" y="349.5743">Events() : void</text><ellipse cx="2205.8415" cy="357.7671" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="112.23" x="2213.6715" y="361.6116">PlantBomb(int m_pid) : void</text><ellipse cx="2205.8415" cy="369.8044" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="48.72" x="2213.6715" y="373.6489">Quit() : void</text><ellipse cx="2205.8415" cy="381.8416" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="62.64" x="2213.6715" y="385.6861">Render() : void</text><ellipse cx="2205.8415" cy="393.8789" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="79.17" x="2213.6715" y="397.7234">SpawnItem() : void</text><ellipse cx="2205.8415" cy="405.9162" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="61.77" x="2213.6715" y="409.7607">Update() : void</text><!--MD5=[5aa411387f1ac4e94a30f54c7c993f84]
+class interfaces.Board--><rect codeLine="249" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="186.2072" id="interfaces.Board" style="stroke:#A80036;stroke-width:1.305;" width="340.17" x="2669.1165" y="132.675"/><ellipse cx="2821.149" cy="146.595" fill="#ADD1B2" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M2822.889,143.55 Q2823.0657,143.115 2823.2696,142.8975 Q2823.4735,142.68 2823.7046,142.68 Q2824.1124,142.68 2824.3707,142.9247 Q2824.629,143.1694 2824.629,143.7403 L2824.629,145.0997 Q2824.629,145.6706 2824.3843,145.9153 Q2824.1396,146.16 2823.759,146.16 Q2823.4192,146.16 2823.2017,146.0105 Q2822.9842,145.8609 2822.889,145.4667 Q2822.8482,145.1948 2822.6987,145.0453 Q2822.4268,144.7598 2821.9374,144.5967 Q2821.4481,144.42 2820.9587,144.42 Q2820.347,144.42 2819.8304,144.6647 Q2819.3274,144.9094 2818.9332,145.4531 Q2818.539,145.9969 2818.539,146.7445 L2818.539,147.5466 Q2818.539,148.4438 2819.2731,149.0419 Q2820.0071,149.64 2821.3121,149.64 Q2822.087,149.64 2822.6307,149.4633 Q2822.9434,149.3681 2823.2968,149.0555 Q2823.5279,148.8788 2823.6503,148.8244 Q2823.7726,148.77 2823.9221,148.77 Q2824.2076,148.77 2824.4115,149.0011 Q2824.629,149.2186 2824.629,149.5313 Q2824.629,149.8303 2824.3299,150.1838 Q2823.8949,150.7003 2823.2017,150.9858 Q2822.2909,151.38 2821.1762,151.38 Q2819.8712,151.38 2818.8245,150.8634 Q2817.9817,150.4556 2817.3835,149.572 Q2816.799,148.6884 2816.799,147.6417 L2816.799,146.6902 Q2816.799,145.6027 2817.3156,144.6511 Q2817.8457,143.6995 2818.7565,143.1966 Q2819.6809,142.68 2820.714,142.68 Q2821.3393,142.68 2821.8831,142.8975 Q2822.4268,143.115 2822.889,143.55 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" lengthAdjust="spacing" textLength="28.71" x="2838.984" y="150.8668">Board</text><line style="stroke:#A80036;stroke-width:1.305;" x1="2669.9865" x2="3008.4165" y1="160.515" y2="160.515"/><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="2676.0765" y="167.475"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="53.94" x="2686.5165" y="173.9295">m_board : int</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="2676.0765" y="179.5123"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="107.88" x="2686.5165" y="185.9667">s_Instance : static Board*</text><line style="stroke:#A80036;stroke-width:1.305;" x1="2669.9865" x2="3008.4165" y1="191.5495" y2="191.5495"/><rect fill="#F24D5C" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="2676.0765" y="198.5095"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="32.19" x="2686.5165" y="204.964">Board()</text><ellipse cx="2678.6865" cy="213.1568" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="93.96" x="2686.5165" y="217.0013">GetInstance() : Board*</text><ellipse cx="2678.6865" cy="225.1941" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="305.37" x="2686.5165" y="229.0385">canPlayerMove(int m_pid, int prevX, int prevY, int newX, int newY) : bool</text><ellipse cx="2678.6865" cy="237.2313" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="216.63" x="2686.5165" y="241.0758">canPlayerPlant(int m_pid, int prevX, int prevY) : bool</text><ellipse cx="2678.6865" cy="249.2686" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="90.48" x="2686.5165" y="253.1131">consoleBoard() : bool</text><ellipse cx="2678.6865" cy="261.3059" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="68.73" x="2686.5165" y="265.1503">initBoard() : bool</text><ellipse cx="2678.6865" cy="273.3431" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="317.55" x="2686.5165" y="277.1876">updateBoardMove(int m_pid, int prevX, int prevY, int newX, int newY) : bool</text><ellipse cx="2678.6865" cy="285.3804" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="228.81" x="2686.5165" y="289.2249">updateBoardPlant(int m_pid, int prevX, int prevY) : bool</text><ellipse cx="2678.6865" cy="297.4177" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="99.18" x="2686.5165" y="301.2621">getTileID(int x, int y) : int</text><ellipse cx="2678.6865" cy="309.4549" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="187.05" x="2686.5165" y="313.2994">updateBoardWithItem(int x, int y, int iid) : void</text><!--MD5=[629c6d17119cecbb56307adb03ce148e]
+class utils.IOHandler--><rect codeLine="314" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="150.0954" id="utils.IOHandler" style="stroke:#A80036;stroke-width:1.305;" width="193.14" x="960.8715" y="150.51"/><ellipse cx="1029.384" cy="164.43" fill="#ADD1B2" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M1031.124,161.385 Q1031.3007,160.95 1031.5046,160.7325 Q1031.7085,160.515 1031.9396,160.515 Q1032.3474,160.515 1032.6057,160.7597 Q1032.864,161.0044 1032.864,161.5753 L1032.864,162.9347 Q1032.864,163.5056 1032.6193,163.7503 Q1032.3746,163.995 1031.994,163.995 Q1031.6542,163.995 1031.4367,163.8455 Q1031.2192,163.6959 1031.124,163.3017 Q1031.0832,163.0298 1030.9337,162.8803 Q1030.6618,162.5948 1030.1724,162.4317 Q1029.6831,162.255 1029.1937,162.255 Q1028.582,162.255 1028.0654,162.4997 Q1027.5624,162.7444 1027.1682,163.2881 Q1026.774,163.8319 1026.774,164.5795 L1026.774,165.3816 Q1026.774,166.2788 1027.5081,166.8769 Q1028.2421,167.475 1029.5471,167.475 Q1030.322,167.475 1030.8657,167.2983 Q1031.1784,167.2031 1031.5318,166.8905 Q1031.7629,166.7138 1031.8853,166.6594 Q1032.0076,166.605 1032.1571,166.605 Q1032.4426,166.605 1032.6465,166.8361 Q1032.864,167.0536 1032.864,167.3663 Q1032.864,167.6653 1032.5649,168.0188 Q1032.1299,168.5353 1031.4367,168.8208 Q1030.5259,169.215 1029.4112,169.215 Q1028.1062,169.215 1027.0595,168.6984 Q1026.2167,168.2906 1025.6185,167.407 Q1025.034,166.5234 1025.034,165.4767 L1025.034,164.5252 Q1025.034,163.4377 1025.5506,162.4861 Q1026.0807,161.5345 1026.9915,161.0316 Q1027.9159,160.515 1028.949,160.515 Q1029.5743,160.515 1030.1181,160.7325 Q1030.6618,160.95 1031.124,161.385 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" lengthAdjust="spacing" textLength="48.72" x="1047.219" y="168.7018">IOHandler</text><line style="stroke:#A80036;stroke-width:1.305;" x1="961.7415" x2="1153.1415" y1="178.35" y2="178.35"/><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="967.8315" y="185.31"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="113.97" x="978.2715" y="191.7645">m_KeyStates : const Uint8*</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="967.8315" y="197.3473"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="123.54" x="978.2715" y="203.8017">s_Instance : static IOHandler*</text><line style="stroke:#A80036;stroke-width:1.305;" x1="961.7415" x2="1153.1415" y1="209.3845" y2="209.3845"/><rect fill="#F24D5C" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="967.8315" y="216.3445"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="47.85" x="978.2715" y="222.799">IOHandler()</text><ellipse cx="970.4415" cy="230.9918" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" text-decoration="underline" textLength="109.62" x="978.2715" y="234.8363">GetInstance() : IOHandler*</text><ellipse cx="970.4415" cy="243.0291" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="166.17" x="978.2715" y="246.8735">KeyPressed(SDL_Scancode key) : bool</text><ellipse cx="970.4415" cy="255.0663" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="170.52" x="978.2715" y="258.9108">KeyReleased(SDL_Scancode key) : bool</text><rect fill="#F24D5C" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="967.8315" y="264.4936"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="73.95" x="978.2715" y="270.9481">KeyDown() : void</text><rect fill="#F24D5C" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="967.8315" y="276.5309"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="60.03" x="978.2715" y="282.9853">KeyUp() : void</text><ellipse cx="970.4415" cy="291.1781" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="57.42" x="978.2715" y="295.0226">Listen() : void</text><!--MD5=[c94bf9e2a94e1f74890cbcf91aab3a62]
+class utils.IOObject--><rect codeLine="327" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="77.8718" id="utils.IOObject" style="stroke:#A80036;stroke-width:1.305;" width="113.1" x="817.3215" y="186.615"/><ellipse cx="849.555" cy="200.535" fill="#A9DCDF" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M851.0775,201.84 L848.2092,201.84 L847.8286,202.71 L847.8286,202.71 L848.2364,202.71 L848.685,203.2538 L848.685,203.58 L848.685,203.9063 L848.2364,204.45 L847.8286,204.45 L846.1837,204.45 L845.6536,204.45 L845.205,203.9063 L845.205,203.58 L845.205,203.2538 L845.6536,202.71 L846.1837,202.71 L848.1956,197.49 L847.4344,197.49 L846.5236,197.49 L846.075,196.9463 L846.075,196.62 L846.075,196.2938 L846.5236,195.75 L847.4344,195.75 L850.6289,195.75 L852.967,202.71 L853.4564,202.71 L853.4564,202.71 L853.905,203.2538 L853.905,203.58 L853.905,203.9063 L853.4564,204.45 L852.967,204.45 L851.3222,204.45 L850.8736,204.45 L850.425,203.9063 L850.425,203.58 L850.425,203.2538 L850.8736,202.71 L851.3222,202.71 L851.3222,202.71 L851.0775,201.84 Z M850.6017,200.1 L849.555,196.987 L848.6578,200.1 L850.6017,200.1 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" font-style="italic" lengthAdjust="spacing" textLength="42.63" x="865.998" y="204.8068">IOObject</text><line style="stroke:#A80036;stroke-width:1.305;" x1="818.1915" x2="929.5515" y1="214.455" y2="214.455"/><line style="stroke:#A80036;stroke-width:1.305;" x1="818.1915" x2="929.5515" y1="221.415" y2="221.415"/><ellipse cx="826.8915" cy="230.985" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" font-style="italic" lengthAdjust="spacing" textLength="57.42" x="834.7215" y="234.8295">Clean() : void</text><ellipse cx="826.8915" cy="243.0223" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" font-style="italic" lengthAdjust="spacing" textLength="53.94" x="834.7215" y="246.8667">Draw() : void</text><ellipse cx="826.8915" cy="255.0595" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" font-style="italic" lengthAdjust="spacing" textLength="90.48" x="834.7215" y="258.904">Update(float dt) : void</text><!--MD5=[e7d94b46357b5bc331758902d85e5c6c]
+class utils.ItemTimer--><rect codeLine="333" fill="#FEFECE" filter="url(#f1ltwwl18eeja0)" height="174.1699" id="utils.ItemTimer" style="stroke:#A80036;stroke-width:1.305;" width="203.58" x="583.2915" y="138.765"/><ellipse cx="657.024" cy="152.685" fill="#ADD1B2" rx="9.57" ry="9.57" style="stroke:#A80036;stroke-width:0.87;"/><path d="M658.764,149.64 Q658.9407,149.205 659.1446,148.9875 Q659.3485,148.77 659.5796,148.77 Q659.9874,148.77 660.2457,149.0147 Q660.504,149.2594 660.504,149.8303 L660.504,151.1897 Q660.504,151.7606 660.2593,152.0053 Q660.0146,152.25 659.634,152.25 Q659.2942,152.25 659.0767,152.1005 Q658.8592,151.9509 658.764,151.5567 Q658.7232,151.2848 658.5737,151.1353 Q658.3018,150.8498 657.8124,150.6867 Q657.3231,150.51 656.8337,150.51 Q656.222,150.51 655.7054,150.7547 Q655.2024,150.9994 654.8082,151.5431 Q654.414,152.0869 654.414,152.8345 L654.414,153.6366 Q654.414,154.5338 655.1481,155.1319 Q655.8821,155.73 657.1871,155.73 Q657.962,155.73 658.5057,155.5533 Q658.8184,155.4581 659.1718,155.1455 Q659.4029,154.9688 659.5252,154.9144 Q659.6476,154.86 659.7971,154.86 Q660.0826,154.86 660.2865,155.0911 Q660.504,155.3086 660.504,155.6213 Q660.504,155.9203 660.2049,156.2738 Q659.7699,156.7903 659.0767,157.0758 Q658.1659,157.47 657.0512,157.47 Q655.7462,157.47 654.6995,156.9534 Q653.8567,156.5456 653.2585,155.662 Q652.674,154.7784 652.674,153.7317 L652.674,152.7802 Q652.674,151.6927 653.1906,150.7411 Q653.7207,149.7895 654.6315,149.2866 Q655.5559,148.77 656.589,148.77 Q657.2143,148.77 657.7581,148.9875 Q658.3018,149.205 658.764,149.64 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="10.44" lengthAdjust="spacing" textLength="48.72" x="674.859" y="156.9568">ItemTimer</text><line style="stroke:#A80036;stroke-width:1.305;" x1="584.1615" x2="786.0015" y1="166.605" y2="166.605"/><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="590.2515" y="173.565"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="105.27" x="600.6915" y="180.0195">m_ReadyToSpawn : bool</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="590.2515" y="185.6023"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="107.01" x="600.6915" y="192.0567">m_TimerHasStarted : bool</text><rect fill="none" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="590.2515" y="197.6395"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="114.84" x="600.6915" y="204.094">m_timerThread : std::thread</text><line style="stroke:#A80036;stroke-width:1.305;" x1="584.1615" x2="786.0015" y1="209.6768" y2="209.6768"/><ellipse cx="592.8615" cy="219.2468" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="46.11" x="600.6915" y="223.0913">ItemTimer()</text><ellipse cx="592.8615" cy="231.2841" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="113.1" x="600.6915" y="235.1285">getReadyToSpawn() : bool</text><ellipse cx="592.8615" cy="243.3213" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="114.84" x="600.6915" y="247.1658">getTimerHasStarted() : bool</text><rect fill="#F24D5C" height="5.22" style="stroke:#C82930;stroke-width:0.87;" width="5.22" x="590.2515" y="252.7486"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="180.96" x="600.6915" y="259.2031">intRand(const int&amp; min, const int&amp; max) : int</text><ellipse cx="592.8615" cy="267.3959" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="145.29" x="600.6915" y="271.2403">setReadyToSpawn(bool val) : void</text><ellipse cx="592.8615" cy="279.4331" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="147.03" x="600.6915" y="283.2776">setTimerHasStarted(bool val) : void</text><ellipse cx="592.8615" cy="291.4704" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="73.95" x="600.6915" y="295.3149">startTimer() : void</text><ellipse cx="592.8615" cy="303.5077" fill="#84BE84" rx="2.61" ry="2.61" style="stroke:#038048;stroke-width:0.87;"/><text fill="#000000" font-family="sans-serif" font-size="9.57" lengthAdjust="spacing" textLength="73.08" x="600.6915" y="307.3521">stopTimer() : void</text><!--MD5=[10f778e5ada94756d417f03c09e3f7bc]
+reverse link entities.creatures.Creature to entities.creatures.Player--><path codeLine="349" d="M1057.4415,841.5771 C1057.4415,852.4173 1057.4415,863.9622 1057.4415,875.9334 " fill="none" id="entities.creatures.Creature-backto-entities.creatures.Player" style="stroke:#A80036;stroke-width:0.87;"/><polygon fill="none" points="1051.3515,841.4379,1057.4415,824.0379,1063.5315,841.4379,1051.3515,841.4379" style="stroke:#A80036;stroke-width:0.87;"/><!--MD5=[a835d6e75637d0a35a79f17d88e81d24]
+reverse link entities.Entity to entities.creatures.Creature--><path codeLine="352" d="M1057.4415,649.3245 C1057.4415,665.6109 1057.4415,682.2279 1057.4415,697.4529 " fill="none" id="entities.Entity-backto-entities.creatures.Creature" style="stroke:#A80036;stroke-width:0.87;"/><polygon fill="none" points="1051.3515,649.2549,1057.4415,631.8549,1063.5315,649.2549,1051.3515,649.2549" style="stroke:#A80036;stroke-width:0.87;"/><!--MD5=[04317c9b876fc3e4a5c0fa61d8f86068]
+reverse link entities.Entity to entities.items.Item--><path codeLine="355" d="M990.6429,642.9735 C985.8492,646.5318 980.8467,649.7595 975.6615,652.5 C951.2493,665.4282 940.3221,651.4299 913.8915,659.46 C866.5287,673.8585 817.0431,699.6888 779.9028,721.5519 " fill="none" id="entities.Entity-backto-entities.items.Item" style="stroke:#A80036;stroke-width:0.87;"/><polygon fill="none" points="986.754,638.2842,1003.9887,631.7418,994.5927,647.6019,986.754,638.2842" style="stroke:#A80036;stroke-width:0.87;"/><!--MD5=[76b6cf506d2d0d21dd2c3f8929a75e85]
+reverse link utils.IOHandler to entities.Entity--><path codeLine="358" d="M1057.4415,318.8289 C1057.4415,370.0023 1057.4415,432.825 1057.4415,480.8838 " fill="none" id="utils.IOHandler-backto-entities.Entity" style="stroke:#A80036;stroke-width:0.87;"/><polygon fill="none" points="1051.3515,318.6549,1057.4415,301.2549,1063.5315,318.6549,1051.3515,318.6549" style="stroke:#A80036;stroke-width:0.87;"/><!--MD5=[099af974e4d8c4930944301d06aadd20]
+reverse link entities.items.Item to entities.items.BombCollectable--><path codeLine="361" d="M646.3839,814.9986 C623.9814,833.0598 600.1434,854.2269 580.6815,876.09 C536.5116,925.7148 496.3002,989.3988 468.3123,1038.2058 " fill="none" id="entities.items.Item-backto-entities.items.BombCollectable" style="stroke:#A80036;stroke-width:0.87;"/><polygon fill="none" points="642.669,810.1788,660.1038,804.1758,650.2119,819.7401,642.669,810.1788" style="stroke:#A80036;stroke-width:0.87;"/><!--MD5=[6684e57e27f659cc4f7d8353e9c665cd]
+reverse link entities.items.Item to entities.items.BombPlanted--><path codeLine="364" d="M719.8815,835.7394 C719.8815,885.8688 719.8815,952.8066 719.8815,1008.33 " fill="none" id="entities.items.Item-backto-entities.items.BombPlanted" style="stroke:#A80036;stroke-width:0.87;"/><polygon fill="none" points="713.7915,835.4871,719.8815,818.0871,725.9715,835.4871,713.7915,835.4871" style="stroke:#A80036;stroke-width:0.87;"/><!--MD5=[17096a5022e9768a8096a03d462e8eef]
+reverse link world.Layer to world.TileLayer--><path codeLine="367" d="M1909.1715,811.8231 C1909.1715,871.0527 1909.1715,970.1457 1909.1715,1038.3363 " fill="none" id="world.Layer-backto-world.TileLayer" style="stroke:#A80036;stroke-width:0.87;"/><polygon fill="none" points="1903.0815,811.4838,1909.1715,794.0838,1915.2615,811.4838,1903.0815,811.4838" style="stroke:#A80036;stroke-width:0.87;"/><!--MD5=[8d2db7110221b90f4d8ef6a899383274]
+reverse link entities.items.BombCollectable to gfx.TextureManager--><path codeLine="372" d="M281.6712,1177.9974 C200.5002,1221.6975 106.9056,1288.3047 60.4215,1378.95 C16.7562,1464.1056 5.22,1516.1055 60.4215,1594.275 C108.402,1662.2133 187.9026,1701.4155 266.8377,1723.9833 " fill="none" id="entities.items.BombCollectable-backto-gfx.TextureManager" style="stroke:#A80036;stroke-width:0.87;"/><polygon fill="#FFFFFF" points="291.7545,1172.6469,285.5127,1172.0158,282.5294,1177.5348,288.7713,1178.1659,291.7545,1172.6469" style="stroke:#A80036;stroke-width:0.87;"/><!--MD5=[7b43d8d9c5e321060e85453c7686acf2]
+reverse link entities.items.BombPlanted to gfx.Animation--><path codeLine="375" d="M719.8815,1230.3627 C719.8815,1290.2535 719.8815,1362.0894 719.8815,1417.0386 " fill="none" id="entities.items.BombPlanted-backto-gfx.Animation" style="stroke:#A80036;stroke-width:0.87;"/><polygon fill="#FFFFFF" points="719.8815,1218.9396,716.4015,1224.1596,719.8815,1229.3796,723.3615,1224.1596,719.8815,1218.9396" style="stroke:#A80036;stroke-width:0.87;"/><!--MD5=[1033a3e59b607c4d0988c914c9ff53e9]
+reverse link gfx.DrawManager to gfx.Vector2D--><path codeLine="378" d="M1093.1115,1591.2474 C1093.1115,1626.4302 1093.1115,1666.137 1093.1115,1697.5179 " fill="none" id="gfx.DrawManager-backto-gfx.Vector2D" style="stroke:#A80036;stroke-width:0.87;"/><polygon fill="#FFFFFF" points="1093.1115,1579.7547,1089.6315,1584.9747,1093.1115,1590.1947,1096.5915,1584.9747,1093.1115,1579.7547" style="stroke:#A80036;stroke-width:0.87;"/><!--MD5=[06c8f4031f32bc58dc0f9b17d595e51a]
+reverse link entities.Entity to gfx.Transform--><path codeLine="381" d="M1134.0537,594.2709 C1159.6578,610.6095 1185.5664,632.3421 1200.9915,659.46 C1347.804,917.589 1306.2615,1293.7857 1282.206,1441.0071 " fill="none" id="entities.Entity-backto-gfx.Transform" style="stroke:#A80036;stroke-width:0.87;"/><polygon fill="#FFFFFF" points="1124.2836,588.2766,1126.9103,593.9739,1133.1796,593.7405,1130.5529,588.0432,1124.2836,588.2766" style="stroke:#A80036;stroke-width:0.87;"/><!--MD5=[e6c69a633ed1049a0e7609d1d310e69c]
+reverse link states.Game to world.GameMap--><path codeLine="384" d="M2187.963,411.4491 C2179.4283,420.1056 2170.5804,428.3184 2161.4715,435.87 C2112.5862,476.4033 2047.6668,506.775 1995.9192,526.7763 " fill="none" id="states.Game-backto-world.GameMap" style="stroke:#A80036;stroke-width:0.87;"/><polygon fill="#FFFFFF" points="2196.054,403.0188,2189.9283,404.3733,2188.8225,410.5487,2194.9482,409.1942,2196.054,403.0188" style="stroke:#A80036;stroke-width:0.87;"/><!--MD5=[46ac167ed1ddf2cf564eff04ea1b5b2a]
+reverse link world.GameMap to world.Layer--><path codeLine="387" d="M1909.1715,618.6657 C1909.1715,654.501 1909.1715,698.2533 1909.1715,727.4853 " fill="none" id="world.GameMap-backto-world.Layer" style="stroke:#A80036;stroke-width:0.87;"/><polygon fill="#FFFFFF" points="1909.1715,607.347,1905.6915,612.567,1909.1715,617.787,1912.6515,612.567,1909.1715,607.347" style="stroke:#A80036;stroke-width:0.87;"/><!--MD5=[93f83c5ab99c1d2280c924b910bccc7b]
+reverse link world.MapParser to world.GameMap--><path codeLine="390" d="M1894.1292,318.5505 C1897.9659,378.9894 1902.8379,455.7669 1905.9873,505.2612 " fill="none" id="world.MapParser-backto-world.GameMap" style="stroke:#A80036;stroke-width:0.87;"/><polygon fill="#FFFFFF" points="1893.3984,307.0839,1890.2582,312.5151,1894.0639,317.5027,1897.2041,312.0714,1893.3984,307.0839" style="stroke:#A80036;stroke-width:0.87;"/><!--MD5=[a7cc82530030d4968bd2040d06b31cef]
+reverse link entities.creatures.Player to gfx.Animation--><path codeLine="393" d="M920.4165,1298.7621 C900.1542,1323.8703 879.0654,1348.9176 858.2115,1371.99 C844.6656,1386.9801 829.719,1402.2834 814.8159,1416.8994 " fill="none" id="entities.creatures.Player-backto-gfx.Animation" style="stroke:#A80036;stroke-width:0.87;"/><polygon fill="#FFFFFF" points="927.5418,1289.8794,921.5605,1291.7724,921.0074,1298.0216,926.9887,1296.1286,927.5418,1289.8794" style="stroke:#A80036;stroke-width:0.87;"/><!--MD5=[dbbe94031ce551aebe6dc52ae1f57bf7]
+reverse link entities.creatures.Player to gfx.DrawManager--><path codeLine="396" d="M1080.2094,1362.7071 C1082.3931,1386.4755 1084.4637,1409.0781 1086.2907,1428.9402 " fill="none" id="entities.creatures.Player-backto-gfx.DrawManager" style="stroke:#A80036;stroke-width:0.87;"/><polygon fill="#FFFFFF" points="1079.1654,1351.3362,1076.1761,1356.8519,1080.1178,1361.7327,1083.1071,1356.217,1079.1654,1351.3362" style="stroke:#A80036;stroke-width:0.87;"/><!--MD5=[992167aa91069c83fccfdba82f6392d8]
+reverse link gfx.Animation to gfx.TextureManager--><path codeLine="399" d="M639.7806,1600.1562 C627.8616,1614.3024 615.4815,1628.988 603.3276,1643.4213 " fill="none" id="gfx.Animation-backto-gfx.TextureManager" style="stroke:#A80036;stroke-width:0.87;"/><polygon fill="#FFFFFF" points="647.1408,1591.4301,641.1167,1593.1819,640.4167,1599.4164,646.4409,1597.6646,647.1408,1591.4301" style="stroke:#A80036;stroke-width:0.87;"/><!--MD5=[23cd05996af9d076982a26ce4bae3957]
+reverse link world.TileLayer to world.Tileset--><path codeLine="402" d="M1909.1715,1200.5043 C1909.1715,1271.0874 1909.1715,1369.6758 1909.1715,1434.9519 " fill="none" id="world.TileLayer-backto-world.Tileset" style="stroke:#A80036;stroke-width:0.87;"/><polygon fill="#A80036" points="1909.1715,1188.9942,1905.6915,1194.2142,1909.1715,1199.4342,1912.6515,1194.2142,1909.1715,1188.9942" style="stroke:#A80036;stroke-width:0.87;"/><!--MD5=[474c857f93458bb68f93d10a23f63e19]
+@startuml
+/' Objects '/
+abstract class entities.Entity {
+	+Entity(Properties* props)
+	#m_Flip : SDL_RendererFlip
+	#m_Transform : Transform*
+	#m_Height : int
+	#m_Width : int
+	#m_TextureID : std::string
+	+{abstract} Clean() : void
+	+{abstract} Draw() : void
+	+{abstract} Update(float dt) : void
+}
+
+abstract class entities.items.Item {
+	+Item(Properties* props)
+	+getItemX() : int
+	+getItemY() : int
+	+{abstract} Clean() : void
+	+{abstract} Draw() : void
+	+{abstract} Update(float dt) : void
+}
+
+class entities.items.BombCollectable {
+	+BombCollectable(Properties* props)
+	-m_BombItemTextureM : TextureManager*
+	-m_ItemBombID : int
+	-m_NumBombsSpawned : int
+	-s_BombsSpawnedList : std::vector<BombCollectable>
+	+getListOfSpawnedBombs() : std::vector<BombCollectable>*
+	+Clean() : void
+	+Draw() : void
+	+Update(float dt) : void
+}
+
+
+class entities.items.BombPlanted {
+	+BombPlanted(Properties* props)
+	-m_BombAnimation : Animation*
+	-m_PlantedBombTexture : SDL_Texture*
+	+m_countDown : bool
+	+m_isBombPlanted : bool
+	+m_start : long
+	+{static} s_bombID : static int
+	+GetBombPlantedTextureName() : std::string
+	-textureName : std::string
+	-s_PlantedBombList : std::vector<BombPlanted>
+	+getListOfPlantedBombs() : std::vector<BombPlanted>*
+	+Clean() : void
+	+Draw() : void
+	+Update(float dt) : void
+}
+
+
+abstract class entities.creatures.Creature {
+	+Creature(Properties* props)
+	#m_Health : int
+	#m_Speed : int
+	#m_Name : std::string
+	+{abstract} Clean() : void
+	+{abstract} Draw() : void
+	+{abstract} Update(float dt) : void
+}
+
+class entities.creatures.Player {
+	+Player(Properties* props)
+	-m_Animation : Animation*
+	-m_DrawManager : DrawManager*
+	-m_bombPlaced : bool
+	-m_getBombed : bool
+	-m_putBomb : bool
+	+GetBomb() : int
+	+GetBombCol() : int
+	+GetHealth() : int
+	-m_Health : int
+	-m_Speed : int
+	-m_bombCollectable : int
+	-m_bombHeld : int
+	-m_bombx : int
+	-m_bomby : int
+	-m_pid : int
+	-newX : int
+	-newY : int
+	+{static} s_AlrPressedP1 : static bool
+	+{static} s_AlrPressedP2 : static bool
+	+{static} s_countdown : static bool
+	+{static} s_PlayerCount : static int
+	+{static} s_p1facing : static int
+	+{static} s_p2facing : static int
+	+{static} s_start : static long
+	+Clean() : void
+	+Draw() : void
+	+GetInput() : void
+	+Update(float dt) : void
+	+bombCountdown() : void
+	+collectBomb() : void
+	+getBombedAnimation() : void
+	+getCurrentAnimation() : void
+	+placeBombCountdown(BombPlanted bombPlanted) : void
+	+plantBomb() : void
+	+takeDamage() : void
+}
+
+class gfx.Animation {
+	+Animation()
+	-m_Flip : SDL_RendererFlip
+	-m_AnimSpeed : int
+	-m_FrameCount : int
+	-m_SpriteCol : int
+	-m_SpriteFrame : int
+	-m_SpriteRow : int
+	-m_TextureID : std::string
+	+Draw(float x, float y, int spriteWidth, int spriteHeight) : void
+	+SetProperties(std::string textureID, int spriteRow, int spriteCol, int frameCount, int animSpeed, SDL_RendererFlip flip) : void
+	+Update() : void
+}
+
+
+class gfx.DrawManager {
+	+DrawManager()
+	+GetPosition() : Vector2D
+	-m_Force : Vector2D
+	-m_Position : Vector2D
+	+ApplyForce(Vector2D F) : void
+	+ApplyForceX(int Fx) : void
+	+ApplyForceY(int Fy) : void
+	+UnsetForce() : void
+	+Update() : void
+}
+
+abstract class world.Layer {
+	+{abstract} Render() : void
+	+{abstract} Update() : void
+}
+
+
+class world.MapParser {
+	-MapParser()
+	+GetMap(std::string id) : GameMap*
+	+{static} GetInstance() : MapParser*
+	-ParseTileLayer(TiXmlElement* xmlLayer, std::vector<Tileset> tilesets, int tilesize, int rowcount, int colcount) : TileLayer*
+	-ParseTileset(TiXmlElement* xmlTileset) : Tileset
+	+Load() : bool
+	-Parse(std::string id, std::string source) : bool
+	-{static} s_Instance : static MapParser*
+	-m_MapDict : std::map<std::string, GameMap*>
+	+Clean() : void
+}
+
+
+class states.Menu {
+	-Menu()
+	+{static} GetInstance() : Menu*
+	+GetRenderer() : SDL_Renderer*
+	-m_Renderer : SDL_Renderer*
+	-m_Window : SDL_Window*
+	+Clean() : bool
+	+Init() : bool
+	+IsRunning() : bool
+	-m_IsRunning : bool
+	-{static} s_Instance : static Menu*
+	+{static} s_AlrPressedSpace : static bool
+	+Events() : void
+	+Quit() : void
+	+Render() : void
+}
+
+class gfx.TextureManager {
+	-TextureManager()
+	+GetTexture(std::string id) : SDL_Texture*
+	+GetFont(std::string) : TTF_Font*
+	+{static} GetInstance() : TextureManager*
+	+Load(std::string id, std::string filename) : bool
+	-{static} s_Instance : static TextureManager*
+	-m_TextureMap : std::map<std::string, SDL_Texture*>
+	-fonts : std::map<std::string, TTF_Font*>
+	+AddFont(std::string, std::string, int) : void
+	+Clean() : void
+	+Draw(std::string id, int x, int y, int width, int height, int row, int col, SDL_RendererFlip flip) : void
+	+DrawFrame(std::string id, int x, int y, int width, int height, int row, int col, int frame, SDL_RendererFlip flip) : void
+	+DrawIcon(std::string id, int x, int y, int width, int height, int row, int col, SDL_RendererFlip flip) : void
+	+DrawTile(std::string tilesetID, int tileSize, int x, int y, int row, int frame, SDL_RendererFlip flip) : void
+	+Drop(std::string id) : void
+}
+
+
+class gfx.Transform {
+	+Transform(int x, int y)
+	+X : int
+	+Y : int
+	+Log(std::string msg) : void
+	+Translate(Vector2D v) : void
+	+TranslateX(int x) : void
+	+TranslateY(int y) : void
+}
+
+
+class gfx.Vector2D {
+	+Vector2D(int x, int y)
+	+operator+(const Vector2D& v2) : Vector2D {query}
+	+operator-(const Vector2D& v2) : Vector2D {query}
+	+X : int
+	+Y : int
+	+Log(std::string msg) : void
+}
+
+class entities.Properties {
+	+Properties(std::string textureID, int x, int y, int width, int height, SDL_RendererFlip flip)
+	+Flip : SDL_RendererFlip
+	+Height : int
+	+PrevX : int
+	+PrevY : int
+	+Width : int
+	+X : int
+	+Y : int
+	+TextureID : std::string
+}
+
+class states.Game {
+	-Game()
+	+{static} GetInstance() : Game*
+	+GetMap() : GameMap*
+	-m_LevelMap : GameMap*
+	+GetRenderer() : SDL_Renderer*
+	-m_Renderer : SDL_Renderer*
+	-m_Window : SDL_Window*
+	+Clean() : bool
+	+Init() : bool
+	+IsRunning() : bool
+	+getPlayAgain() : bool
+	+getWhoWins() : bool
+	-m_IsRunning : bool
+	-{static} s_Instance : static Game*
+	+{static} gameOver : static bool
+	+{static} playAgain : static bool
+	+{static} s_AlrPressedSpace : static bool
+	+{static} whoWins : static bool
+	+GetBombItemList() : std::vector<BombCollectable>*
+	+GetBombPlantedList() : std::vector<BombPlanted>*
+	+BombPlayer(int m_pid) : void
+	+CollectBomb(int m_pid) : void
+	+Events() : void
+	+PlantBomb(int m_pid) : void
+	+Quit() : void
+	+Render() : void
+	+SpawnItem() : void
+	+Update() : void
+}
+
+class interfaces.Board {
+	-Board()
+	+{static} GetInstance() : Board*
+	+canPlayerMove(int m_pid, int prevX, int prevY, int newX, int newY) : bool
+	+canPlayerPlant(int m_pid, int prevX, int prevY) : bool
+	+consoleBoard() : bool
+	+initBoard() : bool
+	+updateBoardMove(int m_pid, int prevX, int prevY, int newX, int newY) : bool
+	+updateBoardPlant(int m_pid, int prevX, int prevY) : bool
+	+getTileID(int x, int y) : int
+	-m_board : int
+	-{static} s_Instance : static Board*
+	+updateBoardWithItem(int x, int y, int iid) : void
+}
+
+
+class world.GameMap {
+	+GameMap()
+	+GetLayers() : std::vector<Layer*>
+	-m_MapLayers : std::vector<Layer*>
+	+Render() : void
+	+Update() : void
+}
+
+class gfx.UILabel {
+	+UILabel(int xpos, int ypos, std::string text, std::string font, SDL_Color& colour)
+	-textColour : SDL_Color
+	-position : SDL_Rect
+	-labelTexture : SDL_Texture*
+	-labelFont : std::string
+	-labelText : std::string
+	+SetLabelText(std::string text, std::string font) : void
+	+draw() : void
+}
+
+class world.Tile {
+	-Tile()
+	-{static} s_Instance : static Tile*
+	-m_Tile : std::map<std::string, SDL_Texture*>
+}
+
+
+class world.TileLayer {
+	+TileLayer(int tilesize, int width, int height, vector<std::vector<int>> tilemap, vector<Tileset> tilesets)
+	+GetTileMap() : TileMap
+	-m_ColCount : int
+	-m_RowCount : int
+	-m_TileSize : int
+	-m_Tilesets : vector<Tileset>
+	-m_Tilemap : vector<std::vector<int>>
+	+Render() : void
+	+Update() : void
+}
+
+class world.Tileset {
+	+ColCount : int
+	+FirstID : int
+	+LastID : int
+	+RowCount : int
+	+TileCount : int
+	+TileSize : int
+	+Name : std::string
+	+Source : std::string
+}
+
+class utils.IOHandler {
+	-IOHandler()
+	+{static} GetInstance() : IOHandler*
+	+KeyPressed(SDL_Scancode key) : bool
+	+KeyReleased(SDL_Scancode key) : bool
+	-m_KeyStates : const Uint8*
+	-{static} s_Instance : static IOHandler*
+	-KeyDown() : void
+	-KeyUp() : void
+	+Listen() : void
+}
+
+
+abstract class utils.IOObject {
+	+{abstract} Clean() : void
+	+{abstract} Draw() : void
+	+{abstract} Update(float dt) : void
+}
+
+class utils.ItemTimer {
+	+ItemTimer()
+	+getReadyToSpawn() : bool
+	+getTimerHasStarted() : bool
+	-m_ReadyToSpawn : bool
+	-m_TimerHasStarted : bool
+	-intRand(const int& min, const int& max) : int
+	-m_timerThread : std::thread
+	+setReadyToSpawn(bool val) : void
+	+setTimerHasStarted(bool val) : void
+	+startTimer() : void
+	+stopTimer() : void
+}
+
+/' Inheritance relationships '/
+
+.entities.creatures.Creature <|- - .entities.creatures.Player
+
+
+.entities.Entity <|- - .entities.creatures.Creature
+
+
+.entities.Entity <|- - .entities.items.Item
+
+
+.utils.IOHandler <|- - .entities.Entity
+
+
+.entities.items.Item <|- - .entities.items.BombCollectable
+
+
+.entities.items.Item <|- - .entities.items.BombPlanted
+
+
+.world.Layer <|- - .world.TileLayer
+
+/' Aggregation relationships '/
+
+
+.entities.items.BombCollectable o- - .gfx.TextureManager
+
+
+.entities.items.BombPlanted o- - .gfx.Animation
+
+
+.gfx.DrawManager o- - .gfx.Vector2D
+
+
+.entities.Entity o- - .gfx.Transform
+
+
+.states.Game o- - .world.GameMap
+
+
+.world.GameMap o- - .world.Layer
+
+
+.world.MapParser o- - .world.GameMap
+
+
+.entities.creatures.Player o- - .gfx.Animation
+
+
+.entities.creatures.Player o- - .gfx.DrawManager
+
+
+.gfx.Animation o- - .gfx.TextureManager
+
+
+.world.TileLayer *- - .world.Tileset
+
+
+/' Nested objects '/
+
+
+@enduml
+
+@startuml
+abstract class entities.Entity {
+	+Entity(Properties* props)
+	#m_Flip : SDL_RendererFlip
+	#m_Transform : Transform*
+	#m_Height : int
+	#m_Width : int
+	#m_TextureID : std::string
+	+{abstract} Clean() : void
+	+{abstract} Draw() : void
+	+{abstract} Update(float dt) : void
+}
+
+abstract class entities.items.Item {
+	+Item(Properties* props)
+	+getItemX() : int
+	+getItemY() : int
+	+{abstract} Clean() : void
+	+{abstract} Draw() : void
+	+{abstract} Update(float dt) : void
+}
+
+class entities.items.BombCollectable {
+	+BombCollectable(Properties* props)
+	-m_BombItemTextureM : TextureManager*
+	-m_ItemBombID : int
+	-m_NumBombsSpawned : int
+	-s_BombsSpawnedList : std::vector<BombCollectable>
+	+getListOfSpawnedBombs() : std::vector<BombCollectable>*
+	+Clean() : void
+	+Draw() : void
+	+Update(float dt) : void
+}
+
+
+class entities.items.BombPlanted {
+	+BombPlanted(Properties* props)
+	-m_BombAnimation : Animation*
+	-m_PlantedBombTexture : SDL_Texture*
+	+m_countDown : bool
+	+m_isBombPlanted : bool
+	+m_start : long
+	+{static} s_bombID : static int
+	+GetBombPlantedTextureName() : std::string
+	-textureName : std::string
+	-s_PlantedBombList : std::vector<BombPlanted>
+	+getListOfPlantedBombs() : std::vector<BombPlanted>*
+	+Clean() : void
+	+Draw() : void
+	+Update(float dt) : void
+}
+
+
+abstract class entities.creatures.Creature {
+	+Creature(Properties* props)
+	#m_Health : int
+	#m_Speed : int
+	#m_Name : std::string
+	+{abstract} Clean() : void
+	+{abstract} Draw() : void
+	+{abstract} Update(float dt) : void
+}
+
+class entities.creatures.Player {
+	+Player(Properties* props)
+	-m_Animation : Animation*
+	-m_DrawManager : DrawManager*
+	-m_bombPlaced : bool
+	-m_getBombed : bool
+	-m_putBomb : bool
+	+GetBomb() : int
+	+GetBombCol() : int
+	+GetHealth() : int
+	-m_Health : int
+	-m_Speed : int
+	-m_bombCollectable : int
+	-m_bombHeld : int
+	-m_bombx : int
+	-m_bomby : int
+	-m_pid : int
+	-newX : int
+	-newY : int
+	+{static} s_AlrPressedP1 : static bool
+	+{static} s_AlrPressedP2 : static bool
+	+{static} s_countdown : static bool
+	+{static} s_PlayerCount : static int
+	+{static} s_p1facing : static int
+	+{static} s_p2facing : static int
+	+{static} s_start : static long
+	+Clean() : void
+	+Draw() : void
+	+GetInput() : void
+	+Update(float dt) : void
+	+bombCountdown() : void
+	+collectBomb() : void
+	+getBombedAnimation() : void
+	+getCurrentAnimation() : void
+	+placeBombCountdown(BombPlanted bombPlanted) : void
+	+plantBomb() : void
+	+takeDamage() : void
+}
+
+class gfx.Animation {
+	+Animation()
+	-m_Flip : SDL_RendererFlip
+	-m_AnimSpeed : int
+	-m_FrameCount : int
+	-m_SpriteCol : int
+	-m_SpriteFrame : int
+	-m_SpriteRow : int
+	-m_TextureID : std::string
+	+Draw(float x, float y, int spriteWidth, int spriteHeight) : void
+	+SetProperties(std::string textureID, int spriteRow, int spriteCol, int frameCount, int animSpeed, SDL_RendererFlip flip) : void
+	+Update() : void
+}
+
+
+class gfx.DrawManager {
+	+DrawManager()
+	+GetPosition() : Vector2D
+	-m_Force : Vector2D
+	-m_Position : Vector2D
+	+ApplyForce(Vector2D F) : void
+	+ApplyForceX(int Fx) : void
+	+ApplyForceY(int Fy) : void
+	+UnsetForce() : void
+	+Update() : void
+}
+
+abstract class world.Layer {
+	+{abstract} Render() : void
+	+{abstract} Update() : void
+}
+
+
+class world.MapParser {
+	-MapParser()
+	+GetMap(std::string id) : GameMap*
+	+{static} GetInstance() : MapParser*
+	-ParseTileLayer(TiXmlElement* xmlLayer, std::vector<Tileset> tilesets, int tilesize, int rowcount, int colcount) : TileLayer*
+	-ParseTileset(TiXmlElement* xmlTileset) : Tileset
+	+Load() : bool
+	-Parse(std::string id, std::string source) : bool
+	-{static} s_Instance : static MapParser*
+	-m_MapDict : std::map<std::string, GameMap*>
+	+Clean() : void
+}
+
+
+class states.Menu {
+	-Menu()
+	+{static} GetInstance() : Menu*
+	+GetRenderer() : SDL_Renderer*
+	-m_Renderer : SDL_Renderer*
+	-m_Window : SDL_Window*
+	+Clean() : bool
+	+Init() : bool
+	+IsRunning() : bool
+	-m_IsRunning : bool
+	-{static} s_Instance : static Menu*
+	+{static} s_AlrPressedSpace : static bool
+	+Events() : void
+	+Quit() : void
+	+Render() : void
+}
+
+class gfx.TextureManager {
+	-TextureManager()
+	+GetTexture(std::string id) : SDL_Texture*
+	+GetFont(std::string) : TTF_Font*
+	+{static} GetInstance() : TextureManager*
+	+Load(std::string id, std::string filename) : bool
+	-{static} s_Instance : static TextureManager*
+	-m_TextureMap : std::map<std::string, SDL_Texture*>
+	-fonts : std::map<std::string, TTF_Font*>
+	+AddFont(std::string, std::string, int) : void
+	+Clean() : void
+	+Draw(std::string id, int x, int y, int width, int height, int row, int col, SDL_RendererFlip flip) : void
+	+DrawFrame(std::string id, int x, int y, int width, int height, int row, int col, int frame, SDL_RendererFlip flip) : void
+	+DrawIcon(std::string id, int x, int y, int width, int height, int row, int col, SDL_RendererFlip flip) : void
+	+DrawTile(std::string tilesetID, int tileSize, int x, int y, int row, int frame, SDL_RendererFlip flip) : void
+	+Drop(std::string id) : void
+}
+
+
+class gfx.Transform {
+	+Transform(int x, int y)
+	+X : int
+	+Y : int
+	+Log(std::string msg) : void
+	+Translate(Vector2D v) : void
+	+TranslateX(int x) : void
+	+TranslateY(int y) : void
+}
+
+
+class gfx.Vector2D {
+	+Vector2D(int x, int y)
+	+operator+(const Vector2D& v2) : Vector2D {query}
+	+operator-(const Vector2D& v2) : Vector2D {query}
+	+X : int
+	+Y : int
+	+Log(std::string msg) : void
+}
+
+class entities.Properties {
+	+Properties(std::string textureID, int x, int y, int width, int height, SDL_RendererFlip flip)
+	+Flip : SDL_RendererFlip
+	+Height : int
+	+PrevX : int
+	+PrevY : int
+	+Width : int
+	+X : int
+	+Y : int
+	+TextureID : std::string
+}
+
+class states.Game {
+	-Game()
+	+{static} GetInstance() : Game*
+	+GetMap() : GameMap*
+	-m_LevelMap : GameMap*
+	+GetRenderer() : SDL_Renderer*
+	-m_Renderer : SDL_Renderer*
+	-m_Window : SDL_Window*
+	+Clean() : bool
+	+Init() : bool
+	+IsRunning() : bool
+	+getPlayAgain() : bool
+	+getWhoWins() : bool
+	-m_IsRunning : bool
+	-{static} s_Instance : static Game*
+	+{static} gameOver : static bool
+	+{static} playAgain : static bool
+	+{static} s_AlrPressedSpace : static bool
+	+{static} whoWins : static bool
+	+GetBombItemList() : std::vector<BombCollectable>*
+	+GetBombPlantedList() : std::vector<BombPlanted>*
+	+BombPlayer(int m_pid) : void
+	+CollectBomb(int m_pid) : void
+	+Events() : void
+	+PlantBomb(int m_pid) : void
+	+Quit() : void
+	+Render() : void
+	+SpawnItem() : void
+	+Update() : void
+}
+
+class interfaces.Board {
+	-Board()
+	+{static} GetInstance() : Board*
+	+canPlayerMove(int m_pid, int prevX, int prevY, int newX, int newY) : bool
+	+canPlayerPlant(int m_pid, int prevX, int prevY) : bool
+	+consoleBoard() : bool
+	+initBoard() : bool
+	+updateBoardMove(int m_pid, int prevX, int prevY, int newX, int newY) : bool
+	+updateBoardPlant(int m_pid, int prevX, int prevY) : bool
+	+getTileID(int x, int y) : int
+	-m_board : int
+	-{static} s_Instance : static Board*
+	+updateBoardWithItem(int x, int y, int iid) : void
+}
+
+
+class world.GameMap {
+	+GameMap()
+	+GetLayers() : std::vector<Layer*>
+	-m_MapLayers : std::vector<Layer*>
+	+Render() : void
+	+Update() : void
+}
+
+class gfx.UILabel {
+	+UILabel(int xpos, int ypos, std::string text, std::string font, SDL_Color& colour)
+	-textColour : SDL_Color
+	-position : SDL_Rect
+	-labelTexture : SDL_Texture*
+	-labelFont : std::string
+	-labelText : std::string
+	+SetLabelText(std::string text, std::string font) : void
+	+draw() : void
+}
+
+class world.Tile {
+	-Tile()
+	-{static} s_Instance : static Tile*
+	-m_Tile : std::map<std::string, SDL_Texture*>
+}
+
+
+class world.TileLayer {
+	+TileLayer(int tilesize, int width, int height, vector<std::vector<int>> tilemap, vector<Tileset> tilesets)
+	+GetTileMap() : TileMap
+	-m_ColCount : int
+	-m_RowCount : int
+	-m_TileSize : int
+	-m_Tilesets : vector<Tileset>
+	-m_Tilemap : vector<std::vector<int>>
+	+Render() : void
+	+Update() : void
+}
+
+class world.Tileset {
+	+ColCount : int
+	+FirstID : int
+	+LastID : int
+	+RowCount : int
+	+TileCount : int
+	+TileSize : int
+	+Name : std::string
+	+Source : std::string
+}
+
+class utils.IOHandler {
+	-IOHandler()
+	+{static} GetInstance() : IOHandler*
+	+KeyPressed(SDL_Scancode key) : bool
+	+KeyReleased(SDL_Scancode key) : bool
+	-m_KeyStates : const Uint8*
+	-{static} s_Instance : static IOHandler*
+	-KeyDown() : void
+	-KeyUp() : void
+	+Listen() : void
+}
+
+
+abstract class utils.IOObject {
+	+{abstract} Clean() : void
+	+{abstract} Draw() : void
+	+{abstract} Update(float dt) : void
+}
+
+class utils.ItemTimer {
+	+ItemTimer()
+	+getReadyToSpawn() : bool
+	+getTimerHasStarted() : bool
+	-m_ReadyToSpawn : bool
+	-m_TimerHasStarted : bool
+	-intRand(const int& min, const int& max) : int
+	-m_timerThread : std::thread
+	+setReadyToSpawn(bool val) : void
+	+setTimerHasStarted(bool val) : void
+	+startTimer() : void
+	+stopTimer() : void
+}
+
+
+.entities.creatures.Creature <|- - .entities.creatures.Player
+
+
+.entities.Entity <|- - .entities.creatures.Creature
+
+
+.entities.Entity <|- - .entities.items.Item
+
+
+.utils.IOHandler <|- - .entities.Entity
+
+
+.entities.items.Item <|- - .entities.items.BombCollectable
+
+
+.entities.items.Item <|- - .entities.items.BombPlanted
+
+
+.world.Layer <|- - .world.TileLayer
+
+
+
+.entities.items.BombCollectable o- - .gfx.TextureManager
+
+
+.entities.items.BombPlanted o- - .gfx.Animation
+
+
+.gfx.DrawManager o- - .gfx.Vector2D
+
+
+.entities.Entity o- - .gfx.Transform
+
+
+.states.Game o- - .world.GameMap
+
+
+.world.GameMap o- - .world.Layer
+
+
+.world.MapParser o- - .world.GameMap
+
+
+.entities.creatures.Player o- - .gfx.Animation
+
+
+.entities.creatures.Player o- - .gfx.DrawManager
+
+
+.gfx.Animation o- - .gfx.TextureManager
+
+
+.world.TileLayer *- - .world.Tileset
+
+
+
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 18:25:05 SGT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: SG
+--></g></svg>

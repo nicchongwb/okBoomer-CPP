@@ -1,0 +1,149 @@
+@startuml
+/' Objects '/
+abstract class entities.Entity {
+}
+
+abstract class entities.items.Item {
+}
+
+class entities.items.BombCollectable {
+}
+
+
+class entities.items.BombPlanted {
+}
+
+
+abstract class entities.creatures.Creature {
+}
+
+class entities.creatures.Player {
+}
+
+class gfx.Animation {
+}
+
+
+class gfx.DrawManager {
+}
+
+abstract class world.Layer {
+}
+
+
+class world.MapParser {
+}
+
+
+class states.Menu {
+}
+
+class gfx.TextureManager {
+}
+
+
+class gfx.Transform {
+}
+
+
+class gfx.Vector2D {
+}
+
+class entities.Properties {
+}
+
+class states.Game {
+}
+
+class interfaces.Board {
+}
+
+
+class world.GameMap {
+}
+
+class gfx.UILabel {
+}
+
+class world.Tile {
+}
+
+
+class world.TileLayer {
+}
+
+class world.Tileset {
+}
+
+class utils.IOHandler {
+}
+
+
+abstract class utils.IOObject {
+}
+
+class utils.ItemTimer {
+}
+
+/' Inheritance relationships '/
+
+.entities.creatures.Creature <|-- .entities.creatures.Player
+
+
+.entities.Entity <|-- .entities.creatures.Creature
+
+
+.entities.Entity <|-- .entities.items.Item
+
+
+.utils.IOHandler <|-- .entities.Entity
+
+
+.entities.items.Item <|-- .entities.items.BombCollectable
+
+
+.entities.items.Item <|-- .entities.items.BombPlanted
+
+
+.world.Layer <|-- .world.TileLayer
+
+/' Aggregation relationships '/
+
+
+.entities.items.BombCollectable o-- .gfx.TextureManager
+
+
+.entities.items.BombPlanted o-- .gfx.Animation
+
+
+.gfx.DrawManager o-- .gfx.Vector2D
+
+
+.entities.Entity o-- .gfx.Transform
+
+
+.states.Game o-- .world.GameMap
+
+
+.world.GameMap o-- .world.Layer
+
+
+.world.MapParser o-- .world.GameMap
+
+
+.entities.creatures.Player o-- .gfx.Animation
+
+
+.entities.creatures.Player o-- .gfx.DrawManager
+
+
+.gfx.Animation o-- .gfx.TextureManager
+
+
+.world.TileLayer *-- .world.Tileset
+
+
+/' Nested objects '/
+
+
+@enduml
