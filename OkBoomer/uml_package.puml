@@ -356,7 +356,7 @@ class utils.ItemTimer {
 .entities.Entity <|-- .entities.items.Item
 
 
-.utils.IOHandler <|-- .entities.Entity
+.utils.IOObject <|-- .entities.Entity
 
 
 .entities.items.Item <|-- .entities.items.BombCollectable
