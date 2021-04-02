@@ -247,7 +247,7 @@ class states.Game {
 	+Update() : void
 }
 
-class interfaces.Board {
+class utils.Board {
 	-Board()
 	+{static} GetInstance() : Board*
 	+canPlayerMove(int m_pid, int prevX, int prevY, int newX, int newY) : bool
