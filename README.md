@@ -1,5 +1,5 @@
 
-# OkBoomer
+# OkBoomer - C++
 
 ## Game desription:
 Game Description: 2-player bomberman game with a minesweeper twist! 
