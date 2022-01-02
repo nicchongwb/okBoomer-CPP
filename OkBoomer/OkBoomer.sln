@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OkBoomer", "OkBoomer.vcxproj", "{67EF83D3-EC7D-46F4-9FF6-E38B41A92A6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E454EEC5-20D2-4FAF-8301-149A1FBA5936}"
+	ProjectSection(SolutionItems) = preProject
+		res\sprites\background.png = res\sprites\background.png
+		res\sprites\bombermantilesnew.png = res\sprites\bombermantilesnew.png
+		res\sprites\bombs2.bmp = res\sprites\bombs2.bmp
+		res\sprites\characternew.png = res\sprites\characternew.png
+		res\sprites\gameover.png = res\sprites\gameover.png
+		res\sprites\history.png = res\sprites\history.png
+		Launcher.cpp = Launcher.cpp
+		res\sprites\quit-button.png = res\sprites\quit-button.png
+		res\sprites\replay-button.png = res\sprites\replay-button.png
+		res\sprites\start-button.png = res\sprites\start-button.png
+		TextureManager.cpp = TextureManager.cpp
+		TextureManager.h = TextureManager.h
+		res\sprites\title.png = res\sprites\title.png
+		res\world\world.tmx = res\world\world.tmx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67EF83D3-EC7D-46F4-9FF6-E38B41A92A6C}.Debug|x64.ActiveCfg = Debug|x64
+		{67EF83D3-EC7D-46F4-9FF6-E38B41A92A6C}.Debug|x64.Build.0 = Debug|x64
+		{67EF83D3-EC7D-46F4-9FF6-E38B41A92A6C}.Debug|x86.ActiveCfg = Debug|Win32
+		{67EF83D3-EC7D-46F4-9FF6-E38B41A92A6C}.Debug|x86.Build.0 = Debug|Win32
+		{67EF83D3-EC7D-46F4-9FF6-E38B41A92A6C}.Release|x64.ActiveCfg = Release|x64
+		{67EF83D3-EC7D-46F4-9FF6-E38B41A92A6C}.Release|x64.Build.0 = Release|x64
+		{67EF83D3-EC7D-46F4-9FF6-E38B41A92A6C}.Release|x86.ActiveCfg = Release|Win32
+		{67EF83D3-EC7D-46F4-9FF6-E38B41A92A6C}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4AFA5D31-86F5-478A-8EE2-7214FD7EDA34}
+	EndGlobalSection
+EndGlobal
